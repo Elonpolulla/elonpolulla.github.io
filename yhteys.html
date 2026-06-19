@@ -8,48 +8,97 @@
 
 <title>Yhteys | Elonpolulla</title>
 
+
 <style>
 
+*{
+box-sizing:border-box;
+}
+
+
 body{
+
 margin:0;
 font-family:Georgia,serif;
-background:#F7F3EA;
-color:#31402F;
+
+background:#F4F0E6;
+
+color:#2F3B2B;
+
 line-height:1.7;
+
 }
+
 
 
 header{
-background:#32402F;
+
+background:#34432F;
+
 color:white;
+
 padding:25px;
+
 text-align:center;
+
+border-bottom:5px solid #C9A65B;
+
 }
+
 
 
 header h1{
-color:#C9A65B;
-font-size:48px;
+
+color:#D1AA55;
+
+font-size:46px;
+
+margin:0;
+
 }
+
+
+
+nav{
+
+margin-top:20px;
+
+}
+
 
 
 nav a{
+
 color:white;
+
 text-decoration:none;
-margin:10px;
+
+margin:8px;
+
+display:inline-block;
+
 }
+
 
 
 section{
+
 padding:70px 10%;
+
 text-align:center;
+
 }
+
 
 
 h2{
-color:#5F7352;
-font-size:42px;
+
+color:#526947;
+
+font-size:40px;
+
 }
+
 
 
 
@@ -59,24 +108,31 @@ max-width:700px;
 
 margin:auto;
 
-background:white;
+background:#FFFDF8;
 
-padding:40px;
+padding:45px;
 
 border-radius:25px;
 
+border-left:6px solid #C9A65B;
+
 box-shadow:
-0 10px 25px rgba(0,0,0,.12);
+0 10px 25px rgba(0,0,0,.10);
 
 }
 
 
 
+
 .email{
+
+display:inline-block;
+
+margin-top:20px;
 
 font-size:24px;
 
-color:#5F7352;
+color:#526947;
 
 text-decoration:none;
 
@@ -86,9 +142,9 @@ text-decoration:none;
 
 .info{
 
-margin-top:30px;
+background:#E5DDCC;
 
-background:#E8E1D2;
+margin-top:35px;
 
 padding:25px;
 
@@ -100,13 +156,36 @@ border-radius:20px;
 
 footer{
 
-background:#1F291F;
+background:#222B20;
 
 color:white;
 
 text-align:center;
 
 padding:25px;
+
+}
+
+
+
+
+@media(max-width:600px){
+
+header h1{
+font-size:36px;
+}
+
+h2{
+font-size:32px;
+}
+
+nav a{
+font-size:15px;
+}
+
+.email{
+font-size:19px;
+}
 
 }
 
@@ -147,10 +226,12 @@ padding:25px;
 
 
 
+
 <section>
 
 
 <div class="contact-box">
+
 
 
 <h2>Ota yhteyttä</h2>
@@ -166,18 +247,14 @@ varata ajan tai tehdä yhteistyötä?
 
 
 
-<p>
 
-📧
+<a class="email" href="mailto:petrivee@proton.me">
 
-<a class="email"
-href="mailto:petrivee@proton.me">
-
-petrivee@proton.me
+📧 petrivee@proton.me
 
 </a>
 
-</p>
+
 
 
 
@@ -191,7 +268,10 @@ petrivee@proton.me
 
 Suomi / verkkopalvelut
 
-<br>
+</p>
+
+
+<p>
 
 Kokonaisvaltaista hyvinvointia,
 kasvua ja yhteyttä luontoon.
@@ -203,10 +283,13 @@ kasvua ja yhteyttä luontoon.
 
 
 
+
 </div>
 
 
 </section>
+
+
 
 
 
@@ -220,6 +303,5 @@ kasvua ja yhteyttä luontoon.
 
 
 </body>
-
 
 </html>
