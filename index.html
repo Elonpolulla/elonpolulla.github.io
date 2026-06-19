@@ -14,50 +14,62 @@
 box-sizing:border-box;
 }
 
+
 body{
+
 margin:0;
 font-family:Georgia,serif;
-background:#F7F3EA;
-color:#31402F;
+background:#F4F0E6;
+color:#2F3B2B;
 line-height:1.7;
+
 }
 
+
 header{
-background:#32402F;
+
+background:#34432F;
 color:white;
 padding:25px;
 text-align:center;
+
+border-bottom:5px solid #C9A65B;
+
 }
+
 
 header h1{
-color:#C9A65B;
+
+color:#D1AA55;
 font-size:48px;
 margin:0;
+
 }
+
 
 nav{
+
 margin-top:20px;
+
 }
 
+
 nav a{
+
 color:white;
 text-decoration:none;
-margin:10px;
+margin:8px;
+display:inline-block;
+font-size:17px;
+
 }
+
 
 .hero{
 
-min-height:75vh;
+min-height:70vh;
 
-background:
-linear-gradient(
-rgba(40,50,35,.65),
-rgba(40,50,35,.65)
-),
-url("metsa.jpeg");
-
-background-size:cover;
-background-position:center;
+background:#5B7052;
 
 display:flex;
 align-items:center;
@@ -65,77 +77,127 @@ justify-content:center;
 
 text-align:center;
 color:white;
-padding:30px;
+
+padding:40px;
 
 }
+
+
+.hero-box{
+
+max-width:700px;
+
+}
+
 
 .hero h2{
-font-size:50px;
+
+font-size:52px;
+line-height:1.2;
+
 }
+
+
+.hero p{
+
+font-size:22px;
+
+}
+
+
 
 .button{
 
+display:inline-block;
+
 background:#C9A65B;
+
 color:white;
-padding:14px 30px;
+
+padding:15px 35px;
+
 border-radius:40px;
+
 text-decoration:none;
 
+margin-top:20px;
+
 }
+
 
 
 section{
+
 padding:60px 10%;
+
 }
+
 
 
 h2{
-color:#5F7352;
+
+color:#526947;
 font-size:38px;
+
 }
+
 
 
 .cards{
 
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:25px;
 
 }
 
 
+
 .card{
 
-background:white;
-padding:25px;
-border-radius:20px;
+background:#FFFDF8;
+
+padding:30px;
+
+border-radius:25px;
+
+border-left:6px solid #C9A65B;
 
 box-shadow:
-0 10px 25px rgba(0,0,0,.12);
+0 10px 25px rgba(0,0,0,.10);
 
 }
+
 
 
 .card h3{
-color:#5F7352;
+
+color:#526947;
+
 }
+
 
 
 .about{
 
+background:#E5DDCC;
+
 display:flex;
+
 gap:40px;
+
 flex-wrap:wrap;
+
 align-items:center;
 
-background:#E8E1D2;
-
 }
+
 
 
 .about img{
 
 width:300px;
+
 border-radius:25px;
 
 }
@@ -144,24 +206,61 @@ border-radius:25px;
 
 .contact{
 
-background:#32402F;
+background:#34432F;
+
 color:white;
+
 text-align:center;
 
 }
 
 
+
 .contact a{
-color:#C9A65B;
+
+color:#D1AA55;
+
 }
+
 
 
 footer{
 
-background:#1F291F;
+background:#222B20;
+
 color:white;
+
 text-align:center;
+
 padding:25px;
+
+}
+
+
+
+@media(max-width:600px){
+
+
+header h1{
+
+font-size:36px;
+
+}
+
+
+.hero h2{
+
+font-size:38px;
+
+}
+
+
+nav a{
+
+font-size:15px;
+
+}
+
 
 }
 
@@ -170,12 +269,15 @@ padding:25px;
 </head>
 
 
+
 <body>
+
 
 
 <header>
 
 <h1>Elonpolulla</h1>
+
 
 <nav>
 
@@ -191,33 +293,49 @@ padding:25px;
 
 </nav>
 
+
 </header>
 
 
 
-<div class="hero">
 
-<div>
+<section class="hero">
+
+
+<div class="hero-box">
+
 
 <h2>
+
 Luonnollinen tie tasapainoon
+
 </h2>
 
+
 <p>
+
 Hyvinvointia, kasvua ja yhteyttä itseen
+
 </p>
 
+
 <a class="button" href="palvelut.html">
+
 Tutustu palveluihin
+
 </a>
 
-</div>
 
 </div>
+
+
+</section>
+
 
 
 
 <section>
+
 
 <h2>Palvelut</h2>
 
@@ -226,32 +344,45 @@ Tutustu palveluihin
 
 
 <div class="card">
+
 <h3>🌿 Keho ja mieli</h3>
+
 <p>
-Kehotietoisuutta ja läsnäoloa tukevia menetelmiä.
+Kehotietoisuutta, läsnäoloa ja oman hyvinvoinnin tukemista.
 </p>
+
 </div>
 
 
+
 <div class="card">
+
 <h3>🍃 Hengitys</h3>
+
 <p>
-Harjoituksia rauhoittumiseen ja palautumiseen.
+Tietoinen hengitys tukee rauhoittumista ja palautumista.
 </p>
+
 </div>
 
 
+
 <div class="card">
-<h3>🌱 Luonnon viisaus</h3>
+
+<h3>🌱 Luontoyhteys</h3>
+
 <p>
-Yrtit, luontoyhteys ja perinteiset hyvinvointitavat.
+Luonnon viisaus ja yhteys ympäröivään maailmaan.
 </p>
+
 </div>
 
 
 </div>
 
 </section>
+
+
 
 
 
@@ -267,12 +398,10 @@ Yrtit, luontoyhteys ja perinteiset hyvinvointitavat.
 
 <p>
 
-Olen Petri. 
-Työssäni yhdistyvät hyvinvointi,
-luonto, hengitys ja henkilökohtainen kasvu.
+Olen Petri. Elonpolulla yhdistyvät
+hyvinvointi, luonto, hengitys ja henkilökohtainen kasvu.
 
 </p>
-
 
 </div>
 
@@ -282,16 +411,21 @@ luonto, hengitys ja henkilökohtainen kasvu.
 
 
 
+
 <section class="contact">
 
+
 <h2>Ota yhteyttä</h2>
+
 
 <p>
 
 📧
 
 <a href="mailto:petrivee@proton.me">
+
 petrivee@proton.me
+
 </a>
 
 </p>
@@ -301,11 +435,13 @@ petrivee@proton.me
 
 
 
+
 <footer>
 
 © Elonpolulla
 
 </footer>
+
 
 
 </body>
