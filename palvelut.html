@@ -19,6 +19,7 @@ box-sizing:border-box;
 body{
 
 margin:0;
+
 font-family:Georgia,serif;
 
 background:#F4F0E6;
@@ -73,7 +74,7 @@ color:white;
 
 text-decoration:none;
 
-margin:8px;
+margin:7px;
 
 display:inline-block;
 
@@ -99,19 +100,40 @@ font-size:40px;
 
 
 
+.intro{
+
+max-width:750px;
+
+}
+
+
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+
+
 .card{
 
 background:#FFFDF8;
 
 padding:30px;
 
-margin-bottom:25px;
-
 border-radius:25px;
 
 border-left:6px solid #C9A65B;
 
 box-shadow:
+
 0 10px 25px rgba(0,0,0,.10);
 
 }
@@ -122,7 +144,23 @@ box-shadow:
 
 color:#526947;
 
-font-size:27px;
+font-size:26px;
+
+}
+
+
+
+.card a{
+
+display:inline-block;
+
+margin-top:15px;
+
+color:#526947;
+
+font-weight:bold;
+
+text-decoration:none;
 
 }
 
@@ -171,6 +209,7 @@ font-size:15px;
 
 <header>
 
+
 <h1>Elonpolulla</h1>
 
 
@@ -179,12 +218,17 @@ font-size:15px;
 <a href="index.html">Etusivu</a>
 
 <a href="palvelut.html">Palvelut</a>
+
 <a href="yrtit.html">Yrtit</a>
+
 <a href="hengitys.html">Hengitys</a>
+
 <a href="tietoa.html">Tietoa</a>
 
 <a href="ekirjat.html">E-kirjat</a>
+
 <a href="kauppa.html">Kauppa</a>
+
 <a href="yhteys.html">Yhteys</a>
 
 </nav>
@@ -199,20 +243,16 @@ font-size:15px;
 <section>
 
 
-<h2>Palvelut</h2>
+<h2>🌿 Palvelut</h2>
 
 
-
-
-<div class="card">
-
-<h3>🌿 Keho ja mieli</h3>
+<div class="intro">
 
 <p>
 
-Kokonaisvaltainen lähestymistapa hyvinvointiin.
-Kehon viestien, tunnetilojen ja ajatusmallien
-tarkastelua arjen tasapainon tueksi.
+Tutustu Elonpolun sisältöihin.
+Palvelut rakentuvat luonnosta, hyvinvoinnista,
+hengityksestä ja omasta kasvusta.
 
 </p>
 
@@ -221,84 +261,134 @@ tarkastelua arjen tasapainon tueksi.
 
 
 
-<div class="card">
 
-<h3>🍃 Hengitysharjoitukset</h3>
+<div class="cards">
 
-<p>
-
-Tietoinen hengitys auttaa vahvistamaan läsnäoloa,
-rauhoittumista ja palautumista.
-
-</p>
-
-</div>
 
 
 
 
 <div class="card">
 
-<h3>🌱 Luonnonyrtit ja salvat</h3>
+<h3>🌱 Yrtit ja salvat</h3>
 
 <p>
 
-Tietoa luonnonyrteistä, perinteisistä käyttötavoista
-ja luonnon hyvinvointia tukevista menetelmistä.
+Luonnonyrtit, perinteinen yrttitieto
+ja luonnolliset tuotteet.
 
 </p>
 
+<a href="yrtit.html">
+
+Tutustu →
+
+</a>
+
 </div>
+
+
 
 
 
 
 <div class="card">
 
-<h3>🔥 Itsensä kehittäminen</h3>
+<h3>🌬 Hengitys</h3>
 
 <p>
 
-Itsetuntemusta, omien voimavarojen löytämistä
-ja henkilökohtaista kasvua.
+Hengitysharjoituksia läsnäoloon,
+rauhoittumiseen ja palautumiseen.
 
 </p>
 
+<a href="hengitys.html">
+
+Tutustu →
+
+</a>
+
 </div>
+
+
+
 
 
 
 
 <div class="card">
 
-<h3>🌙 Luontoyhteys</h3>
+<h3>📚 E-kirjat</h3>
 
 <p>
 
-Harjoituksia, jotka tukevat yhteyttä itseen
-ja ympäröivään luontoon.
+Oppaita hyvinvointiin,
+kasvuun ja itsetuntemukseen.
 
 </p>
 
+<a href="ekirjat.html">
+
+Tutustu →
+
+</a>
+
 </div>
+
+
 
 
 
 
 <div class="card">
 
-<h3>✨ Hyvinvointiohjaus</h3>
+<h3>🛒 Kauppa</h3>
 
 <p>
 
-Arjen tasapainoa ja hyvinvointia tukevia
-käytäntöjä ja menetelmiä.
+Tuotteita ja materiaaleja
+tulevaan verkkokauppaan.
 
 </p>
+
+<a href="kauppa.html">
+
+Tutustu →
+
+</a>
 
 </div>
 
 
+
+
+
+
+
+<div class="card">
+
+<h3>✨ Hyvinvointi</h3>
+
+<p>
+
+Kokonaisvaltaista lähestymistä
+kehoon, mieleen ja arkeen.
+
+</p>
+
+<a href="tietoa.html">
+
+Lue lisää →
+
+</a>
+
+</div>
+
+
+
+
+</div>
 
 
 </section>
