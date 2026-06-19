@@ -8,89 +8,158 @@
 
 <title>Tietoa minusta | Elonpolulla</title>
 
+
 <style>
 
+*{
+box-sizing:border-box;
+}
+
+
 body{
+
 margin:0;
 font-family:Georgia,serif;
-background:#F7F3EA;
-color:#31402F;
+
+background:#F4F0E6;
+
+color:#2F3B2B;
+
 line-height:1.7;
+
 }
+
 
 
 header{
-background:#32402F;
+
+background:#34432F;
+
 color:white;
+
 padding:25px;
+
 text-align:center;
+
+border-bottom:5px solid #C9A65B;
+
 }
+
 
 
 header h1{
-color:#C9A65B;
-font-size:48px;
+
+color:#D1AA55;
+
+font-size:46px;
+
+margin:0;
+
 }
+
+
+
+nav{
+
+margin-top:20px;
+
+}
+
 
 
 nav a{
+
 color:white;
+
 text-decoration:none;
-margin:10px;
+
+margin:8px;
+
+display:inline-block;
+
 }
+
 
 
 section{
+
 padding:60px 10%;
-}
-
-
-.about{
-
-display:flex;
-gap:40px;
-flex-wrap:wrap;
-align-items:center;
 
 }
 
-
-.about img{
-
-width:320px;
-border-radius:25px;
-
-box-shadow:
-0 10px 25px rgba(0,0,0,.2);
-
-}
-
-
-.text{
-
-flex:1;
-min-width:280px;
-
-}
 
 
 h2{
 
-color:#5F7352;
+color:#526947;
+
 font-size:40px;
 
 }
 
 
-.card{
 
-background:white;
-padding:30px;
-margin-top:30px;
+.about{
+
+display:flex;
+
+gap:40px;
+
+flex-wrap:wrap;
+
+align-items:center;
+
+}
+
+
+
+.about img{
+
+width:320px;
+
+max-width:100%;
+
 border-radius:25px;
 
 box-shadow:
-0 10px 25px rgba(0,0,0,.12);
+0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+
+.text{
+
+flex:1;
+
+min-width:280px;
+
+}
+
+
+
+.card{
+
+background:#FFFDF8;
+
+padding:30px;
+
+margin-top:30px;
+
+border-radius:25px;
+
+border-left:6px solid #C9A65B;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.10);
+
+}
+
+
+
+.card h3{
+
+color:#526947;
 
 }
 
@@ -98,15 +167,36 @@ box-shadow:
 
 footer{
 
-background:#1F291F;
+background:#222B20;
+
 color:white;
+
 text-align:center;
+
 padding:25px;
 
 }
 
 
+
+@media(max-width:600px){
+
+header h1{
+font-size:36px;
+}
+
+h2{
+font-size:32px;
+}
+
+nav a{
+font-size:15px;
+}
+
+}
+
 </style>
+
 
 </head>
 
@@ -115,13 +205,17 @@ padding:25px;
 <body>
 
 
+
+
 <header>
 
 
 <h1>Elonpolulla</h1>
 
 
+
 <nav>
+
 
 <a href="index.html">Etusivu</a>
 
@@ -133,6 +227,7 @@ padding:25px;
 
 <a href="yhteys.html">Yhteys</a>
 
+
 </nav>
 
 
@@ -141,19 +236,25 @@ padding:25px;
 
 
 
+
 <section>
+
 
 
 <div class="about">
 
 
+
 <img src="Petri.jpg" alt="Petri">
+
 
 
 <div class="text">
 
 
+
 <h2>Tietoa minusta</h2>
+
 
 
 <p>
@@ -162,21 +263,50 @@ Olen Petri.
 
 Elonpolulla yhdistyvät kiinnostukseni
 ihmisen kokonaisvaltaiseen hyvinvointiin,
-luontoon ja henkilökohtaiseen kasvuun.
+luontoon, hengitykseen ja henkilökohtaiseen kasvuun.
 
 </p>
+
 
 
 <p>
 
-Haluan tarjota turvallisia ja käytännöllisiä
-menetelmiä, joiden avulla voi vahvistaa
-yhteyttä itseensä ja omaan hyvinvointiinsa.
+Tavoitteeni on tarjota tietoa, harjoituksia
+ja näkökulmia, jotka tukevat ihmisen omaa
+hyvinvoinnin matkaa.
 
 </p>
 
 
+
 </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>🌿 Ajatus Elonpolulla</h3>
+
+
+<p>
+
+Hyvinvointi rakentuu pienistä tietoisista
+valinnoista.
+
+Kehon kuunteleminen, läsnäolo ja yhteys
+luontoon voivat tuoda arkeen enemmän
+selkeyttä ja tasapainoa.
+
+</p>
 
 
 </div>
@@ -188,46 +318,25 @@ yhteyttä itseensä ja omaan hyvinvointiinsa.
 <div class="card">
 
 
-<h2>Ajatukseni</h2>
+<h3>✨ Työskentelyn perusta</h3>
 
 
 <p>
 
-Pienet tietoiset muutokset voivat avata
-uusia näkökulmia elämään.
-
-Kehon kuunteleminen, hengitys,
-luonto ja läsnäolo ovat tärkeitä
-työkaluja tasapainon löytämiseen.
+Kehotietoisuus, hengitys, luonnon viisaus
+ja henkilökohtainen kasvu kulkevat mukana
+turvallisella ja yksilöllisellä tavalla.
 
 </p>
 
 
 </div>
 
-
-
-
-<div class="card">
-
-
-<h2>Elonpolulla</h2>
-
-
-<p>
-
-Tavoitteena on kulkea rinnalla kohti
-selkeyttä, voimavaroja ja merkityksellisempää
-arkea.
-
-</p>
-
-
-</div>
 
 
 
 </section>
+
 
 
 
@@ -237,6 +346,7 @@ arkea.
 © Elonpolulla
 
 </footer>
+
 
 
 </body>
