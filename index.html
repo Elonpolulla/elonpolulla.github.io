@@ -1,218 +1,410 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elonpolulla</title>
+
+<title>Elonpolulla | Hyvinvointi ja kasvu</title>
 
 <style>
 
+*{
+box-sizing:border-box;
+}
+
 body{
 margin:0;
-font-family: Georgia, serif;
+font-family:Georgia, serif;
 background:#F8F5EE;
-color:#2F3B2F;
+color:#32402F;
 line-height:1.7;
 }
 
-/* HERO */
 
 .hero{
-height:95vh;
+
+height:90vh;
+
+background:
+linear-gradient(
+rgba(50,64,47,0.75),
+rgba(95,115,82,0.65)
+),
+url("https://images.unsplash.com/photo-1448375240586-882707db888b");
+
+background-size:cover;
+background-position:center;
+
 display:flex;
 align-items:center;
 justify-content:center;
+
 text-align:center;
 color:white;
-background:
-linear-gradient(rgba(30,40,30,0.7),rgba(60,80,60,0.6)),
-url("https://images.unsplash.com/photo-1448375240586-882707db888b");
-background-size:cover;
-background-position:center;
-padding:20px;
+padding:30px;
+
 }
+
 
 .hero h1{
-font-size:64px;
+
+font-size:70px;
 margin:0;
-letter-spacing:2px;
+
 }
+
 
 .hero p{
-font-size:22px;
-margin-top:10px;
+
+font-size:24px;
+
 }
 
-.btn{
+
+.button{
+
 display:inline-block;
-margin-top:20px;
-padding:14px 30px;
+
 background:#C6A55C;
+
 color:white;
+
+padding:15px 35px;
+
 border-radius:40px;
+
 text-decoration:none;
+
+margin-top:20px;
+
 }
 
-/* SECTIONS */
+
 
 section{
-padding:80px 12%;
+
+padding:70px 10%;
+
 }
+
 
 h2{
+
+font-size:42px;
 color:#5F7352;
-font-size:40px;
-margin-bottom:30px;
+
 }
 
-/* CARDS */
 
-.grid{
+
+.cards{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:20px;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
 }
+
+
 
 .card{
+
 background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+padding:30px;
+
+border-radius:25px;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,0.12);
+
 }
+
+
 
 .card h3{
+
 color:#5F7352;
+
 }
 
-/* ABOUT */
+
 
 .about{
+
 background:#E7E1D3;
+
 display:flex;
+
 flex-wrap:wrap;
+
 gap:40px;
+
 align-items:center;
+
 }
+
+
 
 .about img{
-width:280px;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+width:300px;
+
+border-radius:25px;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,0.25);
+
 }
+
+
 
 .about-text{
+
 flex:1;
-min-width:250px;
+
+min-width:260px;
+
 }
 
-/* CONTACT */
+
 
 .contact{
+
 background:#32402F;
+
 color:white;
+
 text-align:center;
+
 }
+
+
 
 .contact a{
+
 color:#C6A55C;
-text-decoration:none;
+
 }
 
-/* FOOTER */
+
 
 footer{
-text-align:center;
-padding:30px;
+
 background:#1f2a1f;
+
 color:white;
+
+text-align:center;
+
+padding:30px;
+
 }
 
+
 </style>
+
 </head>
+
 
 <body>
 
+
+
 <div class="hero">
+
 <div>
+
 <h1>Elonpolulla</h1>
-<p>Luonnollinen tie tasapainoon, kasvuun ja hyvinvointiin</p>
-<a class="btn" href="#palvelut">Tutustu palveluihin</a>
+
+<p>
+Luonnollinen tie tasapainoon,
+kasvuun ja hyvinvointiin
+</p>
+
+<a class="button" href="#palvelut">
+Tutustu palveluihin
+</a>
+
 </div>
+
 </div>
+
+
+
 
 <section id="palvelut">
 
 <h2>Palvelut</h2>
 
-<div class="grid">
+
+<div class="cards">
+
 
 <div class="card">
+
 <h3>🌿 Keho ja mieli</h3>
-<p>Kehotietoisuutta, läsnäoloa ja sisäistä tasapainoa tukevia harjoituksia.</p>
-</div>
-
-<div class="card">
-<h3>🍃 Hengitys</h3>
-<p>Hengitysharjoitukset rauhoittavat hermostoa ja lisäävät läsnäoloa.</p>
-</div>
-
-<div class="card">
-<h3>🌱 Luonnon viisaus</h3>
-<p>Luonnonyrtit ja perinteiset hyvinvointimenetelmät.</p>
-</div>
-
-<div class="card">
-<h3>🔥 Kasvu</h3>
-<p>Itsetuntemusta ja oman elämän suunnan selkeyttämistä.</p>
-</div>
-
-<div class="card">
-<h3>🌙 Luontoyhteys</h3>
-<p>Syvempi yhteys luontoon ja omaan sisäiseen maailmaan.</p>
-</div>
-
-<div class="card">
-<h3>✨ Hyvinvointi</h3>
-<p>Kokonaisvaltaista tukea arkeen ja palautumiseen.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="about">
-
-  <img src="petri.jpg" alt="Petri">
-<div class="about-text">
-
-<h2>Tietoa minusta</h2>
 
 <p>
-Olen Petri. Työskentelen kehotietoisuuden, hengityksen,
-luonnon ja henkilökohtaisen kasvun parissa.
-
-Autan ihmisiä löytämään rauhaa, selkeyttä ja omia voimavaroja arjessa.
-
-Luonto on työni ja elämäni pohja.
+Kehotietoisuutta, läsnäoloa ja
+hyvinvointia tukevia harjoituksia.
 </p>
 
 </div>
 
+
+
+<div class="card">
+
+<h3>🍃 Hengitysharjoitukset</h3>
+
+<p>
+Tietoinen hengitys tukee
+rauhoittumista ja palautumista.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🌱 Luonnonyrtit</h3>
+
+<p>
+Tietoa luonnosta, yrteistä ja
+perinteisistä hyvinvointitavoista.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>🔥 Henkilökohtainen kasvu</h3>
+
+<p>
+Itsetuntemusta, voimavarojen
+löytämistä ja oman polun vahvistamista.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🌙 Luontoyhteys</h3>
+
+<p>
+Yhteyttä omaan sisäiseen maailmaan
+ja ympäröivään luontoon.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>✨ Hyvinvointi</h3>
+
+<p>
+Kokonaisvaltaista tukea arkeen
+ja tasapainoon.
+</p>
+
+</div>
+
+
+</div>
+
 </section>
+
+
+
+
+
+<section class="about">
+
+
+<img src="petri.jpg" alt="Petri">
+
+
+<div class="about-text">
+
+
+<h2>Tietoa minusta</h2>
+
+
+<p>
+
+Olen Petri.
+
+Työskentelen hyvinvoinnin,
+kehotietoisuuden, hengityksen,
+luontoyhteyden ja henkilökohtaisen
+kasvun parissa.
+
+Tavoitteeni on auttaa löytämään
+omia voimavaroja ja rakentamaan
+tasapainoisempaa elämää.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
 
 <section class="contact">
 
+
 <h2>Ota yhteyttä</h2>
 
-<p>📧 <a href="mailto:petrivee@proton.me">petrivee@proton.me</a></p>
 
-<p>Elonpolulla – tasapainoa luonnosta</p>
+<p>
+
+📧
+
+<a href="mailto:petrivee@proton.me">
+petrivee@proton.me
+</a>
+
+</p>
+
+
+<p>
+Suomi / verkkopalvelut
+</p>
+
 
 </section>
 
+
+
 <footer>
-© Elonpolulla
+
+Elonpolulla
+
+<br>
+
+"Muutos alkaa siitä hetkestä,
+kun päätät kohdata itsesi."
+
 </footer>
 
+
+
 </body>
+
 </html>
