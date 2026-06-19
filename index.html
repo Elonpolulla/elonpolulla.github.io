@@ -8,6 +8,7 @@
 
 <title>Elonpolulla</title>
 
+
 <style>
 
 *{
@@ -19,18 +20,25 @@ body{
 
 margin:0;
 font-family:Georgia,serif;
+
 background:#F4F0E6;
+
 color:#2F3B2B;
+
 line-height:1.7;
 
 }
 
 
+
 header{
 
 background:#34432F;
+
 color:white;
+
 padding:25px;
+
 text-align:center;
 
 border-bottom:5px solid #C9A65B;
@@ -38,13 +46,17 @@ border-bottom:5px solid #C9A65B;
 }
 
 
+
 header h1{
 
 color:#D1AA55;
-font-size:48px;
+
+font-size:46px;
+
 margin:0;
 
 }
+
 
 
 nav{
@@ -54,53 +66,40 @@ margin-top:20px;
 }
 
 
+
 nav a{
 
 color:white;
+
 text-decoration:none;
-margin:8px;
+
+margin:7px;
+
 display:inline-block;
-font-size:17px;
 
 }
+
 
 
 .hero{
 
-min-height:70vh;
-
 background:#5B7052;
 
-display:flex;
-align-items:center;
-justify-content:center;
-
-text-align:center;
 color:white;
 
-padding:40px;
+padding:80px 10%;
+
+text-align:center;
 
 }
 
-
-.hero-box{
-
-max-width:700px;
-
-}
 
 
 .hero h2{
 
-font-size:52px;
-line-height:1.2;
+font-size:48px;
 
-}
-
-
-.hero p{
-
-font-size:22px;
+margin-bottom:15px;
 
 }
 
@@ -108,21 +107,22 @@ font-size:22px;
 
 .button{
 
-display:inline-block;
-
 background:#C9A65B;
 
 color:white;
 
-padding:15px 35px;
+padding:14px 30px;
 
 border-radius:40px;
 
 text-decoration:none;
 
+display:inline-block;
+
 margin-top:20px;
 
 }
+
 
 
 
@@ -137,19 +137,24 @@ padding:60px 10%;
 h2{
 
 color:#526947;
+
 font-size:38px;
 
 }
 
 
 
+
 .cards{
 
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
 gap:25px;
 
 }
+
 
 
 
@@ -178,49 +183,16 @@ color:#526947;
 
 
 
-.about{
+.card a{
 
-background:#E5DDCC;
+color:#526947;
 
-display:flex;
+text-decoration:none;
 
-gap:40px;
-
-flex-wrap:wrap;
-
-align-items:center;
+font-weight:bold;
 
 }
 
-
-
-.about img{
-
-width:300px;
-
-border-radius:25px;
-
-}
-
-
-
-.contact{
-
-background:#34432F;
-
-color:white;
-
-text-align:center;
-
-}
-
-
-
-.contact a{
-
-color:#D1AA55;
-
-}
 
 
 
@@ -238,29 +210,20 @@ padding:25px;
 
 
 
+
 @media(max-width:600px){
 
-
 header h1{
-
 font-size:36px;
-
 }
-
 
 .hero h2{
-
-font-size:38px;
-
+font-size:34px;
 }
-
 
 nav a{
-
 font-size:15px;
-
 }
-
 
 }
 
@@ -276,7 +239,9 @@ font-size:15px;
 
 <header>
 
+
 <h1>Elonpolulla</h1>
+
 
 
 <nav>
@@ -284,12 +249,17 @@ font-size:15px;
 <a href="index.html">Etusivu</a>
 
 <a href="palvelut.html">Palvelut</a>
+
 <a href="yrtit.html">Yrtit</a>
+
 <a href="hengitys.html">Hengitys</a>
+
 <a href="tietoa.html">Tietoa</a>
 
 <a href="ekirjat.html">E-kirjat</a>
+
 <a href="kauppa.html">Kauppa</a>
+
 <a href="yhteys.html">Yhteys</a>
 
 </nav>
@@ -300,24 +270,24 @@ font-size:15px;
 
 
 
+
 <section class="hero">
-
-
-<div class="hero-box">
 
 
 <h2>
 
-Luonnollinen tie tasapainoon
+Tasapainoa, kasvua ja yhteyttä
 
 </h2>
 
 
 <p>
 
-Hyvinvointia, kasvua ja yhteyttä itseen
+Hyvinvointia tukevia palveluita,
+tietoa ja luonnollisia menetelmiä.
 
 </p>
+
 
 
 <a class="button" href="palvelut.html">
@@ -327,10 +297,10 @@ Tutustu palveluihin
 </a>
 
 
-</div>
-
-
 </section>
+
+
+
 
 
 
@@ -338,48 +308,111 @@ Tutustu palveluihin
 <section>
 
 
-<h2>Palvelut</h2>
+<h2>🌿 Tutustu</h2>
+
 
 
 <div class="cards">
 
 
-<div class="card">
-
-<h3>🌿 Keho ja mieli</h3>
-
-<p>
-Kehotietoisuutta, läsnäoloa ja oman hyvinvoinnin tukemista.
-</p>
-
-</div>
-
-
 
 <div class="card">
 
-<h3>🍃 Hengitys</h3>
+<h3>🌱 Yrtit ja salvat</h3>
 
 <p>
-Tietoinen hengitys tukee rauhoittumista ja palautumista.
+
+Luonnonyrtit, perinteinen yrttitieto
+ja luonnolliset tuotteet.
+
 </p>
 
+<a href="yrtit.html">
+
+Lue lisää →
+
+</a>
+
 </div>
+
+
+
 
 
 
 <div class="card">
 
-<h3>🌱 Luontoyhteys</h3>
+<h3>🌬 Hengitys</h3>
 
 <p>
-Luonnon viisaus ja yhteys ympäröivään maailmaan.
+
+Harjoituksia läsnäoloon,
+rauhoittumiseen ja palautumiseen.
+
 </p>
 
+<a href="hengitys.html">
+
+Lue lisää →
+
+</a>
+
 </div>
 
 
+
+
+
+
+<div class="card">
+
+<h3>📚 E-kirjat</h3>
+
+<p>
+
+Oppaita hyvinvointiin ja
+henkilökohtaiseen kasvuun.
+
+</p>
+
+<a href="ekirjat.html">
+
+Lue lisää →
+
+</a>
+
 </div>
+
+
+
+
+
+
+
+<div class="card">
+
+<h3>🛒 Kauppa</h3>
+
+<p>
+
+Käsintehtyjä tuotteita,
+oppaita ja hyvinvointiin liittyviä tuotteita.
+
+</p>
+
+<a href="kauppa.html">
+
+Katso kauppa →
+
+</a>
+
+</div>
+
+
+
+
+</div>
+
 
 </section>
 
@@ -387,15 +420,13 @@ Luonnon viisaus ja yhteys ympäröivään maailmaan.
 
 
 
-<section class="about">
 
 
-<img src="Petri.jpg" alt="Petri">
+<section>
 
-
-<div>
 
 <h2>Tietoa minusta</h2>
+
 
 <p>
 
@@ -404,8 +435,6 @@ hyvinvointi, luonto, hengitys ja henkilökohtainen kasvu.
 
 </p>
 
-</div>
-
 
 </section>
 
@@ -413,7 +442,9 @@ hyvinvointi, luonto, hengitys ja henkilökohtainen kasvu.
 
 
 
-<section class="contact">
+
+
+<section>
 
 
 <h2>Ota yhteyttä</h2>
@@ -433,6 +464,8 @@ petrivee@proton.me
 
 
 </section>
+
+
 
 
 
