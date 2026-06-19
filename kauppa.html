@@ -11,6 +11,11 @@
 
 <style>
 
+*{
+box-sizing:border-box;
+}
+
+
 body{
 
 margin:0;
@@ -23,6 +28,7 @@ color:#2F3B2B;
 line-height:1.7;
 
 }
+
 
 
 header{
@@ -40,11 +46,22 @@ border-bottom:5px solid #C9A65B;
 }
 
 
+
 header h1{
 
 color:#D1AA55;
 
 font-size:46px;
+
+margin:0;
+
+}
+
+
+
+nav{
+
+margin-top:20px;
 
 }
 
@@ -53,8 +70,11 @@ font-size:46px;
 nav a{
 
 color:white;
+
 text-decoration:none;
-margin:8px;
+
+margin:7px;
+
 display:inline-block;
 
 }
@@ -68,11 +88,20 @@ padding:60px 10%;
 }
 
 
+
 h2{
 
 color:#526947;
 
 font-size:40px;
+
+}
+
+
+
+.intro{
+
+max-width:750px;
 
 }
 
@@ -86,11 +115,13 @@ grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 
 gap:25px;
 
+margin-top:40px;
+
 }
 
 
 
-.card{
+.product{
 
 background:#FFFDF8;
 
@@ -107,9 +138,11 @@ box-shadow:
 
 
 
-.card h3{
+.product h3{
 
 color:#526947;
+
+font-size:26px;
 
 }
 
@@ -117,25 +150,43 @@ color:#526947;
 
 .price{
 
-color:#C08B30;
+color:#B07A25;
 
 font-size:22px;
+
+font-weight:bold;
 
 }
 
 
 
-.badge{
+.tag{
+
+display:inline-block;
 
 background:#C9A65B;
 
 color:white;
 
-padding:8px 15px;
+padding:7px 15px;
 
 border-radius:30px;
 
-display:inline-block;
+margin-top:15px;
+
+}
+
+
+
+.notice{
+
+background:#E5DDCC;
+
+padding:30px;
+
+border-radius:25px;
+
+margin-top:40px;
 
 }
 
@@ -154,10 +205,26 @@ padding:25px;
 }
 
 
+
+@media(max-width:600px){
+
+header h1{
+font-size:36px;
+}
+
+h2{
+font-size:32px;
+}
+
+nav a{
+font-size:15px;
+}
+
+}
+
 </style>
 
 </head>
-
 
 
 <body>
@@ -180,6 +247,8 @@ padding:25px;
 
 <a href="hengitys.html">Hengitys</a>
 
+<a href="tietoa.html">Tietoa</a>
+
 <a href="ekirjat.html">E-kirjat</a>
 
 <a href="kauppa.html">Kauppa</a>
@@ -198,15 +267,22 @@ padding:25px;
 <section>
 
 
-<h2>🌿 Verkkokauppa</h2>
+<h2>🛒 Verkkokauppa</h2>
 
+
+<div class="intro">
 
 <p>
 
-Hyvinvointia tukevia tuotteita
-ja materiaaleja Elonpolulta.
+Tervetuloa Elonpolulla-verkkokauppaan.
+
+Valikoimaan tulee luonnonläheisiä tuotteita,
+oppaita ja hyvinvointia tukevia materiaaleja.
 
 </p>
+
+</div>
+
 
 
 
@@ -215,36 +291,91 @@ ja materiaaleja Elonpolulta.
 
 
 
-<div class="card">
 
-<h3>🌱 Luonnolliset tuotteet</h3>
+
+<div class="product">
+
+<h3>🌿 Luonnolliset salvat</h3>
 
 <p>
 
-Luonnosta inspiroituneita tuotteita
-tulevaan valikoimaan.
+Käsintehtyjä ja luonnosta inspiroituneita
+tuotteita arjen hyvinvointiin.
 
 </p>
 
-<span class="badge">Tulossa</span>
+<div class="price">
+
+Hinta tulossa
+
+</div>
+
+<span class="tag">
+
+Tulossa
+
+</span>
 
 </div>
 
 
 
 
-<div class="card">
+
+
+<div class="product">
+
+<h3>🌱 Yrttituotteet</h3>
+
+<p>
+
+Luonnonyrtteihin liittyviä tuotteita,
+tietoa ja perinteisiä menetelmiä.
+
+</p>
+
+<div class="price">
+
+Hinta tulossa
+
+</div>
+
+<span class="tag">
+
+Tulossa
+
+</span>
+
+</div>
+
+
+
+
+
+
+
+<div class="product">
 
 <h3>📚 E-kirjat</h3>
 
 <p>
 
-Oppaita hyvinvointiin,
+Digitaalisia oppaita hyvinvointiin,
 kasvuun ja itsetuntemukseen.
 
 </p>
 
-<span class="badge">Tulossa</span>
+<div class="price">
+
+Hinta tulossa
+
+</div>
+
+<span class="tag">
+
+Tulossa
+
+</span>
 
 </div>
 
@@ -252,24 +383,58 @@ kasvuun ja itsetuntemukseen.
 
 
 
-<div class="card">
+
+
+<div class="product">
 
 <h3>✨ Meditaatiotuotteet</h3>
 
 <p>
 
-Tuotteita rauhoittumiseen
-ja omaan harjoitukseen.
+Tuotteita rauhoittumiseen,
+läsnäoloon ja omaan harjoitukseen.
 
 </p>
 
-<span class="badge">Tulossa</span>
+<div class="price">
+
+Hinta tulossa
+
+</div>
+
+<span class="tag">
+
+Tulossa
+
+</span>
 
 </div>
 
 
 
 </div>
+
+
+
+
+
+<div class="notice">
+
+
+<h3>🌿 Kauppa avautuu myöhemmin</h3>
+
+
+<p>
+
+Kun verkkokauppa otetaan käyttöön,
+tähän voidaan lisätä tuotteet,
+maksutavat ja toimitustiedot.
+
+</p>
+
+
+</div>
+
 
 
 </section>
