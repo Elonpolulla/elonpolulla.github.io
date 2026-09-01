@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fi">
 
 <head>
@@ -8,184 +9,177 @@
 
 <title>Elonpolulla</title>
 
-
 <style>
 
 *{
 box-sizing:border-box;
 }
 
-
 body{
-
 margin:0;
 font-family:Georgia,serif;
 background:#F4F0E6;
 color:#2F3B2B;
 line-height:1.7;
-
 }
 
-
+/* YLÄOSA */
 
 header{
-
 background:#34432F;
 color:white;
-padding:25px;
+padding:22px 25px;
 text-align:center;
 border-bottom:5px solid #C9A65B;
-
 }
 
-
-
 header h1{
-
 color:#D1AA55;
 font-size:46px;
 margin:0;
-
 }
-
-
 
 nav{
-
-margin-top:20px;
-
+margin-top:18px;
 }
-
 
 nav a{
-
 color:white;
 text-decoration:none;
-margin:7px;
+margin:5px 9px;
 display:inline-block;
-
+font-size:16px;
 }
 
-
+/* PÄÄOSA */
 
 .hero{
-
 background:#5B7052;
 color:#FFFDF8;
-padding:80px 10%;
+padding:90px 10%;
 text-align:center;
-
 }
-
-
 
 .hero h2{
-
 font-size:48px;
-margin-bottom:15px;
+margin:0 0 20px;
 color:#D1AA55;
-
 }
-
-
 
 .hero p{
-
-font-size:20px;
+font-size:21px;
+max-width:700px;
+margin:0 auto;
 color:#FFF3D6;
-
 }
 
-
-
-
 .button{
-
 background:#C9A65B;
 color:white;
 padding:14px 35px;
 border-radius:40px;
 text-decoration:none;
 display:inline-block;
-margin-top:20px;
-
+margin-top:25px;
 }
 
+/* ESITTELY */
 
-
-section{
-
-padding:60px 10%;
-
+.intro{
+max-width:800px;
+margin:auto;
+text-align:center;
 }
 
-
-
-h2{
-
+.intro h2{
 color:#526947;
 font-size:38px;
-
 }
 
-
-
-
-.cards{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-gap:25px;
-
+.intro p{
+font-size:19px;
 }
 
+/* LINKIT */
 
-
-.card{
-
-background:#FFFDF8;
-padding:30px;
-border-radius:25px;
-border-left:6px solid #C9A65B;
-
-box-shadow:
-0 10px 25px rgba(0,0,0,.10);
-
+section{
+padding:65px 10%;
 }
 
-
-
-.card h3{
-
+.section-title{
+text-align:center;
 color:#526947;
-
+font-size:36px;
+margin-bottom:45px;
 }
 
+.links{
+max-width:900px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
 
+.link-box{
+background:#FFFDF8;
+padding:28px;
+border-radius:18px;
+border:1px solid #DED6C5;
+text-decoration:none;
+color:#2F3B2B;
+transition:transform .2s, box-shadow .2s;
+}
 
-.card a{
+.link-box:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 20px rgba(0,0,0,.10);
+}
 
+.link-box h3{
+color:#526947;
+font-size:24px;
+margin:0 0 10px;
+}
+
+.link-box p{
+margin:0;
+font-size:17px;
+}
+
+.arrow{
+display:block;
+margin-top:15px;
 color:#526947;
 font-weight:bold;
-text-decoration:none;
-
 }
 
+/* AJATUS */
 
+.quote{
+background:#EEE8D8;
+padding:65px 10%;
+text-align:center;
+}
 
+.quote p{
+max-width:750px;
+margin:auto;
+font-size:25px;
+font-style:italic;
+color:#526947;
+}
+
+/* ALATUNNISTE */
 
 footer{
-
 background:#222B20;
 color:white;
 text-align:center;
-padding:25px;
-
+padding:30px;
 }
 
-
-
-
+/* PUHELIN */
 
 @media(max-width:600px){
 
@@ -193,14 +187,25 @@ header h1{
 font-size:36px;
 }
 
-
-.hero h2{
-font-size:34px;
-}
-
-
 nav a{
 font-size:15px;
+margin:4px 6px;
+}
+
+.hero{
+padding:65px 8%;
+}
+
+.hero h2{
+font-size:36px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+section{
+padding:50px 7%;
 }
 
 }
@@ -209,199 +214,159 @@ font-size:15px;
 
 </head>
 
-
-
 <body>
-
-
 
 <header>
 
-
 <h1>Elonpolulla</h1>
-
 
 <nav>
 
-<a href="index.html">Etusivu</a>
-<a href="palvelut.html">Palvelut</a>
-<a href="yrtit.html">Yrtit</a>
-<a href="hengitys.html">Hengitys</a>
-<a href="tietoa.html">Tietoa</a>
-<a href="ekirjat.html">E-kirjat</a>
-<a href="kauppa.html">Kauppa</a>
-<a href="yhteys.html">Yhteys</a>
+<a href="index.html">Etusivu</a> <a href="palvelut.html">Palvelut</a> <a href="blogi.html">Blogi</a> <a href="yrtit.html">Yrtit</a> <a href="hengitys.html">Hengitys</a> <a href="ekirjat.html">E-kirjat</a> <a href="kauppa.html">Kauppa</a> <a href="tietoa.html">Tietoa</a> <a href="yhteys.html">Yhteys</a>
 
 </nav>
 
-
 </header>
-
-
-
-
 
 <section class="hero">
 
-
-<h2>
-
-Tasapainoa, kasvua ja yhteyttä
-
-</h2>
-
+<h2>Löydä oma polkusi takaisin itseesi</h2>
 
 <p>
-
-Hyvinvointia tukevia palveluita,
-tietoa ja luonnollisia menetelmiä.
-
+Elonpolulla on paikka pysähtymiselle, oivalluksille,
+luonnolle, hyvinvoinnille ja oman sisäisen polun tutkimiselle.
 </p>
 
-
-<a class="button" href="palvelut.html">
-
-Tutustu palveluihin
-
+<a class="button" href="tietoa.html">
+Tutustu Elonpolulle
 </a>
-
 
 </section>
 
+<section>
 
+<div class="intro">
 
+<h2>🌿 Matka on sinun</h2>
 
+<p>
+Uskomme, ettei hyvinvointi ole yksi valmis malli, joka sopii kaikille.
+Oma polku löytyy vähitellen – kuuntelemalla itseä, kehoa ja hengitystä
+sekä pysähtymällä luonnon äärelle.
+</p>
+
+<p>
+Elonpolulla kokoaa yhteen ajatuksia, tietoa, kirjoituksia ja
+luonnollisia tapoja tukea omaa matkaa. Saat kulkea täällä juuri
+siihen suuntaan, joka tällä hetkellä tuntuu sinulle tärkeältä.
+</p>
+
+</div>
+
+</section>
 
 <section>
 
+<h2 class="section-title">Tutustu Elonpolkuun</h2>
 
-<h2>🌿 Tutustu</h2>
+<div class="links">
 
-
-
-<div class="cards">
-<div class="card">
+<a class="link-box" href="blogi.html">
 
 <h3>✍️ Blogi</h3>
 
 <p>
-Ajatuksia luonnosta,
-hyvinvoinnista ja
-henkisestä kasvusta.
+Henkilökohtaisia ajatuksia, kokemuksia ja oivalluksia
+luonnosta, hyvinvoinnista ja henkisestä kasvusta.
 </p>
 
-<a href="blogi.html">
-Lue blogia →
+<span class="arrow">Tutustu blogiin →</span>
+
 </a>
 
-</div>
+<a class="link-box" href="palvelut.html">
 
-
-<div class="card">
-
-<h3>🌱 Yrtit ja salvat</h3>
+<h3>🌿 Palvelut</h3>
 
 <p>
-
-Luonnonyrtit, perinteinen yrttitieto
-ja luonnolliset tuotteet.
-
+Tutustu Elonpolullan tarjoamiin tapoihin pysähtyä,
+oivaltaa ja vahvistaa omaa hyvinvointia.
 </p>
 
-<a href="yrtit.html">
-
-Lue lisää →
+<span class="arrow">Tutustu palveluihin →</span>
 
 </a>
 
-</div>
+<a class="link-box" href="yrtit.html">
 
+<h3>🌱 Luonto & yrtit</h3>
 
+<p>
+Tutustu luonnon kasveihin, yrttitietoon ja luonnolliseen
+hyvinvointiin liittyviin ajatuksiin.
+</p>
 
+<span class="arrow">Tutustu →</span>
 
+</a>
 
-<div class="card">
+<a class="link-box" href="hengitys.html">
 
 <h3>🌬 Hengitys</h3>
 
 <p>
-
-Harjoituksia läsnäoloon,
-rauhoittumiseen ja palautumiseen.
-
+Hengitys kulkee aina mukanamme. Tutustu hengitykseen,
+läsnäoloon ja rauhoittumiseen.
 </p>
 
-<a href="hengitys.html">
-
-Lue lisää →
+<span class="arrow">Tutustu →</span>
 
 </a>
 
-</div>
-
-
-
-
-
-<div class="card">
+<a class="link-box" href="ekirjat.html">
 
 <h3>📚 E-kirjat</h3>
 
 <p>
-
-Oppaita hyvinvointiin ja
-henkilökohtaiseen kasvuun.
-
+Syvempää sisältöä ja oppaita oman matkan tueksi,
+omaan tahtiin luettavaksi.
 </p>
 
-<a href="ekirjat.html">
-
-Lue lisää →
+<span class="arrow">Tutustu e-kirjoihin →</span>
 
 </a>
 
-</div>
-
-
-
-
-
-<div class="card">
+<a class="link-box" href="kauppa.html">
 
 <h3>🛒 Kauppa</h3>
 
 <p>
-
-Käsintehtyjä tuotteita,
-oppaita ja hyvinvointiin liittyviä tuotteita.
-
+Elonpolulla syntyneitä tuotteita ja käsintehtyjä
+asioita oman hyvinvoinnin ja matkan tueksi.
 </p>
 
-<a href="kauppa.html">
-
-Katso kauppa →
+<span class="arrow">Siirry kauppaan →</span>
 
 </a>
 
 </div>
 
-
-</div>
-
-
 </section>
 
+<section class="quote">
 
+<p>
+"Polku ei tarvitse olla valmis.
+Riittää, että otat seuraavan askeleen."
+</p>
 
-
+</section>
 
 <footer>
 
 © Elonpolulla
 
 </footer>
-
-
 
 </body>
 
