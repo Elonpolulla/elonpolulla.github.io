@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fi">
 
 <head>
@@ -6,8 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Tietoa minusta | Elonpolulla</title>
-
+<title>Tietoa Elonpolusta | Elonpolulla</title>
 
 <style>
 
@@ -15,169 +15,135 @@
 box-sizing:border-box;
 }
 
-
 body{
-
 margin:0;
 font-family:Georgia,serif;
-
 background:#F4F0E6;
-
 color:#2F3B2B;
-
 line-height:1.7;
-
 }
 
-
+/* YLÄOSA */
 
 header{
-
 background:#34432F;
-
 color:white;
-
-padding:25px;
-
+padding:22px 25px;
 text-align:center;
-
 border-bottom:5px solid #C9A65B;
-
 }
-
-
 
 header h1{
-
 color:#D1AA55;
-
 font-size:46px;
-
 margin:0;
-
 }
-
-
 
 nav{
-
-margin-top:20px;
-
+margin-top:18px;
 }
-
-
 
 nav a{
-
 color:white;
-
 text-decoration:none;
-
-margin:8px;
-
+margin:5px 9px;
 display:inline-block;
-
+font-size:16px;
 }
 
+nav a:hover{
+color:#D1AA55;
+}
 
+/* PÄÄOSA */
 
 section{
-
-padding:60px 10%;
-
+padding:65px 10%;
 }
-
-
-
-h2{
-
-color:#526947;
-
-font-size:40px;
-
-}
-
-
 
 .about{
-
+max-width:1000px;
+margin:auto;
 display:flex;
-
-gap:40px;
-
+gap:45px;
 flex-wrap:wrap;
-
 align-items:center;
-
 }
-
-
 
 .about img{
-
 width:320px;
-
 max-width:100%;
-
 border-radius:25px;
-
-box-shadow:
-0 10px 25px rgba(0,0,0,.15);
-
+box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
-
-
 
 .text{
-
 flex:1;
-
 min-width:280px;
-
 }
 
+.text h2{
+color:#526947;
+font-size:40px;
+margin-top:0;
+}
 
+.text p{
+font-size:19px;
+}
+
+/* KORTIT */
+
+.cards{
+max-width:850px;
+margin:50px auto 0;
+}
 
 .card{
-
 background:#FFFDF8;
-
 padding:30px;
-
-margin-top:30px;
-
-border-radius:25px;
-
-border-left:6px solid #C9A65B;
-
-box-shadow:
-0 10px 25px rgba(0,0,0,.10);
-
+margin-top:25px;
+border-radius:20px;
+border:1px solid #DED6C5;
+box-shadow:0 8px 20px rgba(0,0,0,.06);
 }
-
-
 
 .card h3{
-
 color:#526947;
-
+font-size:26px;
+margin-top:0;
 }
 
+.card p{
+font-size:18px;
+}
 
+/* LOPPUAJATUS */
+
+.quote{
+background:#EEE8D8;
+padding:65px 10%;
+text-align:center;
+}
+
+.quote p{
+max-width:760px;
+margin:auto;
+font-size:25px;
+font-style:italic;
+color:#526947;
+}
+
+/* ALATUNNISTE */
 
 footer{
-
 background:#222B20;
-
 color:white;
-
 text-align:center;
-
-padding:25px;
-
+padding:30px;
 }
 
-
+/* PUHELIN */
 
 @media(max-width:600px){
 
@@ -185,170 +151,141 @@ header h1{
 font-size:36px;
 }
 
-h2{
-font-size:32px;
-}
-
 nav a{
 font-size:15px;
+margin:4px 6px;
+}
+
+section{
+padding:50px 7%;
+}
+
+.text h2{
+font-size:32px;
 }
 
 }
 
 </style>
 
-
 </head>
-
-
 
 <body>
 
-
-
-
 <header>
-
 
 <h1>Elonpolulla</h1>
 
-
-
 <nav>
 
-
-<a href="index.html">Etusivu</a>
-
-<a href="palvelut.html">Palvelut</a>
-<a href="yrtit.html">Yrtit</a>
-<a href="hengitys.html">Hengitys</a>  
-<a href="tietoa.html">Tietoa</a>
-
-<a href="ekirjat.html">E-kirjat</a>
-<a href="kauppa.html">Kauppa</a>
-<a href="yhteys.html">Yhteys</a>
-
+<a href="index.html">Etusivu</a> <a href="palvelut.html">Hyvinvointi</a> <a href="blogi.html">Blogi</a> <a href="ekirjat.html">E-kirjat</a> <a href="kauppa.html">Kauppa</a> <a href="tietoa.html">Tietoa</a> <a href="yhteys.html">Yhteys</a>
 
 </nav>
 
-
 </header>
-
-
-
-
 
 <section>
 
-
-
 <div class="about">
-
-
 
 <img src="Petri.jpg" alt="Petri">
 
-
-
 <div class="text">
 
-
-
-<h2>Tietoa minusta</h2>
-
-
+<h2>Tietoa Elonpolusta</h2>
 
 <p>
-
-Olen Petri.
-
-Elonpolulla yhdistyvät kiinnostukseni
-ihmisen kokonaisvaltaiseen hyvinvointiin,
-luontoon, hengitykseen ja henkilökohtaiseen kasvuun.
-
+Olen Petri, ja Elonpolulla on syntynyt halusta
+tutkia ja jakaa ajatuksia ihmisen omasta polusta,
+hyvinvoinnista ja kasvusta.
 </p>
-
-
 
 <p>
-
-Tavoitteeni on tarjota tietoa, harjoituksia
-ja näkökulmia, jotka tukevat ihmisen omaa
-hyvinvoinnin matkaa.
-
+Minua kiinnostavat erityisesti yhteys itseemme,
+luontoon, hengitykseen ja siihen, mitä elämä
+meille eri vaiheissa opettaa.
 </p>
 
-
+<p>
+Elonpolulla ei ole tarkoitus antaa yhtä valmista
+vastausta. Ajatus on ennemmin tarjota tilaa
+pysähtymiselle, tutkimiselle ja omien oivallusten
+löytämiselle.
+</p>
 
 </div>
 
-
-
 </div>
 
-
-
-
-
-
+<div class="cards">
 
 <div class="card">
 
-
-<h3>🌿 Ajatus Elonpolulla</h3>
-
+<h3>🌿 Mikä on Elonpolulla?</h3>
 
 <p>
-
-Hyvinvointi rakentuu pienistä tietoisista
-valinnoista.
-
-Kehon kuunteleminen, läsnäolo ja yhteys
-luontoon voivat tuoda arkeen enemmän
-selkeyttä ja tasapainoa.
-
+Elonpolulla on paikka ajatuksille, tiedolle,
+kirjoituksille ja erilaisille sisällöille,
+jotka liittyvät hyvinvointiin, omaan kasvuun
+ja luonnon kanssa yhteydessä olemiseen.
 </p>
 
+<p>
+Sivusto rakentuu vähitellen. Sen sisältö saa
+kasvaa ja muuttua matkan mukana.
+</p>
 
 </div>
-
-
-
-
 
 <div class="card">
 
-
-<h3>✨ Työskentelyn perusta</h3>
-
+<h3>🌱 Oma polku</h3>
 
 <p>
-
-Kehotietoisuus, hengitys, luonnon viisaus
-ja henkilökohtainen kasvu kulkevat mukana
-turvallisella ja yksilöllisellä tavalla.
-
+Uskon, että jokaisella ihmisellä on oma
+ainutlaatuinen polkunsa. Se mikä toimii yhdelle,
+ei välttämättä ole oikea toiselle.
 </p>
 
+<p>
+Siksi Elonpolulla haluan rohkaista kuuntelemaan
+itseä ja löytämään pieniä asioita, jotka tuntuvat
+omassa elämässä merkityksellisiltä.
+</p>
 
 </div>
 
+<div class="card">
 
+<h3>🌬 Pysähtyminen</h3>
 
+<p>
+Joskus tärkein askel eteenpäin on pysähtyä.
+Hetki hiljaisuudessa, luonnossa tai oman
+hengityksen äärellä voi avata tilaa uudelle
+ajatukselle.
+</p>
+
+</div>
+
+</div>
 
 </section>
 
+<section class="quote">
 
+<p>
+"Jokainen polku alkaa siitä,
+että uskaltaa ottaa ensimmäisen askeleen."
+</p>
 
-
+</section>
 
 <footer>
 
 © Elonpolulla
 
 </footer>
-
-
 
 </body>
 
