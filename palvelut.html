@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fi">
 
 <head>
@@ -6,8 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Palvelut | Elonpolulla</title>
-
+<title>Hyvinvointi | Elonpolulla</title>
 
 <style>
 
@@ -15,171 +15,135 @@
 box-sizing:border-box;
 }
 
-
 body{
-
 margin:0;
-
 font-family:Georgia,serif;
-
 background:#F4F0E6;
-
 color:#2F3B2B;
-
 line-height:1.7;
-
 }
 
-
+/* YLÄOSA */
 
 header{
-
 background:#34432F;
-
 color:white;
-
-padding:25px;
-
+padding:22px 25px;
 text-align:center;
-
 border-bottom:5px solid #C9A65B;
-
 }
-
-
 
 header h1{
-
 color:#D1AA55;
-
 font-size:46px;
-
 margin:0;
-
 }
-
-
 
 nav{
-
-margin-top:20px;
-
+margin-top:18px;
 }
-
-
 
 nav a{
-
 color:white;
-
 text-decoration:none;
-
-margin:7px;
-
+margin:5px 9px;
 display:inline-block;
-
+font-size:16px;
 }
 
+nav a:hover{
+color:#D1AA55;
+}
 
+/* PÄÄOSA */
 
 section{
-
-padding:60px 10%;
-
+padding:65px 10%;
 }
-
-
-
-h2{
-
-color:#526947;
-
-font-size:40px;
-
-}
-
-
 
 .intro{
-
-max-width:750px;
-
+max-width:800px;
+margin:0 auto;
+text-align:center;
 }
 
+.intro h2{
+color:#526947;
+font-size:40px;
+margin-top:0;
+}
 
+.intro p{
+font-size:19px;
+}
+
+/* SISÄLTÖ */
 
 .cards{
-
+max-width:950px;
+margin:50px auto 0;
 display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-
+grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
 gap:25px;
-
-margin-top:40px;
-
 }
-
-
 
 .card{
-
 background:#FFFDF8;
-
 padding:30px;
-
-border-radius:25px;
-
-border-left:6px solid #C9A65B;
-
-box-shadow:
-
-0 10px 25px rgba(0,0,0,.10);
-
+border-radius:20px;
+border:1px solid #DED6C5;
+box-shadow:0 8px 20px rgba(0,0,0,.06);
 }
-
-
 
 .card h3{
-
 color:#526947;
-
-font-size:26px;
-
+font-size:27px;
+margin-top:0;
 }
 
-
+.card p{
+font-size:17px;
+}
 
 .card a{
-
 display:inline-block;
-
 margin-top:15px;
-
 color:#526947;
-
 font-weight:bold;
-
 text-decoration:none;
-
 }
 
+.card a:hover{
+color:#B07A25;
+}
 
+/* LOPPUAJATUS */
+
+.quote{
+background:#EEE8D8;
+padding:65px 10%;
+text-align:center;
+margin-top:20px;
+}
+
+.quote p{
+max-width:760px;
+margin:auto;
+font-size:24px;
+font-style:italic;
+color:#526947;
+}
+
+/* ALATUNNISTE */
 
 footer{
-
 background:#222B20;
-
 color:white;
-
 text-align:center;
-
-padding:25px;
-
+padding:30px;
 }
 
-
-
+/* PUHELIN */
 
 @media(max-width:600px){
 
@@ -187,12 +151,21 @@ header h1{
 font-size:36px;
 }
 
-h2{
+nav a{
+font-size:15px;
+margin:4px 6px;
+}
+
+section{
+padding:50px 7%;
+}
+
+.intro h2{
 font-size:32px;
 }
 
-nav a{
-font-size:15px;
+.quote{
+padding:50px 7%;
 }
 
 }
@@ -201,209 +174,105 @@ font-size:15px;
 
 </head>
 
-
-
 <body>
-
-
 
 <header>
 
-
 <h1>Elonpolulla</h1>
-
 
 <nav>
 
-<a href="index.html">Etusivu</a>
-
-<a href="palvelut.html">Palvelut</a>
-
-<a href="yrtit.html">Yrtit</a>
-
-<a href="hengitys.html">Hengitys</a>
-
-<a href="tietoa.html">Tietoa</a>
-
-<a href="ekirjat.html">E-kirjat</a>
-
-<a href="kauppa.html">Kauppa</a>
-
-<a href="yhteys.html">Yhteys</a>
+<a href="index.html">Etusivu</a> <a href="palvelut.html">Hyvinvointi</a> <a href="blogi.html">Blogi</a> <a href="ekirjat.html">E-kirjat</a> <a href="kauppa.html">Kauppa</a> <a href="tietoa.html">Tietoa</a> <a href="yhteys.html">Yhteys</a>
 
 </nav>
 
-
 </header>
-
-
-
-
 
 <section>
 
-
-<h2>🌿 Palvelut</h2>
-
-
 <div class="intro">
 
+<h2>🌿 Hyvinvointi</h2>
+
 <p>
+Hyvinvointi on kokonaisuus, joka rakentuu pienistä asioista.
+Se voi tarkoittaa pysähtymistä, hengittämistä, luonnossa olemista,
+oman kehon kuuntelemista ja aikaa itselle.
+</p>
 
-Tutustu Elonpolun sisältöihin.
-Palvelut rakentuvat luonnosta, hyvinvoinnista,
-hengityksestä ja omasta kasvusta.
-
+<p>
+Elonpolulla hyvinvointia lähestytään lempeästi ja ilman yhtä
+valmista mallia. Jokainen kulkee omaa polkuaan ja löytää
+itselleen sopivat tavat vähitellen.
 </p>
 
 </div>
-
-
-
-
 
 <div class="cards">
-
-
-
-
-
-<div class="card">
-
-<h3>🌱 Yrtit ja salvat</h3>
-
-<p>
-
-Luonnonyrtit, perinteinen yrttitieto
-ja luonnolliset tuotteet.
-
-</p>
-
-<a href="yrtit.html">
-
-Tutustu →
-
-</a>
-
-</div>
-
-
-
-
-
 
 <div class="card">
 
 <h3>🌬 Hengitys</h3>
 
 <p>
-
-Hengitysharjoituksia läsnäoloon,
-rauhoittumiseen ja palautumiseen.
-
+Hengitys kulkee aina mukanamme. Sen äärelle pysähtyminen
+voi auttaa huomaamaan, mitä juuri tässä hetkessä tapahtuu.
 </p>
 
 <a href="hengitys.html">
-
-Tutustu →
-
+Tutustu hengitykseen →
 </a>
 
 </div>
-
-
-
-
-
-
 
 <div class="card">
 
-<h3>📚 E-kirjat</h3>
+<h3>🌱 Oma kasvu</h3>
 
 <p>
-
-Oppaita hyvinvointiin,
-kasvuun ja itsetuntemukseen.
-
+Oman itsen äärelle pysähtyminen voi avata uusia näkökulmia,
+oivalluksia ja mahdollisuuksia kasvaa omassa tahdissa.
 </p>
 
-<a href="ekirjat.html">
-
-Tutustu →
-
+<a href="blogi.html">
+Lue ajatuksia blogista →
 </a>
 
 </div>
-
-
-
-
-
 
 <div class="card">
 
-<h3>🛒 Kauppa</h3>
+<h3>🌿 Luonto</h3>
 
 <p>
-
-Tuotteita ja materiaaleja
-tulevaan verkkokauppaan.
-
+Luonto tarjoaa tilaa hiljaisuudelle, hengittämiselle ja
+pysähtymiselle. Joskus pieni hetki luonnossa riittää.
 </p>
 
-<a href="kauppa.html">
-
-Tutustu →
-
+<a href="blogi.html">
+Tutustu kirjoituksiin →
 </a>
 
 </div>
 
-
-
-
-
-
-
-<div class="card">
-
-<h3>✨ Hyvinvointi</h3>
-
-<p>
-
-Kokonaisvaltaista lähestymistä
-kehoon, mieleen ja arkeen.
-
-</p>
-
-<a href="tietoa.html">
-
-Lue lisää →
-
-</a>
-
 </div>
-
-
-
-
-</div>
-
 
 </section>
 
+<section class="quote">
 
+<p>
+"Hyvinvointi ei ole määränpää.
+Se on matka, jota kuljetaan päivä kerrallaan."
+</p>
 
-
+</section>
 
 <footer>
 
 © Elonpolulla
 
 </footer>
-
-
 
 </body>
 
