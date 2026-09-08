@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fi">
 
 <head>
@@ -8,203 +9,173 @@
 
 <title>Kauppa | Elonpolulla</title>
 
-
 <style>
 
 *{
 box-sizing:border-box;
 }
 
-
 body{
-
 margin:0;
 font-family:Georgia,serif;
-
 background:#F4F0E6;
-
 color:#2F3B2B;
-
 line-height:1.7;
-
 }
 
-
+/* YLÄOSA */
 
 header{
-
 background:#34432F;
-
 color:white;
-
-padding:25px;
-
+padding:22px 25px;
 text-align:center;
-
 border-bottom:5px solid #C9A65B;
-
 }
-
-
 
 header h1{
-
 color:#D1AA55;
-
 font-size:46px;
-
 margin:0;
-
 }
-
-
 
 nav{
-
-margin-top:20px;
-
+margin-top:18px;
 }
-
-
 
 nav a{
-
 color:white;
-
 text-decoration:none;
-
-margin:7px;
-
+margin:5px 9px;
 display:inline-block;
-
+font-size:16px;
 }
 
+nav a:hover{
+color:#D1AA55;
+}
 
+/* PÄÄOSA */
 
 section{
-
-padding:60px 10%;
-
+padding:65px 10%;
 }
 
+.shop-intro{
+max-width:800px;
+margin:0 auto;
+text-align:center;
+}
 
-
-h2{
-
+.shop-intro h2{
 color:#526947;
-
 font-size:40px;
-
+margin-top:0;
 }
 
-
-
-.intro{
-
-max-width:750px;
-
+.shop-intro p{
+font-size:19px;
 }
 
+/* KAUPAN OSIOT */
 
-
-.products{
-
+.shop-items{
+max-width:1000px;
+margin:50px auto 0;
 display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px;
-
-margin-top:40px;
-
 }
 
-
-
-.product{
-
+.shop-item{
 background:#FFFDF8;
-
 padding:30px;
-
-border-radius:25px;
-
-border-left:6px solid #C9A65B;
-
-box-shadow:
-0 10px 25px rgba(0,0,0,.10);
-
+border-radius:20px;
+border:1px solid #DED6C5;
+box-shadow:0 8px 20px rgba(0,0,0,.06);
 }
 
-
-
-.product h3{
-
+.shop-item h3{
 color:#526947;
-
-font-size:26px;
-
+font-size:27px;
+margin-top:0;
 }
 
-
-
-.price{
-
-color:#B07A25;
-
-font-size:22px;
-
-font-weight:bold;
-
+.shop-item p{
+font-size:17px;
 }
 
-
-
-.tag{
-
+.status{
 display:inline-block;
-
 background:#C9A65B;
-
 color:white;
-
-padding:7px 15px;
-
+padding:7px 16px;
 border-radius:30px;
-
-margin-top:15px;
-
+margin-top:10px;
 }
 
+/* YRTIT */
 
+.herbs{
+background:#EEE8D8;
+margin-top:60px;
+padding:55px 10%;
+text-align:center;
+}
+
+.herbs h2{
+color:#526947;
+font-size:36px;
+margin-top:0;
+}
+
+.herbs p{
+max-width:750px;
+margin:0 auto 20px;
+font-size:19px;
+}
+
+.herbs-button{
+display:inline-block;
+margin-top:15px;
+background:#526947;
+color:white;
+padding:13px 30px;
+border-radius:40px;
+text-decoration:none;
+}
+
+.herbs-button:hover{
+background:#34432F;
+}
+
+/* INFO */
 
 .notice{
-
-background:#E5DDCC;
-
+max-width:800px;
+margin:60px auto 0;
+background:#FFFDF8;
 padding:30px;
-
-border-radius:25px;
-
-margin-top:40px;
-
+border-radius:20px;
+text-align:center;
+border:1px solid #DED6C5;
 }
 
+.notice h3{
+color:#526947;
+font-size:25px;
+}
 
+/* ALATUNNISTE */
 
 footer{
-
 background:#222B20;
-
 color:white;
-
 text-align:center;
-
-padding:25px;
-
+padding:30px;
 }
 
-
+/* PUHELIN */
 
 @media(max-width:600px){
 
@@ -212,12 +183,25 @@ header h1{
 font-size:36px;
 }
 
-h2{
+nav a{
+font-size:15px;
+margin:4px 6px;
+}
+
+section{
+padding:50px 7%;
+}
+
+.shop-intro h2{
 font-size:32px;
 }
 
-nav a{
-font-size:15px;
+.herbs{
+padding:50px 7%;
+}
+
+.herbs h2{
+font-size:30px;
 }
 
 }
@@ -226,230 +210,102 @@ font-size:15px;
 
 </head>
 
-
 <body>
-
-
 
 <header>
 
-
 <h1>Elonpolulla</h1>
-
 
 <nav>
 
-<a href="index.html">Etusivu</a>
-
-<a href="palvelut.html">Palvelut</a>
-
-<a href="yrtit.html">Yrtit</a>
-
-<a href="hengitys.html">Hengitys</a>
-
-<a href="tietoa.html">Tietoa</a>
-
-<a href="ekirjat.html">E-kirjat</a>
-
-<a href="kauppa.html">Kauppa</a>
-
-<a href="yhteys.html">Yhteys</a>
+<a href="index.html">Etusivu</a> <a href="palvelut.html">Hyvinvointi</a> <a href="blogi.html">Blogi</a> <a href="ekirjat.html">E-kirjat</a> <a href="kauppa.html">Kauppa</a> <a href="tietoa.html">Tietoa</a> <a href="yhteys.html">Yhteys</a>
 
 </nav>
 
-
 </header>
-
-
-
-
 
 <section>
 
+<div class="shop-intro">
 
-<h2>🛒 Verkkokauppa</h2>
-
-
-<div class="intro">
+<h2>🛍 Kauppa</h2>
 
 <p>
+Tervetuloa Elonpolullan kauppaan.
+</p>
 
-Tervetuloa Elonpolulla-verkkokauppaan.
-
-Valikoimaan tulee luonnonläheisiä tuotteita,
-oppaita ja hyvinvointia tukevia materiaaleja.
-
+<p>
+Kauppa rakentuu vähitellen oman polkunsa näköiseksi.
+Tänne tulevat Elonpolulla syntyneet tuotteet ja muut
+sisällöt, jotka voivat kulkea mukana oman matkan eri vaiheissa.
 </p>
 
 </div>
 
+<div class="shop-items">
 
+<div class="shop-item">
 
-
-
-<div class="products">
-
-
-
-
-
-<div class="product">
-
-<h3>🌿 Luonnolliset salvat</h3>
+<h3>🌿 Luonnolliset tuotteet</h3>
 
 <p>
-
-Käsintehtyjä ja luonnosta inspiroituneita
-tuotteita arjen hyvinvointiin.
-
+Luonnonläheisiä ja käsintehtyjä tuotteita,
+jotka syntyvät Elonpolun ajatuksesta ja tekemisestä.
 </p>
 
-<div class="price">
-
-Hinta tulossa
+<span class="status">Tulossa</span>
 
 </div>
 
-<span class="tag">
+<div class="shop-item">
 
-Tulossa
-
-</span>
-
-</div>
-
-
-
-
-
-
-<div class="product">
-
-<h3>🌱 Yrttituotteet</h3>
+<h3>🌱 Yrtit</h3>
 
 <p>
-
-Luonnonyrtteihin liittyviä tuotteita,
-tietoa ja perinteisiä menetelmiä.
-
+Yrttien maailmaan liittyviä tuotteita, tietoa ja
+luonnollisia tapoja tutustua kasvien mahdollisuuksiin.
 </p>
 
-<div class="price">
-
-Hinta tulossa
+<span class="status">Tulossa</span>
 
 </div>
 
-<span class="tag">
-
-Tulossa
-
-</span>
-
 </div>
-
-
-
-
-
-
-
-<div class="product">
-
-<h3>📚 E-kirjat</h3>
-
-<p>
-
-Digitaalisia oppaita hyvinvointiin,
-kasvuun ja itsetuntemukseen.
-
-</p>
-
-<div class="price">
-
-Hinta tulossa
-
-</div>
-
-<span class="tag">
-
-Tulossa
-
-</span>
-
-</div>
-
-
-
-
-
-
-
-<div class="product">
-
-<h3>✨ Meditaatiotuotteet</h3>
-
-<p>
-
-Tuotteita rauhoittumiseen,
-läsnäoloon ja omaan harjoitukseen.
-
-</p>
-
-<div class="price">
-
-Hinta tulossa
-
-</div>
-
-<span class="tag">
-
-Tulossa
-
-</span>
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-<div class="notice">
-
-
-<h3>🌿 Kauppa avautuu myöhemmin</h3>
-
-
-<p>
-
-Kun verkkokauppa otetaan käyttöön,
-tähän voidaan lisätä tuotteet,
-maksutavat ja toimitustiedot.
-
-</p>
-
-
-</div>
-
-
 
 </section>
 
+<section class="herbs">
 
+<h2>🌱 Yrtit osana Elonpolkua</h2>
 
+<p>
+Luonto ja kasvit ovat tärkeä osa Elonpolun ajatusta.
+Yrttien pariin tullaan jatkossa kokoamaan lisää tietoa,
+sisältöä ja tuotteita.
+</p>
 
+<p>
+Osio täydentyy vähitellen.
+</p>
+
+</section>
+
+<div class="notice">
+
+<h3>🌿 Kauppa avautuu myöhemmin</h3>
+
+<p>
+Kun tuotteet ovat valmiita, tähän voidaan lisätä
+tuotetiedot, hinnat, maksutavat ja toimitustiedot.
+</p>
+
+</div>
 
 <footer>
 
 © Elonpolulla
 
 </footer>
-
-
 
 </body>
 
