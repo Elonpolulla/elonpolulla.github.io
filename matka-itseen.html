@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-
 <html lang="fi">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Matka takaisin itseen | Elonpolulla</title>
 
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6RE9D5240B"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6RE9D5240B');
+</script>
+
 <style>
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Georgia, serif;
@@ -26,8 +41,19 @@ header {
 
 header h1 {
     color: #D1AA55;
-    margin: 0;
     font-size: 42px;
+    margin: 0 0 15px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 7px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #D1AA55;
 }
 
 main {
@@ -73,15 +99,51 @@ p {
     font-weight: bold;
     text-decoration: none;
 }
+
+.back:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #34432F;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+}
+
+@media (max-width: 700px) {
+
+    h2 {
+        font-size: 34px;
+    }
+
+}
+
 </style>
 
 </head>
 
+
 <body>
 
+
 <header>
+
 <h1>Elonpolulla</h1>
+
+<nav>
+    <a href="index.html">Etusivu</a>
+    <a href="palvelut.html">Palvelut</a>
+    <a href="blogi.html">Blogi</a>
+    <a href="ekirjat.html">E-kirjat</a>
+    <a href="kauppa.html">Kauppa</a>
+    <a href="tietoa.html">Tietoa</a>
+    <a href="yhteys.html">Yhteys</a>
+</nav>
+
 </header>
+
 
 <main>
 
@@ -221,5 +283,12 @@ matkasta takaisin siihen, kuka todella olet.
 
 </main>
 
+
+<footer>
+© Elonpolulla
+</footer>
+
+
 </body>
+
 </html>
