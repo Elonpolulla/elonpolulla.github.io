@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="fi">
 
 <head>
@@ -9,200 +8,137 @@
 
 <title>Kauppa | Elonpolulla</title>
 
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6RE9D5240B"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6RE9D5240B');
+</script>
+
 <style>
 
-*{
-box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
 
-body{
-margin:0;
-font-family:Georgia,serif;
-background:#F4F0E6;
-color:#2F3B2B;
-line-height:1.7;
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #F4F0E6;
+    color: #2F3B2B;
+    line-height: 1.7;
 }
 
-/* YLÄOSA */
-
-header{
-background:#34432F;
-color:white;
-padding:22px 25px;
-text-align:center;
-border-bottom:5px solid #C9A65B;
+header {
+    background: #34432F;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 5px solid #C9A65B;
 }
 
-header h1{
-color:#D1AA55;
-font-size:46px;
-margin:0;
+header h1 {
+    color: #D1AA55;
+    font-size: 42px;
+    margin: 0 0 15px 0;
 }
 
-nav{
-margin-top:18px;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 7px;
+    display: inline-block;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin:5px 9px;
-display:inline-block;
-font-size:16px;
+nav a:hover {
+    color: #D1AA55;
 }
 
-nav a:hover{
-color:#D1AA55;
+.hero {
+    background: #5B7052;
+    color: #FFFDF8;
+    padding: 70px 10%;
+    text-align: center;
 }
 
-/* PÄÄOSA */
-
-section{
-padding:65px 10%;
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #D1AA55;
 }
 
-.shop-intro{
-max-width:800px;
-margin:0 auto;
-text-align:center;
+.hero p {
+    font-size: 20px;
+    color: #FFF3D6;
+    max-width: 750px;
+    margin: auto;
 }
 
-.shop-intro h2{
-color:#526947;
-font-size:40px;
-margin-top:0;
+.content {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 20px;
 }
 
-.shop-intro p{
-font-size:19px;
+.shop-card {
+    background: #FFFDF8;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    text-align: center;
 }
 
-/* KAUPAN OSIOT */
-
-.shop-items{
-max-width:1000px;
-margin:50px auto 0;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
+.shop-card h3 {
+    color: #526947;
+    font-size: 29px;
+    margin-top: 0;
 }
 
-.shop-item{
-background:#FFFDF8;
-padding:30px;
-border-radius:20px;
-border:1px solid #DED6C5;
-box-shadow:0 8px 20px rgba(0,0,0,.06);
+.shop-card p {
+    font-size: 18px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.shop-item h3{
-color:#526947;
-font-size:27px;
-margin-top:0;
+.coming {
+    margin-top: 30px;
+    padding: 20px;
+    background: #F4F0E6;
+    border-radius: 10px;
+    color: #526947;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.shop-item p{
-font-size:17px;
+.quote {
+    text-align: center;
+    font-style: italic;
+    font-size: 22px;
+    color: #526947;
+    margin: 50px 0 20px;
 }
 
-.status{
-display:inline-block;
-background:#C9A65B;
-color:white;
-padding:7px 16px;
-border-radius:30px;
-margin-top:10px;
+footer {
+    background: #34432F;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
 }
 
-/* YRTIT */
+@media (max-width: 700px) {
 
-.herbs{
-background:#EEE8D8;
-margin-top:60px;
-padding:55px 10%;
-text-align:center;
-}
+    .hero h2 {
+        font-size: 34px;
+    }
 
-.herbs h2{
-color:#526947;
-font-size:36px;
-margin-top:0;
-}
-
-.herbs p{
-max-width:750px;
-margin:0 auto 20px;
-font-size:19px;
-}
-
-.herbs-button{
-display:inline-block;
-margin-top:15px;
-background:#526947;
-color:white;
-padding:13px 30px;
-border-radius:40px;
-text-decoration:none;
-}
-
-.herbs-button:hover{
-background:#34432F;
-}
-
-/* INFO */
-
-.notice{
-max-width:800px;
-margin:60px auto 0;
-background:#FFFDF8;
-padding:30px;
-border-radius:20px;
-text-align:center;
-border:1px solid #DED6C5;
-}
-
-.notice h3{
-color:#526947;
-font-size:25px;
-}
-
-/* ALATUNNISTE */
-
-footer{
-background:#222B20;
-color:white;
-text-align:center;
-padding:30px;
-}
-
-/* PUHELIN */
-
-@media(max-width:600px){
-
-header h1{
-font-size:36px;
-}
-
-nav a{
-font-size:15px;
-margin:4px 6px;
-}
-
-section{
-padding:50px 7%;
-}
-
-.shop-intro h2{
-font-size:32px;
-}
-
-.herbs{
-padding:50px 7%;
-}
-
-.herbs h2{
-font-size:30px;
-}
+    .shop-card {
+        padding: 28px 20px;
+    }
 
 }
 
@@ -210,102 +146,78 @@ font-size:30px;
 
 </head>
 
+
 <body>
+
 
 <header>
 
 <h1>Elonpolulla</h1>
 
 <nav>
-
-<a href="index.html">Etusivu</a> <a href="palvelut.html">Hyvinvointi</a> <a href="blogi.html">Blogi</a> <a href="ekirjat.html">E-kirjat</a> <a href="kauppa.html">Kauppa</a> <a href="tietoa.html">Tietoa</a> <a href="yhteys.html">Yhteys</a>
-
+    <a href="index.html">Etusivu</a>
+    <a href="palvelut.html">Palvelut</a>
+    <a href="blogi.html">Blogi</a>
+    <a href="ekirjat.html">E-kirjat</a>
+    <a href="kauppa.html">Kauppa</a>
+    <a href="tietoa.html">Tietoa</a>
+    <a href="yhteys.html">Yhteys</a>
 </nav>
 
 </header>
 
-<section>
 
-<div class="shop-intro">
+<section class="hero">
 
 <h2>🛍 Kauppa</h2>
 
 <p>
-Tervetuloa Elonpolullan kauppaan.
-</p>
-
-<p>
-Kauppa rakentuu vähitellen oman polkunsa näköiseksi.
-Tänne tulevat Elonpolulla syntyneet tuotteet ja muut
-sisällöt, jotka voivat kulkea mukana oman matkan eri vaiheissa.
-</p>
-
-</div>
-
-<div class="shop-items">
-
-<div class="shop-item">
-
-<h3>🌿 Luonnolliset tuotteet</h3>
-
-<p>
-Luonnonläheisiä ja käsintehtyjä tuotteita,
-jotka syntyvät Elonpolun ajatuksesta ja tekemisestä.
-</p>
-
-<span class="status">Tulossa</span>
-
-</div>
-
-<div class="shop-item">
-
-<h3>🌱 Yrtit</h3>
-
-<p>
-Yrttien maailmaan liittyviä tuotteita, tietoa ja
-luonnollisia tapoja tutustua kasvien mahdollisuuksiin.
-</p>
-
-<span class="status">Tulossa</span>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="herbs">
-
-<h2>🌱 Yrtit osana Elonpolkua</h2>
-
-<p>
-Luonto ja kasvit ovat tärkeä osa Elonpolun ajatusta.
-Yrttien pariin tullaan jatkossa kokoamaan lisää tietoa,
-sisältöä ja tuotteita.
-</p>
-
-<p>
-Osio täydentyy vähitellen.
+Elonpolun kauppa rakentuu vähitellen osaksi sivustoa.
 </p>
 
 </section>
 
-<div class="notice">
 
-<h3>🌿 Kauppa avautuu myöhemmin</h3>
+<section class="content">
+
+
+<div class="shop-card">
+
+<h3>🌿 Elonpolun kauppa</h3>
 
 <p>
-Kun tuotteet ovat valmiita, tähän voidaan lisätä
-tuotetiedot, hinnat, maksutavat ja toimitustiedot.
+Tänne rakentuu ajan myötä Elonpolun oma kauppa.
 </p>
 
+<p>
+Ajatuksena on, että kaupan sisältö syntyy vähitellen
+Elonpolun matkan mukana ja täydentää sivuston muuta sisältöä.
+</p>
+
+<p>
+Emme halua kiirehtiä valmista, vaan antaa myös tämän
+osan löytää oman muotonsa luonnollisesti.
+</p>
+
+<div class="coming">
+Kauppa avautuu myöhemmin.
 </div>
+
+</div>
+
+
+<div class="quote">
+"Kaiken ei tarvitse olla valmista heti. Myös asiat saavat kasvaa matkalla."
+</div>
+
+
+</section>
+
 
 <footer>
-
 © Elonpolulla
-
 </footer>
+
 
 </body>
 
