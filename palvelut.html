@@ -10,150 +10,138 @@
 
 <style>
 
-*{
-box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
 
-body{
-margin:0;
-font-family:Georgia,serif;
-background:#F4F0E6;
-color:#2F3B2B;
-line-height:1.7;
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #F4F0E6;
+    color: #2F3B2B;
+    line-height: 1.7;
 }
 
-header{
-background:#34432F;
-color:white;
-padding:22px 25px;
-text-align:center;
-border-bottom:5px solid #C9A65B;
+header {
+    background: #34432F;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 5px solid #C9A65B;
 }
 
-header h1{
-color:#D1AA55;
-font-size:46px;
-margin:0;
+header h1 {
+    color: #D1AA55;
+    font-size: 42px;
+    margin: 0 0 15px 0;
 }
 
-nav{
-margin-top:18px;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 7px;
+    display: inline-block;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin:5px 9px;
-display:inline-block;
-font-size:16px;
+nav a:hover {
+    color: #D1AA55;
 }
 
-nav a:hover{
-color:#D1AA55;
+.hero {
+    background: #5B7052;
+    color: #FFFDF8;
+    padding: 70px 10%;
+    text-align: center;
 }
 
-section{
-padding:65px 10%;
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #D1AA55;
 }
 
-.intro{
-max-width:800px;
-margin:0 auto;
-text-align:center;
+.hero p {
+    font-size: 20px;
+    color: #FFF3D6;
+    max-width: 800px;
+    margin: auto;
 }
 
-.intro h2{
-color:#526947;
-font-size:40px;
-margin-top:0;
+.content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
 }
 
-.intro p{
-font-size:19px;
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
 }
 
-.cards{
-max-width:950px;
-margin:50px auto 0;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
-gap:25px;
+.card {
+    background: #FFFDF8;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
 
-.card{
-background:#FFFDF8;
-padding:30px;
-border-radius:20px;
-border:1px solid #DED6C5;
-box-shadow:0 8px 20px rgba(0,0,0,.06);
+.card h3 {
+    color: #526947;
+    font-size: 27px;
+    margin-top: 0;
 }
 
-.card h3{
-color:#526947;
-font-size:27px;
-margin-top:0;
+.card a {
+    color: #526947;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.card p{
-font-size:17px;
+.card a:hover {
+    text-decoration: underline;
 }
 
-.card a{
-display:inline-block;
-margin-top:15px;
-color:#526947;
-font-weight:bold;
-text-decoration:none;
+.info-card {
+    background: #FFFDF8;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
 
-.card a:hover{
-color:#B07A25;
+.info-card h3 {
+    color: #526947;
+    font-size: 27px;
+    margin-top: 0;
 }
 
-.quote{
-background:#EEE8D8;
-padding:65px 10%;
-text-align:center;
-margin-top:20px;
+.quote {
+    text-align: center;
+    font-style: italic;
+    font-size: 22px;
+    color: #526947;
+    margin: 50px 0;
 }
 
-.quote p{
-max-width:760px;
-margin:auto;
-font-size:24px;
-font-style:italic;
-color:#526947;
+footer {
+    background: #34432F;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
 }
 
-footer{
-background:#222B20;
-color:white;
-text-align:center;
-padding:30px;
-}
+@media (max-width: 700px) {
 
-@media(max-width:600px){
+    .services {
+        grid-template-columns: 1fr;
+    }
 
-header h1{
-font-size:36px;
-}
-
-nav a{
-font-size:15px;
-margin:4px 6px;
-}
-
-section{
-padding:50px 7%;
-}
-
-.intro h2{
-font-size:32px;
-}
-
-.quote{
-padding:50px 7%;
-}
+    .hero h2 {
+        font-size: 34px;
+    }
 
 }
 
@@ -161,64 +149,48 @@ padding:50px 7%;
 
 </head>
 
+
 <body>
+
 
 <header>
 
 <h1>Elonpolulla</h1>
 
 <nav>
-
-<a href="index.html">Etusivu</a>
-<a href="palvelut.html">Palvelut</a>
-<a href="blogi.html">Blogi</a>
-<a href="ekirjat.html">E-kirjat</a>
-<a href="kauppa.html">Kauppa</a>
-<a href="tietoa.html">Tietoa</a>
-<a href="yhteys.html">Yhteys</a>
-
+    <a href="index.html">Etusivu</a>
+    <a href="palvelut.html">Palvelut</a>
+    <a href="blogi.html">Blogi</a>
+    <a href="ekirjat.html">E-kirjat</a>
+    <a href="kauppa.html">Kauppa</a>
+    <a href="tietoa.html">Tietoa</a>
+    <a href="yhteys.html">Yhteys</a>
 </nav>
 
 </header>
 
 
-<section>
-
-<div class="intro">
+<section class="hero">
 
 <h2>🌿 Palvelut</h2>
 
 <p>
-Elonpolun palvelut ovat kohtaamisia, joiden tarkoitus on
-tukea ihmistä hänen omalla polullaan.
+Elonpolun palvelut ovat kohtaamisia, joiden tarkoitus on tukea
+ihmistä hänen omalla polullaan.
 </p>
 
 <p>
-Palveluissa tärkeää on kiireettömyys, kuunteleminen ja
-aito kohtaaminen. Jokainen voi lähteä liikkeelle siitä,
-mikä tuntuu juuri nyt itselle sopivalta.
+Palveluissa tärkeää on kiireettömyys, kuunteleminen ja aito kohtaaminen.
+Jokainen voi lähteä liikkeelle siitä, mikä tuntuu juuri nyt itselle sopivalta.
 </p>
 
-</div>
+</section>
 
 
-<div class="cards">
+<section class="content">
 
 
-<div class="card">
-
-<h3>🌬 Hengitys</h3>
-
-<p>
-Hengitys kulkee aina mukanamme. Sen äärelle pysähtyminen
-voi auttaa huomaamaan, mitä juuri tässä hetkessä tapahtuu.
-</p>
-
-<a href="hengitys.html">
-Tutustu hengitykseen →
-</a>
-
-</div>
+<div class="services">
 
 
 <div class="card">
@@ -226,9 +198,14 @@ Tutustu hengitykseen →
 <h3>🤝 Kaveripalvelu</h3>
 
 <p>
-Joskus tärkeintä on, ettei tarvitse kulkea yksin.
-Kaveripalvelussa on mahdollisuus keskusteluun, kohtaamiseen
-ja yhdessä olemiseen.
+Joskus elämässä tarvitsemme toisen ihmisen rinnalle.
+Kaveripalvelu tarjoaa aikaa, kuuntelemista, keskustelua ja
+käytännön apua erilaisiin elämäntilanteisiin.
+</p>
+
+<p>
+Tapaamisia on mahdollista järjestää Satakunnan alueella
+sekä etänä kaikkialla Suomessa.
 </p>
 
 <a href="kaveripalvelu.html">
@@ -238,26 +215,83 @@ Tutustu Kaveripalveluun →
 </div>
 
 
-</div>
+<div class="card">
 
-</section>
-
-
-<section class="quote">
+<h3>🌬 Hengitys</h3>
 
 <p>
-"Jokainen polku on erilainen.
-Tärkeintä on löytää oma tapa kulkea."
+Hengitys on aina mukanamme, mutta harvoin pysähdymme todella
+huomaamaan sitä.
 </p>
+
+<p>
+Tietoinen hengitys voi auttaa rauhoittamaan kehoa,
+pysähtymään tähän hetkeen ja löytämään tilaa omille ajatuksille.
+</p>
+
+<a href="hengitys.html">
+Tutustu hengitykseen →
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="info-card">
+
+<h3>🌱 Työkaluja oman polun tueksi</h3>
+
+<p>
+Kaikki tilanteet eivät tarvitse toista ihmistä rinnalle.
+Joskus pieni pysähtyminen, hengitys tai uusi näkökulma voi auttaa
+löytämään tilaa ajatuksille ja omalle hyvinvoinnille.
+</p>
+
+<p>
+Elonpolulla haluaa tarjota erilaisia työkaluja oman polun tueksi.
+Näitä voivat olla esimerkiksi hengitysharjoitukset, kirjoitukset,
+e-kirjat ja myöhemmin muut hyvinvointia tukevat sisällöt.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>🤍 Matalan kynnyksen apua</h3>
+
+<p>
+Elonpolun ajatuksena on, ettei avun tai tuen hakemisen tarvitse
+aina olla suuri askel.
+</p>
+
+<p>
+Joskus riittää keskustelu, pieni käytännön apu tai mahdollisuus
+pysähtyä hetkeksi toisen ihmisen kanssa.
+</p>
+
+<p>
+Tärkeintä on, että ihminen voi tulla kohdatuksi omana itsenään
+ja omasta elämäntilanteestaan käsin.
+</p>
+
+</div>
+
+
+<div class="quote">
+"Jokainen polku on erilainen. Tärkeintä on löytää oma tapa kulkea."
+</div>
+
 
 </section>
 
 
 <footer>
-
 © Elonpolulla
-
 </footer>
+
 
 </body>
 
