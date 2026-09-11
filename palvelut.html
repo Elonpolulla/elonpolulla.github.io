@@ -6,7 +6,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Palvelut | Elonpolulla</title>
+<title>Palvelut | Kaveripalvelu ja hengitys | Elonpolulla</title>
+
+<meta name="description" content="Elonpolun palveluihin kuuluvat Kaveripalvelu sekä hengitykseen ja hyvinvointiin liittyvät sisällöt. Kaveripalvelua tarjotaan Satakunnassa ja etänä koko Suomessa.">
 
 <style>
 
@@ -63,8 +65,8 @@ nav a:hover {
 .hero p {
     font-size: 20px;
     color: #FFF3D6;
-    max-width: 800px;
-    margin: 10px auto;
+    max-width: 850px;
+    margin: auto;
 }
 
 .content {
@@ -73,16 +75,10 @@ nav a:hover {
     padding: 50px 20px;
 }
 
-.services {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    margin-bottom: 40px;
-}
-
 .card {
     background: #FFFDF8;
     padding: 30px;
+    margin-bottom: 30px;
     border-radius: 12px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
@@ -97,32 +93,19 @@ nav a:hover {
     font-size: 18px;
 }
 
-.card a {
-    color: #526947;
-    font-weight: bold;
+.button {
+    display: inline-block;
+    background: #526947;
+    color: white;
+    padding: 14px 26px;
+    border-radius: 8px;
     text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
-.card a:hover {
-    text-decoration: underline;
-}
-
-.info-card {
-    background: #FFFDF8;
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-}
-
-.info-card h3 {
-    color: #526947;
-    font-size: 27px;
-    margin-top: 0;
-}
-
-.info-card p {
-    font-size: 18px;
+.button:hover {
+    background: #34432F;
 }
 
 .quote {
@@ -130,7 +113,20 @@ nav a:hover {
     font-style: italic;
     font-size: 22px;
     color: #526947;
-    margin: 50px 0;
+    margin: 50px 0 20px;
+}
+
+.back {
+    display: block;
+    text-align: center;
+    margin: 35px 0 10px;
+    color: #526947;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -200,12 +196,12 @@ footer a {
 
 @media (max-width: 700px) {
 
-    .services {
-        grid-template-columns: 1fr;
-    }
-
     .hero h2 {
         font-size: 34px;
+    }
+
+    .card {
+        padding: 25px 20px;
     }
 
     .cookie-banner {
@@ -224,9 +220,7 @@ footer a {
 
 </head>
 
-
 <body>
-
 
 <header>
 
@@ -244,7 +238,6 @@ footer a {
 
 </header>
 
-
 <section class="hero">
 
 <h2>🌿 Palvelut</h2>
@@ -256,73 +249,62 @@ joiden tarkoitus on tukea ihmistä hänen omalla polullaan.
 
 <p>
 Tärkeää ovat kiireettömyys, kuunteleminen ja aito kohtaaminen.
-Jokainen voi lähteä liikkeelle siitä, mikä tuntuu juuri nyt itselle sopivalta.
+Jokainen voi lähteä liikkeelle siitä,
+mikä tuntuu juuri nyt itselle sopivalta.
 </p>
 
 </section>
 
-
 <section class="content">
-
-
-<div class="services">
-
 
 <div class="card">
 
 <h3>🤝 Kaveripalvelu</h3>
 
 <p>
-Joskus elämässä tarvitsemme toisen ihmisen rinnalle.
-Kaveripalvelu tarjoaa aikaa, kuuntelemista, keskustelua
-ja käytännön apua erilaisiin elämäntilanteisiin.
+Kaveripalvelu tarjoaa seuraa, läsnäoloa ja käytännön apua
+erilaisiin elämäntilanteisiin.
 </p>
 
 <p>
-Lähitapaamisia on mahdollista järjestää Satakunnan alueella
-ja etätapaamisia kaikkialla Suomessa.
+Palvelua voidaan toteuttaa lähitapaamisina Satakunnan alueella
+tai etänä puhelimitse ja verkon välityksellä kaikkialla Suomessa.
 </p>
 
-<a href="kaveripalvelu.html">
+<p>
+Palvelun voi tilata itselleen, mutta myös omainen tai muu läheinen
+voi ottaa yhteyttä ja järjestää palvelun avuntarvitsijalle.
+</p>
+
+<a class="button" href="kaveripalvelu.html">
 Tutustu Kaveripalveluun →
 </a>
 
 </div>
-
 
 <div class="card">
 
 <h3>🌬 Hengitys</h3>
 
 <p>
-Hengitys on aina mukanamme, mutta harvoin pysähdymme
-todella huomaamaan sitä.
+Hengitys on yksi yksinkertaisimmista tavoista pysähtyä hetkeksi
+oman itsensä äärelle.
 </p>
 
 <p>
-Tietoinen hengitys voi auttaa rauhoittamaan kehoa,
-pysähtymään tähän hetkeen ja löytämään tilaa omille ajatuksille.
+Hengitykseen liittyvissä sisällöissä tutustutaan tietoiseen hengitykseen,
+pysähtymiseen ja oman kehon kuuntelemiseen rauhallisella tavalla.
 </p>
 
-<a href="hengitys.html">
+<a class="button" href="hengitys.html">
 Tutustu hengitykseen →
 </a>
 
 </div>
 
-
-</div>
-
-
-<div class="info-card">
+<div class="card">
 
 <h3>🌱 Työkaluja oman polun tueksi</h3>
-
-<p>
-Kaikki tilanteet eivät tarvitse toista ihmistä rinnalle.
-Joskus pieni pysähtyminen, hengitys tai uusi näkökulma
-voi auttaa löytämään tilaa ajatuksille ja omalle hyvinvoinnille.
-</p>
 
 <p>
 Elonpolulle rakentuu vähitellen erilaisia sisältöjä oman polun tueksi.
@@ -332,36 +314,27 @@ oman kehityksen sisällöt sekä erilaiset käytännön harjoitukset.
 
 </div>
 
-
-<div class="info-card">
+<div class="card">
 
 <h3>🤍 Matalan kynnyksen apua</h3>
 
 <p>
-Elonpolun ajatuksena on, ettei avun tai tuen hakemisen
-tarvitse aina olla suuri askel.
-</p>
-
-<p>
-Joskus riittää keskustelu, pieni käytännön apu
-tai mahdollisuus pysähtyä hetkeksi toisen ihmisen kanssa.
-</p>
-
-<p>
-Tärkeintä on, että ihminen voi tulla kohdatuksi omana itsenään
-ja omasta elämäntilanteestaan käsin.
+Kaiken ei tarvitse alkaa suuresta muutoksesta.
+Joskus ensimmäinen askel voi olla keskustelu,
+pieni pysähtyminen tai se, että joku kulkee hetken rinnalla.
 </p>
 
 </div>
-
 
 <div class="quote">
 "Jokainen polku on erilainen. Tärkeintä on löytää oma tapa kulkea."
 </div>
 
+<a class="back" href="index.html">
+← Takaisin etusivulle
+</a>
 
 </section>
-
 
 <footer>
 
@@ -373,7 +346,6 @@ ja omasta elämäntilanteestaan käsin.
 </p>
 
 </footer>
-
 
 <div id="cookieBanner" class="cookie-banner">
 
@@ -402,7 +374,6 @@ Kieltäydy
 </div>
 
 </div>
-
 
 <script>
 
@@ -435,7 +406,6 @@ function loadAnalytics() {
     document.head.appendChild(script);
 }
 
-
 function acceptAnalytics() {
 
     localStorage.setItem('elonpolullaAnalytics', 'accepted');
@@ -445,7 +415,6 @@ function acceptAnalytics() {
     loadAnalytics();
 }
 
-
 function rejectAnalytics() {
 
     localStorage.setItem('elonpolullaAnalytics', 'rejected');
@@ -453,12 +422,10 @@ function rejectAnalytics() {
     document.getElementById('cookieBanner').style.display = 'none';
 }
 
-
 function openCookieSettings() {
 
     document.getElementById('cookieBanner').style.display = 'block';
 }
-
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -481,7 +448,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
-
 
 </body>
 
