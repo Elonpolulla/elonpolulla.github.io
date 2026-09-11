@@ -6,14 +6,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>E-kirjat | Elonpolulla</title>
+<title>E-kirjat ja sisällöt | Elonpolulla</title>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6RE9D5240B"></script>
 
 <script>
 window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
+
+function gtag(){
+    dataLayer.push(arguments);
+}
+
 gtag('js', new Date());
 gtag('config', 'G-6RE9D5240B');
 </script>
@@ -42,8 +46,12 @@ header {
 
 header h1 {
     color: #D1AA55;
-    font-size: 42px;
-    margin: 0 0 15px 0;
+    font-size: 46px;
+    margin: 0;
+}
+
+nav {
+    margin-top: 20px;
 }
 
 nav a {
@@ -65,7 +73,7 @@ nav a:hover {
 }
 
 .hero h2 {
-    font-size: 42px;
+    font-size: 44px;
     margin-bottom: 15px;
     color: #D1AA55;
 }
@@ -73,45 +81,68 @@ nav a:hover {
 .hero p {
     font-size: 20px;
     color: #FFF3D6;
-    max-width: 750px;
+    max-width: 800px;
     margin: auto;
 }
 
 .content {
-    max-width: 900px;
+    max-width: 950px;
     margin: auto;
     padding: 50px 20px;
 }
 
-.ebook-card {
-    background: #FFFDF8;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+.intro {
     text-align: center;
+    max-width: 800px;
+    margin: 0 auto 45px auto;
 }
 
-.ebook-card h3 {
+.intro h2 {
     color: #526947;
-    font-size: 29px;
+    font-size: 32px;
+}
+
+.intro p {
+    font-size: 18px;
+}
+
+.card {
+    background: #FFFDF8;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.card h2 {
+    color: #526947;
     margin-top: 0;
 }
 
-.ebook-card p {
-    font-size: 18px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+.card h3 {
+    color: #526947;
+}
+
+.notice {
+    background: #F4F0E6;
+    border-left: 5px solid #C9A65B;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 6px;
 }
 
 .coming {
-    margin-top: 30px;
-    padding: 20px;
-    background: #F4F0E6;
-    border-radius: 10px;
-    color: #526947;
-    font-size: 20px;
-    font-weight: bold;
+    text-align: center;
+    background: #5B7052;
+    color: #FFFDF8;
+    padding: 35px;
+    border-radius: 12px;
+    margin-top: 35px;
+}
+
+.coming h2 {
+    color: #D1AA55;
+    margin-top: 0;
 }
 
 .quote {
@@ -119,7 +150,23 @@ nav a:hover {
     font-style: italic;
     font-size: 22px;
     color: #526947;
-    margin: 50px 0 20px;
+    margin: 50px auto;
+    max-width: 750px;
+}
+
+.back {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.back a {
+    color: #526947;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back a:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -127,7 +174,6 @@ footer {
     color: white;
     text-align: center;
     padding: 25px;
-    margin-top: 40px;
 }
 
 @media (max-width: 700px) {
@@ -136,8 +182,12 @@ footer {
         font-size: 34px;
     }
 
-    .ebook-card {
-        padding: 28px 20px;
+    header h1 {
+        font-size: 38px;
+    }
+
+    .card {
+        padding: 25px;
     }
 
 }
@@ -169,11 +219,11 @@ footer {
 
 <section class="hero">
 
-<h2>📚 E-kirjat ja oppaat</h2>
+<h2>📚 E-kirjat ja sisällöt</h2>
 
 <p>
-Elonpolulle rakentuu vähitellen digitaalista sisältöä
-oman polun, hyvinvoinnin ja henkilökohtaisen kasvun tueksi.
+Tietoa, kokemuksia ja käytännön työkaluja oman hyvinvoinnin,
+henkilökohtaisen kasvun ja oman polun tueksi.
 </p>
 
 </section>
@@ -182,36 +232,99 @@ oman polun, hyvinvoinnin ja henkilökohtaisen kasvun tueksi.
 <section class="content">
 
 
-<div class="ebook-card">
+<div class="intro">
 
-<h3>🌿 Sisältöä oman polun tueksi</h3>
+<h2>🌱 Tutki, kokeile ja löydä oma tapasi</h2>
 
 <p>
-E-kirjojen ja oppaiden tarkoituksena on tarjota
-ajatuksia, harjoituksia ja näkökulmia, joiden äärelle
-voi pysähtyä omassa tahdissaan.
+Elonpolulle rakentuu e-kirjoja, luentoja ja erilaisia harjoituksia,
+joihin voit tutustua rauhassa ja omaan tahtiisi.
 </p>
 
 <p>
-Sisältö rakentuu vähitellen Elonpolun muun toiminnan rinnalle
-ja saa kehittyä ajan, kokemusten ja uusien ajatusten mukana.
+Sisällöissä yhdistyvät kokemustieto, omat havainnot,
+käytännön harjoitukset sekä kiinnostus ihmisen kokonaisvaltaiseen
+hyvinvointiin ja henkilökohtaiseen kasvuun.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>🌿 Parasiittien luonnollinen poistaminen</h2>
+
+<p>
+Elonpolun ensimmäinen e-kirja käsittelee parasiitteja ja
+luonnollisia lähestymistapoja, joita ihmiset ovat käyttäneet
+kehon hyvinvoinnin tukena.
 </p>
 
 <p>
-Tänne kootaan myöhemmin e-kirjoja ja oppaita,
-joihin voit palata silloin, kun kaipaat uusia näkökulmia,
-pysähtymistä tai tukea omalle polullesi.
+Kirjan lähtökohtana on erityisesti <strong>kokemustieto</strong>.
+Siinä tarkastellaan aiheeseen liittyviä kokemuksia, havaintoja
+ja erilaisia näkökulmia.
 </p>
+
+<p>
+Tarkoituksena ei ole kertoa lukijalle, mitä hänen pitäisi tehdä,
+vaan tarjota tietoa ja kokemuksia, joiden pohjalta aiheeseen
+voi tutustua ja muodostaa oman käsityksensä.
+</p>
+
+<div class="notice">
+
+<strong>Hyvä tietää</strong>
+
+<p>
+E-kirjan sisältö perustuu kokemustietoon eikä sitä ole tarkoitettu
+lääketieteelliseksi diagnoosiksi tai hoito-ohjeeksi.
+Se ei korvaa lääkärin tai muun terveydenhuollon ammattilaisen
+arviota, tutkimuksia tai hoitoa.
+</p>
+
+<p>
+Jos epäilet parasiitti- tai loistartuntaa tai sinulla on
+terveyteen liittyviä oireita, asia kannattaa selvittää
+terveydenhuollon ammattilaisen kanssa.
+</p>
+
+</div>
+
+</div>
+
 
 <div class="coming">
-Ensimmäiset e-kirjat ja oppaat ovat tulossa myöhemmin.
-</div>
+
+<h2>🌬 Lisää sisältöä on tulossa</h2>
+
+<p>
+Elonpolulle on tarkoitus rakentaa vähitellen lisää e-kirjoja,
+luentoja ja harjoituksia.
+</p>
+
+<p>
+Tulevissa sisällöissä käsitellään muun muassa hengitystä,
+omaa kehitystä, kehon ja mielen yhteyttä, pysähtymistä
+sekä erilaisia käytännön harjoituksia.
+</p>
+
+<p>
+Kaiken ei tarvitse tulla valmiiksi kerralla.
+Sisällöt saavat kasvaa ja löytää muotonsa Elonpolun mukana.
+</p>
 
 </div>
 
 
 <div class="quote">
-"Joskus yksi ajatus voi avata kokonaan uuden suunnan."
+"Kaikkea ei tarvitse ottaa valmiina totuutena.
+Joskus tärkeintä on uskaltaa tutkia, kuunnella ja muodostaa oma käsityksensä."
+</div>
+
+
+<div class="back">
+<a href="index.html">← Takaisin etusivulle</a>
 </div>
 
 
