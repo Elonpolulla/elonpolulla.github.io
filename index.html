@@ -6,7 +6,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Elonpolulla</title>
+<title>Elonpolulla | Kaveripalvelu, hyvinvointi ja oma polku</title>
+
+<meta name="description" content="Elonpolulla tarjoaa Kaveripalvelua, hyvinvointiin liittyviä sisältöjä ja tukea elämän erilaisiin tilanteisiin. Lähitapaamiset Satakunnassa ja etänä koko Suomessa.">
 
 <style>
 
@@ -68,16 +70,17 @@ nav a:hover {
     font-size: 20px;
     color: #FFF3D6;
     max-width: 850px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 25px;
 }
 
 .button {
     display: inline-block;
     background: #C9A65B;
     color: #2F3B2B;
-    padding: 14px 25px;
+    padding: 14px 26px;
     border-radius: 8px;
     text-decoration: none;
+    margin-top: 10px;
     font-weight: bold;
 }
 
@@ -92,14 +95,17 @@ nav a:hover {
 }
 
 .intro {
-    text-align: center;
-    max-width: 850px;
-    margin: 0 auto 50px auto;
+    background: #FFFDF8;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
 }
 
-.intro h2 {
+.intro h3 {
     color: #526947;
-    font-size: 32px;
+    font-size: 30px;
+    margin-top: 0;
 }
 
 .intro p {
@@ -110,14 +116,13 @@ nav a:hover {
     text-align: center;
     color: #526947;
     font-size: 32px;
-    margin-top: 50px;
+    margin: 50px 0 30px;
 }
 
 .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    margin-top: 30px;
 }
 
 .card {
@@ -133,6 +138,10 @@ nav a:hover {
     margin-top: 0;
 }
 
+.card p {
+    font-size: 17px;
+}
+
 .card a {
     color: #526947;
     font-weight: bold;
@@ -146,28 +155,32 @@ nav a:hover {
 .quote {
     text-align: center;
     font-style: italic;
-    font-size: 23px;
+    font-size: 22px;
     color: #526947;
-    margin: 60px auto;
-    max-width: 800px;
+    margin: 55px 0;
 }
 
 .contact {
     background: #5B7052;
     color: #FFFDF8;
+    padding: 40px;
+    border-radius: 12px;
     text-align: center;
-    padding: 50px 20px;
 }
 
-.contact h2 {
+.contact h3 {
     color: #D1AA55;
-    font-size: 32px;
+    font-size: 30px;
+    margin-top: 0;
 }
 
 .contact p {
-    max-width: 750px;
-    margin: 0 auto 25px auto;
     font-size: 18px;
+}
+
+.contact a {
+    color: #FFF3D6;
+    font-weight: bold;
 }
 
 footer {
@@ -175,6 +188,7 @@ footer {
     color: white;
     text-align: center;
     padding: 25px;
+    margin-top: 50px;
 }
 
 footer a {
@@ -202,10 +216,6 @@ footer a {
 .cookie-banner h3 {
     color: #526947;
     margin-top: 0;
-}
-
-.cookie-banner p {
-    margin-bottom: 18px;
 }
 
 .cookie-banner a {
@@ -240,16 +250,22 @@ footer a {
 
 @media (max-width: 700px) {
 
-    .cards {
-        grid-template-columns: 1fr;
+    header h1 {
+        font-size: 38px;
     }
 
     .hero h2 {
         font-size: 36px;
     }
 
-    header h1 {
-        font-size: 38px;
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .intro,
+    .card,
+    .contact {
+        padding: 25px 20px;
     }
 
     .cookie-banner {
@@ -268,9 +284,7 @@ footer a {
 
 </head>
 
-
 <body>
-
 
 <header>
 
@@ -288,41 +302,38 @@ footer a {
 
 </header>
 
-
 <section class="hero">
 
 <h2>Löydetään voima sisältäsi</h2>
 
 <p>
 Elonpolulla kuljetaan rinnalla elämän erilaisissa hetkissä.
-Joskus tarvitsemme vain pysähtymistä, joskus uuden työkalun tai ajatuksen
-tueksi ja joskus toisen ihmisen rinnalle.
+Joskus tarvitsemme vain pysähtymistä, joskus uuden työkalun
+tai ajatuksen tueksi ja joskus toisen ihmisen rinnalle.
 </p>
 
 <a class="button" href="palvelut.html">
-Tutustu palveluihin →
+Tutustu palveluihin
 </a>
 
 </section>
 
-
 <section class="content">
-
 
 <div class="intro">
 
-<h2>🌿 Oma polku – mutta ei aina yksin</h2>
+<h3>🌿 Oma polku – mutta ei aina yksin</h3>
 
 <p>
-Jokaisella meistä on oma polkumme kuljettavana syntymästä elämän
-viimeisiin vaiheisiin asti. Matkan varrelle mahtuu iloa, surua,
-muutoksia, epävarmuutta ja joskus tilanteita, jotka pysäyttävät
-elämän yllättäen.
+Jokainen meistä kulkee omaa polkuaan syntymästä aina elämän viimeisiin
+vaiheisiin asti. Matkan varrelle mahtuu iloa, surua, muutoksia,
+epävarmuutta ja hetkiä, jolloin emme oikein tiedä,
+mihin suuntaan seuraavaksi pitäisi kulkea.
 </p>
 
 <p>
-Joskus eteen tulee hetki, jolloin kaipaa ystävää, kuuntelijaa,
-tukijaa tai ihmistä, joka auttaa selvittämään asioita.
+Joskus tarvitsemme ystävän, kuuntelijan, tukijan tai auttavan käden.
+Joskus tarvitsemme vain toisen ihmisen rinnalle hetkeksi.
 </p>
 
 <p>
@@ -330,47 +341,36 @@ tukijaa tai ihmistä, joka auttaa selvittämään asioita.
 </p>
 
 <p>
-Kaveripalvelun kautta tarjoamme seuraa, läsnäoloa ja käytännön apua.
-Voimme kohdata kasvotusten Satakunnan alueella tai etänä puhelimitse
-ja verkon välityksellä.
+Kaveripalvelu tarjoaa seuraa, läsnäoloa ja käytännön apua
+elämän erilaisiin tilanteisiin. Lähitapaamisia voidaan sopia
+Satakunnan alueella ja etätapaamisia kaikkialle Suomeen.
 </p>
 
 <p>
 Sinun ei tarvitse kulkea kaikkea yksin.
-Joskus yksi ihminen rinnalla voi olla juuri se seuraava askel.
+Joskus seuraava askel löytyy helpommin yhdessä.
 </p>
 
 </div>
-
 
 <h2 class="section-title">🌱 Työkaluja oman polun tueksi</h2>
 
-<div class="intro">
-
-<p>
-Kaikki tilanteet eivät tarvitse toista ihmistä rinnalle.
-Joskus pieni pysähtyminen, hengitys, kirjoitus tai uusi näkökulma
-voi auttaa löytämään tilaa omille ajatuksille.
+<p style="text-align:center; max-width:800px; margin:0 auto 35px;">
+Elonpolulla rakentuu vähitellen erilaisia sisältöjä ja työkaluja
+oman hyvinvoinnin, kasvun ja pysähtymisen tueksi.
+Näitä ovat esimerkiksi hengitys, kirjoitukset, e-kirjat
+ja tulevat sisällöt.
 </p>
-
-<p>
-Elonpolulla tarjoaa erilaisia työkaluja oman polun tueksi.
-Näitä ovat esimerkiksi hengitys, kirjoitukset, e-kirjat ja
-myöhemmin muut hyvinvointia tukevat sisällöt.
-</p>
-
-</div>
-
 
 <div class="cards">
-
 
 <div class="card">
 
 <h3>🌿 Tietoa Elonpolusta</h3>
 
 <p>
-Tutustu Elonpolun ajatukseen, taustaan ja ihmisiin sen takana.
+Lue Elonpolun ajatuksesta, taustasta ja siitä,
+miksi tämä polku on saanut alkunsa.
 </p>
 
 <a href="tietoa.html">
@@ -379,14 +379,13 @@ Lue lisää →
 
 </div>
 
-
 <div class="card">
 
 <h3>🤝 Palvelut</h3>
 
 <p>
-Tutustu Elonpolun palveluihin ja löydä sinulle sopiva tapa saada
-tukea omalle polullesi.
+Tutustu Kaveripalveluun ja muihin Elonpolun palveluihin
+sekä tapoihin saada tukea omaan elämäntilanteeseen.
 </p>
 
 <a href="palvelut.html">
@@ -395,14 +394,13 @@ Tutustu palveluihin →
 
 </div>
 
-
 <div class="card">
 
 <h3>🌬 Hengitys</h3>
 
 <p>
-Hengitys on yksinkertainen mutta voimakas tapa pysähtyä,
-rauhoittaa kehoa ja palata takaisin tähän hetkeen.
+Pysähdy hetkeksi hengityksen äärelle ja tutustu
+tietoiseen hengitykseen rauhallisella tavalla.
 </p>
 
 <a href="hengitys.html">
@@ -411,29 +409,28 @@ Tutustu hengitykseen →
 
 </div>
 
-
 <div class="card">
 
 <h3>📚 E-kirjat</h3>
 
 <p>
-E-kirjoja hyvinvoinnin, kasvun ja oman polun tueksi.
+Elonpolulle rakentuu e-kirjoja ja muita sisältöjä,
+joissa yhdistyvät kokemukset, ajatukset ja käytännön työkalut.
 </p>
 
 <a href="ekirjat.html">
-Tutustu e-kirjoihin →
+Tutustu sisältöihin →
 </a>
 
 </div>
-
 
 <div class="card">
 
 <h3>✍️ Blogi</h3>
 
 <p>
-Kirjoituksia elämästä, hyvinvoinnista, luonnosta ja
-henkisestä kasvusta.
+Kirjoituksia elämästä, hyvinvoinnista,
+henkilökohtaisesta kasvusta ja oman polun löytämisestä.
 </p>
 
 <a href="blogi.html">
@@ -441,7 +438,6 @@ Lue blogia →
 </a>
 
 </div>
-
 
 <div class="card">
 
@@ -458,33 +454,30 @@ Tutustu kauppaan →
 
 </div>
 
-
 </div>
-
 
 <div class="quote">
 "Polku ei tarvitse olla valmis. Riittää, että otat seuraavan askeleen."
 </div>
 
+<div class="contact">
 
-</section>
-
-
-<section class="contact">
-
-<h2>Haluatko jutella?</h2>
+<h3>🤍 Ota yhteyttä</h3>
 
 <p>
-Jos jokin Elonpolun palveluista herättää kiinnostusta tai haluat
-kysyä lisää, voit ottaa yhteyttä matalalla kynnyksellä.
+Jos jokin Elonpolun palvelu tai ajatus tuntuu sinulle ajankohtaiselta,
+voit ottaa yhteyttä matalalla kynnyksellä.
 </p>
 
-<a class="button" href="yhteys.html">
-Ota yhteyttä →
+<p>
+<a href="yhteys.html">
+Siirry yhteydenottoon →
 </a>
+</p>
+
+</div>
 
 </section>
-
 
 <footer>
 
@@ -496,7 +489,6 @@ Ota yhteyttä →
 </p>
 
 </footer>
-
 
 <div id="cookieBanner" class="cookie-banner">
 
@@ -525,7 +517,6 @@ Kieltäydy
 </div>
 
 </div>
-
 
 <script>
 
@@ -558,7 +549,6 @@ function loadAnalytics() {
     document.head.appendChild(script);
 }
 
-
 function acceptAnalytics() {
 
     localStorage.setItem('elonpolullaAnalytics', 'accepted');
@@ -568,7 +558,6 @@ function acceptAnalytics() {
     loadAnalytics();
 }
 
-
 function rejectAnalytics() {
 
     localStorage.setItem('elonpolullaAnalytics', 'rejected');
@@ -576,12 +565,10 @@ function rejectAnalytics() {
     document.getElementById('cookieBanner').style.display = 'none';
 }
 
-
 function openCookieSettings() {
 
     document.getElementById('cookieBanner').style.display = 'block';
 }
-
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -604,7 +591,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
-
 
 </body>
 
