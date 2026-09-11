@@ -22,6 +22,7 @@ gtag('js', new Date());
 gtag('config', 'G-6RE9D5240B');
 </script>
 
+
 <style>
 
 * {
@@ -108,6 +109,9 @@ nav a:hover {
     margin-right: auto;
 }
 
+
+/* YHTEYDENOTTOTAVAT */
+
 .contact-options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -149,9 +153,92 @@ nav a:hover {
     color: #FFF3D6;
 }
 
+
+/* LOMAKE */
+
+.form-section {
+    margin-top: 45px;
+    padding-top: 35px;
+    border-top: 1px solid #ddd3bd;
+    text-align: left;
+}
+
+.form-section h3 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.form-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #526947;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #CFC7B5;
+    border-radius: 8px;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    background: white;
+    color: #2F3B2B;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #526947;
+}
+
+.form-group textarea {
+    min-height: 170px;
+    resize: vertical;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    background: #526947;
+    color: white;
+    border: none;
+    padding: 16px 25px;
+    border-radius: 8px;
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.submit-button:hover {
+    background: #34432F;
+}
+
+.form-note {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    color: #687160;
+}
+
+
+/* ALATIEDOT */
+
 .info {
-    margin-top: 40px;
-    padding-top: 25px;
+    margin-top: 45px;
+    padding-top: 30px;
     border-top: 1px solid #ddd3bd;
 }
 
@@ -176,6 +263,9 @@ footer {
     padding: 25px;
     margin-top: 40px;
 }
+
+
+/* PUHELIN */
 
 @media (max-width: 700px) {
 
@@ -218,6 +308,7 @@ footer {
 </header>
 
 
+
 <section class="hero">
 
 <h2>Yhteys</h2>
@@ -230,29 +321,39 @@ Kaveripalvelun maksuttoman alkukartoituksen, ota rohkeasti yhteyttä.
 </section>
 
 
+
 <section class="content">
 
 
 <div class="contact-card">
 
+
 <h3>🌿 Ota yhteyttä</h3>
 
 <p>
-Voit ottaa yhteyttä sähköpostilla tai Instagramin kautta.
-Valitse sinulle luontevin tapa.
+Voit ottaa yhteyttä sähköpostilla, Instagramissa
+tai lähettää viestin suoraan alla olevalla lomakkeella.
 </p>
+
 
 
 <div class="contact-options">
 
 
+<!-- SÄHKÖPOSTI -->
+
 <a class="contact-option" href="mailto:petrivee@proton.me">
 
-<svg class="contact-icon" viewBox="0 0 24 24" fill="none"
-stroke="currentColor" stroke-width="1.8"
-stroke-linecap="round" stroke-linejoin="round">
+<svg class="contact-icon"
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="1.8"
+stroke-linecap="round"
+stroke-linejoin="round">
 
 <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+
 <path d="M3 7l9 6 9-6"></path>
 
 </svg>
@@ -264,17 +365,26 @@ stroke-linecap="round" stroke-linejoin="round">
 </a>
 
 
+
+<!-- INSTAGRAM -->
+
 <a class="contact-option"
 href="https://www.instagram.com/elonpolulla/"
 target="_blank"
 rel="noopener noreferrer">
 
-<svg class="contact-icon" viewBox="0 0 24 24" fill="none"
-stroke="currentColor" stroke-width="1.8"
-stroke-linecap="round" stroke-linejoin="round">
+<svg class="contact-icon"
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="1.8"
+stroke-linecap="round"
+stroke-linejoin="round">
 
 <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+
 <circle cx="12" cy="12" r="4"></circle>
+
 <circle cx="17.5" cy="6.5" r="1"></circle>
 
 </svg>
@@ -287,6 +397,113 @@ stroke-linecap="round" stroke-linejoin="round">
 
 
 </div>
+
+
+
+<!-- YHTEYDENOTTOLOMAKE -->
+
+<div class="form-section">
+
+<h3>✉️ Lähetä viesti</h3>
+
+<p class="form-intro">
+Voit lähettää viestin myös suoraan tästä.
+Vastaan sinulle sähköpostilla.
+</p>
+
+
+<form
+action="https://formsubmit.co/petrivee@proton.me"
+method="POST">
+
+
+<input type="hidden"
+name="_subject"
+value="Uusi yhteydenotto Elonpolulla-sivulta">
+
+
+<input type="hidden"
+name="_template"
+value="table">
+
+
+<input type="hidden"
+name="_url"
+value="https://elonpolulla.fi/yhteys.html">
+
+
+<!-- Roskapostisuoja -->
+<input
+type="text"
+name="_honey"
+style="display:none">
+
+
+<div class="form-group">
+
+<label for="nimi">
+Nimi
+</label>
+
+<input
+type="text"
+id="nimi"
+name="Nimi"
+placeholder="Nimesi"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="email">
+Sähköposti
+</label>
+
+<input
+type="email"
+id="email"
+name="email"
+placeholder="Sähköpostiosoitteesi"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="viesti">
+Viesti
+</label>
+
+<textarea
+id="viesti"
+name="Viesti"
+placeholder="Kirjoita viestisi tähän..."
+required></textarea>
+
+</div>
+
+
+<button
+class="submit-button"
+type="submit">
+
+Lähetä viesti
+
+</button>
+
+
+<p class="form-note">
+Tietojasi käytetään vain yhteydenottoosi vastaamiseen.
+</p>
+
+
+</form>
+
+</div>
+
 
 
 <div class="info">
@@ -304,19 +521,26 @@ luonnon, pysähtymisen ja aidon kohtaamisen kautta.
 
 </div>
 
+
 </div>
 
 
+
 <div class="quote">
+
 "Oma polku – mutta ei aina yksin."
+
 </div>
 
 
 </section>
 
 
+
 <footer>
+
 © Elonpolulla
+
 </footer>
 
 
