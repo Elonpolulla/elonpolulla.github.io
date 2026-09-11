@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Tietoa Elonpolusta | Elonpolulla</title>
 
 <style>
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Georgia, serif;
@@ -23,9 +31,9 @@ header {
 }
 
 header h1 {
-    margin: 0 0 15px 0;
     color: #D1AA55;
     font-size: 42px;
+    margin: 0 0 15px 0;
 }
 
 nav a {
@@ -47,14 +55,14 @@ nav a:hover {
 }
 
 .hero h2 {
-    color: #D1AA55;
     font-size: 42px;
     margin-bottom: 15px;
+    color: #D1AA55;
 }
 
 .hero p {
-    color: #FFF3D6;
     font-size: 20px;
+    color: #FFF3D6;
     max-width: 800px;
     margin: auto;
 }
@@ -79,15 +87,28 @@ nav a:hover {
     margin-top: 0;
 }
 
-.card p {
-    margin-bottom: 15px;
+.petri-box {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.petri-box img {
+    width: 220px;
+    max-width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.petri-text {
+    flex: 1;
 }
 
 .button {
     display: inline-block;
     background: #526947;
     color: white;
-    padding: 12px 22px;
+    padding: 13px 24px;
     border-radius: 8px;
     text-decoration: none;
     margin-top: 10px;
@@ -112,156 +133,251 @@ footer {
     padding: 25px;
     margin-top: 40px;
 }
+
+@media (max-width: 700px) {
+
+    .petri-box {
+        display: block;
+    }
+
+    .petri-box img {
+        display: block;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto 25px auto;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+}
+
 </style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>Elonpolulla</h1>
 
-    <nav>
-        <a href="index.html">Etusivu</a>
-        <a href="palvelut.html">Palvelut</a>
-        <a href="blogi.html">Blogi</a>
-        <a href="ekirjat.html">E-kirjat</a>
-        <a href="kauppa.html">Kauppa</a>
-        <a href="tietoa.html">Tietoa</a>
-        <a href="yhteys.html">Yhteys</a>
-    </nav>
+<h1>Elonpolulla</h1>
+
+<nav>
+    <a href="index.html">Etusivu</a>
+    <a href="palvelut.html">Palvelut</a>
+    <a href="blogi.html">Blogi</a>
+    <a href="ekirjat.html">E-kirjat</a>
+    <a href="kauppa.html">Kauppa</a>
+    <a href="tietoa.html">Tietoa</a>
+    <a href="yhteys.html">Yhteys</a>
+</nav>
+
 </header>
 
+
 <section class="hero">
-    <h2>Tietoa Elonpolusta</h2>
-    <p>
-        Jokaisella meistä on oma polkumme kuljettavana.
-        Joskus tarvitsemme vain hieman tukea löytääksemme seuraavan askeleen.
-    </p>
+
+<h2>Tietoa Elonpolusta</h2>
+
+<p>
+Jokaisella meistä on oma polkumme kuljettavana.
+Joskus tarvitsemme vain hieman tukea löytääksemme seuraavan askeleen.
+</p>
+
 </section>
+
 
 <section class="content">
 
-    <div class="card">
-        <h3>🌿 Miksi Elonpolku syntyi?</h3>
 
-        <p>
-            Olen kohdannut ihmisiä monenlaisissa elämäntilanteissa.
-            Näissä kohtaamisissa olen huomannut, kuinka erilaisia tuen tarpeita
-            ihmisillä voi olla ja kuinka helposti ihminen voi jäädä yksin
-            tilanteessa, jossa tarvitsisi vain hieman tukea, kuuntelemista
-            tai rinnalla kulkemista.
-        </p>
+<div class="card">
 
-        <p>
-            Nuorten joukossa olen kohdannut yksinäisiä ja suuntaansa etsiviä
-            ihmisiä, joilla ei välttämättä ole riittävästi tukea ympärillään.
-            Kun oma paikka ja suunta elämässä ovat hukassa, voivat myös
-            elämäntavat ajautua helposti epäterveeseen suuntaan.
-        </p>
+<div class="petri-box">
 
-        <p>
-            Keski-ikäisillä perheellisillä elämä voi puolestaan olla täynnä
-            työtä, perhe-elämän vaatimuksia ja erilaisia velvollisuuksia.
-            Ruuhkavuosien keskellä omat voimavarat voivat vähitellen kulua
-            loppuun. Omille tarpeille ja jaksamiselle ei aina jää riittävästi
-            aikaa tai tilaa.
-        </p>
+<img src="Petri.jpg" alt="Petri">
 
-        <p>
-            Vanhusten kohdalla olen nähnyt yksin jäämistä ja sitä, kuinka
-            tavallisetkin arjen asiat voivat muuttua vaikeiksi.
-            Nopeasti muuttuva ympäristö ja muuttunut terveydentila voivat
-            aiheuttaa ahdistusta, epävarmuutta tai syrjäytymistä.
-        </p>
+<div class="petri-text">
 
-        <p>
-            Asioiden hoitaminen, paperiasiat, yhteydenotot ja muut käytännön
-            tehtävät voivat tuntua raskailta silloin, kun oma toimintakyky
-            tai voimavarat eivät enää riitä.
-        </p>
+<h3>🌿 Kuka on Petri?</h3>
 
-        <p>
-            Näiden kohtaamisten kautta olen ymmärtänyt yhä paremmin,
-            kuinka tärkeää voi olla se, että joku pysähtyy hetkeksi rinnalle,
-            kuuntelee ja auttaa eteenpäin.
-        </p>
-    </div>
+<p>
+Petri on koulutukseltaan poliisi ja oikeustradenomi.
+Hän on työskennellyt poliisin virassa 15 vuoden ajan ja nähnyt siinä ajassa
+hyvin erilaisia elämäntilanteita viranomaisen näkökulmasta.
+Työ on antanut hänelle laajan kokemuksen ihmisten kohtaamisesta,
+haastavista tilanteista sekä yhteiskunnan ja viranomaisjärjestelmän toiminnasta.
+</p>
 
+<p>
+Oikeustradenomin koulutus on syventänyt Petrin juridista osaamista
+ja ymmärrystä muun muassa lainsäädännöstä, päätöksenteosta ja ihmisten oikeuksista.
+Tämä tausta tuo Elonpolulle käytännönläheistä osaamista tilanteisiin,
+joissa elämässä tulee vastaan esimerkiksi viranomaisasioita,
+päätöksiä tai muita vaikeasti hahmotettavia kokonaisuuksia.
+</p>
 
-    <div class="card">
-        <h3>🤝 Kaveripalvelu</h3>
+<p>
+Vuosien varrella Petri on kulkenut myös vahvasti henkisen kasvun polkua.
+Hän on suorittanut Kundalini Healing I -koulutuksen vuonna 2018
+ja Kundalini Healing II -koulutuksen vuonna 2019 sekä
+shamaanikoulutuksen vuonna 2024.
+</p>
 
-        <p>
-            Kaveripalvelu on matalan kynnyksen mahdollisuus saada toinen ihminen
-            hetkeksi rinnalle. Ihminen vierelle auttamaan, ohjaamaan ja luomaan
-            uusia polkuja.
-        </p>
+<p>
+Hengitysharjoitukset ovat kuuluneet Petrin omaan elämään vuodesta 2015 lähtien.
+Niiden rinnalla hän on harjoittanut kehonhuoltoa ja tutkinut käytännössä sitä,
+miten hengitys, keho, mieli ja ihmisen kokonaisvaltainen hyvinvointi
+liittyvät toisiinsa.
+</p>
 
-        <p>
-            Apua voi tarvita esimerkiksi byrokratian, digitalisaation tai
-            pankkiasioiden kanssa. Tukea voi kaivata myös silloin, kun pohtii
-            tulevaisuuden mahdollisuuksia ja sitä, mihin suuntaan elämässä
-            lähtisi seuraavaksi.
-        </p>
+<p>
+Petrin taustassa yhdistyvät kaksi hyvin erilaista maailmaa:
+käytännönläheinen viranomais- ja juridinen osaaminen sekä pitkä kiinnostus
+ihmisen henkiseen ja kokonaisvaltaiseen hyvinvointiin.
+</p>
 
-        <p>
-            Joskus tärkeintä ei kuitenkaan ole löytää valmista ratkaisua,
-            vaan saada puhua, tulla kuulluksi ja viettää hetki yhdessä.
-        </p>
+<p>
+Juuri näiden kokemusten kautta on syntynyt myös Elonpolun ajatus –
+ihminen voidaan kohdata kokonaisuutena, elämäntilannetta vähättelemättä
+ja ilman valmiita vastauksia.
+Joskus tarvitaan käytännön apua, joskus keskustelua ja joskus vain ihminen,
+joka pysähtyy hetkeksi rinnalle.
+</p>
 
-        <p>
-            Kaveripalvelua on mahdollista saada Satakunnan alueella lähitapaamisina
-            sekä kaikkialle etänä puhelimitse tai verkon välityksellä.
-        </p>
+</div>
 
-        <a class="button" href="kaveripalvelu.html">
-            Tutustu Kaveripalveluun →
-        </a>
-    </div>
+</div>
+
+</div>
 
 
-    <div class="card">
-        <h3>🌬 Työkaluja oman polun tueksi</h3>
+<div class="card">
 
-        <p>
-            Kaikki tilanteet eivät tarvitse toista ihmistä rinnalle.
-            Joskus tarvitsemme vain uuden ajatuksen, hetken pysähtymistä
-            tai jonkin työkalun, jonka avulla voimme lähteä tutkimaan
-            omaa tilannettamme.
-        </p>
+<h3>🌿 Miksi Elonpolku syntyi?</h3>
 
-        <p>
-            Elonpolulla löydät esimerkiksi hengitykseen liittyviä harjoituksia,
-            kirjoituksia, blogitekstejä ja e-kirjoja. Sivustolle tulee
-            vähitellen myös muuta sisältöä oman polun tueksi.
-        </p>
-    </div>
+<p>
+Olen kohdannut ihmisiä monenlaisissa elämäntilanteissa.
+Näissä kohtaamisissa olen huomannut, kuinka erilaisia tuen tarpeita ihmisillä
+voi olla ja kuinka helposti ihminen voi jäädä yksin tilanteessa,
+jossa tarvitsisi vain hieman tukea, kuuntelemista tai rinnalla kulkemista.
+</p>
+
+<p>
+Nuorten kohdalla olen nähnyt yksinäisyyttä, oman suunnan etsimistä
+ja tilanteita, joissa tukea ei ole ollut riittävästi saatavilla.
+Kun oma paikka tai suunta elämässä on hukassa, myös elämäntavat voivat
+helposti lähteä kulkemaan suuntaan, joka ei tue omaa hyvinvointia.
+</p>
+
+<p>
+Keski-ikäisten ja perheellisten elämässä työ, perhe, velvollisuudet
+ja arjen vaatimukset voivat kasautua.
+Omat voimavarat voivat vähitellen kulua, eikä omille tarpeille,
+palautumiselle tai pysähtymiselle aina jää riittävästi aikaa tai tilaa.
+</p>
+
+<p>
+Ikääntyessä yksin jääminen voi puolestaan korostua.
+Tavalliset arjen asiat voivat muuttua vaikeammiksi, ja nopeasti muuttuva
+ympäristö sekä oman terveydentilan muutokset voivat aiheuttaa epävarmuutta,
+ahdistusta tai ulkopuolisuuden tunnetta.
+</p>
+
+<p>
+Myös paperiasiat, yhteydenotot ja erilaiset käytännön tehtävät voivat tuntua
+raskailta silloin, kun omat voimavarat tai toimintakyky eivät enää riitä
+niiden hoitamiseen.
+</p>
+
+<p>
+Näiden kohtaamisten kautta olen ymmärtänyt yhä paremmin,
+kuinka tärkeää voi olla se, että joku pysähtyy hetkeksi rinnalle,
+kuuntelee ja auttaa eteenpäin.
+</p>
+
+</div>
 
 
-    <div class="card">
-        <h3>🤍 Matalan kynnyksen apua</h3>
+<div class="card">
 
-        <p>
-            Avun ei tarvitse alkaa vasta silloin, kun ongelmat ovat kasvaneet
-            suuriksi. Joskus ensimmäinen askel voi olla keskustelu,
-            kuunteleva ihminen, seura tai pieni käytännön apu.
-        </p>
+<h3>🤝 Kaveripalvelu</h3>
 
-        <p>
-            Jokaisen elämäntilanne on erilainen. Siksi myös tuen tarve
-            voi olla erilainen.
-        </p>
-    </div>
+<p>
+Kaveripalvelu on matalan kynnyksen mahdollisuus saada toinen ihminen hetkeksi rinnalle.
+Ihminen vierelle auttamaan, ohjaamaan ja luomaan uusia polkuja.
+</p>
+
+<p>
+Apua voi tarvita esimerkiksi byrokratian, digitalisaation tai pankkiasioiden kanssa.
+Tukea voi kaivata myös silloin, kun pohtii tulevaisuuden mahdollisuuksia
+ja sitä, mihin suuntaan elämässä lähtisi seuraavaksi.
+</p>
+
+<p>
+Joskus tärkeintä ei kuitenkaan ole löytää valmista ratkaisua,
+vaan saada puhua, tulla kuulluksi ja viettää hetki yhdessä.
+</p>
+
+<p>
+Kaveripalvelua on mahdollista saada Satakunnan alueella lähitapaamisina
+sekä kaikkialle etänä puhelimitse tai verkon välityksellä.
+</p>
+
+<a class="button" href="kaveripalvelu.html">
+Tutustu Kaveripalveluun →
+</a>
+
+</div>
 
 
-    <div class="quote">
-        "Jokainen polku on erilainen. Joskus tärkeintä on, että joku kulkee hetken rinnalla."
-    </div>
+<div class="card">
+
+<h3>🌬 Työkaluja oman polun tueksi</h3>
+
+<p>
+Kaikki tilanteet eivät tarvitse toista ihmistä rinnalle.
+Joskus pieni pysähtyminen, hengitys tai uusi näkökulma voi auttaa
+löytämään tilaa ajatuksille ja omalle hyvinvoinnille.
+</p>
+
+<p>
+Elonpolulla haluaa tarjota erilaisia työkaluja oman polun tueksi.
+Näitä voivat olla esimerkiksi hengitysharjoitukset, kirjoitukset,
+e-kirjat ja myöhemmin muut hyvinvointia tukevat sisällöt.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🤍 Matalan kynnyksen apua</h3>
+
+<p>
+Elonpolun ajatuksena on, ettei avun tai tuen hakemisen tarvitse aina olla suuri askel.
+Joskus riittää keskustelu, pieni käytännön apu tai mahdollisuus
+pysähtyä hetkeksi toisen ihmisen kanssa.
+</p>
+
+<p>
+Tärkeintä on, että ihminen voi tulla kohdatuksi omana itsenään
+ja omasta elämäntilanteestaan käsin.
+</p>
+
+</div>
+
+
+<div class="quote">
+"Jokainen polku on erilainen. Joskus tärkeintä on, että joku kulkee hetken rinnalla."
+</div>
+
 
 </section>
 
+
 <footer>
-    © Elonpolulla
+© Elonpolulla
 </footer>
 
 </body>
