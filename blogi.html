@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Blogi | Elonpolulla</title>
 
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6RE9D5240B"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6RE9D5240B');
+</script>
+
 <style>
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Georgia, serif;
@@ -25,12 +42,8 @@ header {
 
 header h1 {
     color: #D1AA55;
-    margin: 0;
     font-size: 42px;
-}
-
-nav {
-    margin-top: 20px;
+    margin: 0 0 15px 0;
 }
 
 nav a {
@@ -41,44 +54,61 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #D1AA55;
 }
 
-main {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 0 25px;
-}
-
-h2 {
-    color: #34432F;
-    font-size: 40px;
+.hero {
+    background: #5B7052;
+    color: #FFFDF8;
+    padding: 70px 10%;
     text-align: center;
+}
+
+.hero h2 {
+    font-size: 42px;
     margin-bottom: 15px;
+    color: #D1AA55;
 }
 
-.intro {
-    text-align: center;
+.hero p {
     font-size: 20px;
-    color: #4A5844;
-    margin-bottom: 40px;
+    color: #FFF3D6;
+    max-width: 750px;
+    margin: auto;
+}
+
+.content {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 20px;
 }
 
 .card {
-    background: white;
+    background: #FFFDF8;
     padding: 30px;
-    margin: 25px 0;
-    border-radius: 10px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
 
 .card h3 {
-    color: #5B7052;
+    color: #526947;
     font-size: 27px;
-    margin-top: 0;
+    margin-top: 5px;
+}
+
+.card p {
+    font-size: 18px;
+}
+
+.date {
+    color: #7A806F;
+    font-size: 15px !important;
+    margin-bottom: 5px;
 }
 
 .card a {
-    color: #34432F;
+    color: #526947;
     font-weight: bold;
     text-decoration: none;
 }
@@ -87,13 +117,12 @@ h2 {
     text-decoration: underline;
 }
 
-.home {
-    display: block;
+.quote {
     text-align: center;
-    margin: 45px 0;
-    color: #34432F;
-    font-weight: bold;
-    text-decoration: none;
+    font-style: italic;
+    font-size: 22px;
+    color: #526947;
+    margin: 50px 0 20px;
 }
 
 footer {
@@ -101,38 +130,75 @@ footer {
     color: white;
     text-align: center;
     padding: 25px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
+
+@media (max-width: 700px) {
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+}
+
 </style>
 
 </head>
 
+
 <body>
+
 
 <header>
 
 <h1>Elonpolulla</h1>
 
 <nav>
-<a href="index.html">Etusivu</a>
-<a href="palvelut.html">Palvelut</a>
-<a href="blogi.html">Blogi</a>
-<a href="ekirjat.html">E-kirjat</a>
-<a href="kauppa.html">Kauppa</a>
-<a href="tietoa.html">Tietoa</a>
-<a href="yhteys.html">Yhteys</a>
+    <a href="index.html">Etusivu</a>
+    <a href="palvelut.html">Palvelut</a>
+    <a href="blogi.html">Blogi</a>
+    <a href="ekirjat.html">E-kirjat</a>
+    <a href="kauppa.html">Kauppa</a>
+    <a href="tietoa.html">Tietoa</a>
+    <a href="yhteys.html">Yhteys</a>
 </nav>
 
 </header>
 
-<main>
 
-<h2>Blogi</h2>
+<section class="hero">
 
-<p class="intro">
-Kirjoituksia luonnosta, hyvinvoinnista,
-hengityksestä ja henkisestä kasvusta.
+<h2>✍️ Blogi</h2>
+
+<p>
+Kirjoituksia elämästä, hyvinvoinnista, pysähtymisestä
+ja oman polun löytämisestä.
 </p>
+
+</section>
+
+
+<section class="content">
+
+
+<div class="card">
+
+<p class="date">11.9.2026</p>
+
+<h3>Onnellisuus elonpolulla</h3>
+
+<p>
+Kauniina syyspäivänä Reijo Taipaleen Elonpolulla-kappale
+herätti ajatuksia onnellisuudesta, elämästä ja siitä,
+kuinka lähellä onnellisuus voikaan joskus olla.
+</p>
+
+<a href="onnellisuus-elonpolulla.html">
+Lue kirjoitus →
+</a>
+
+</div>
+
 
 <div class="card">
 
@@ -149,13 +215,14 @@ Lue kirjoitus →
 
 </div>
 
+
 <div class="card">
 
 <h3>Miksi Elonpolulla syntyi</h3>
 
 <p>
 Elonpolulla syntyi ajatuksesta luoda paikka,
-jossa ihminen voi pysähtyä, löytää ajatuksia
+jossa ihminen voi pysähtyä, löytää uusia näkökulmia
 ja kulkea omaa polkuaan.
 </p>
 
@@ -165,15 +232,20 @@ Lue kirjoitus →
 
 </div>
 
-<a class="home" href="index.html">
-← Takaisin Elonpolulla-etusivulle
-</a>
 
-</main>
+<div class="quote">
+"Joskus pysähtyminen on ensimmäinen askel eteenpäin."
+</div>
+
+
+</section>
+
 
 <footer>
-Elonpolulla
+© Elonpolulla
 </footer>
 
+
 </body>
+
 </html>
