@@ -1,394 +1,258 @@
 <!DOCTYPE html>
 <html lang="fi">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Tietoa Elonpolusta | Elonpolulla</title>
 
 <style>
-
-*{
-box-sizing:border-box;
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #F4F0E6;
+    color: #2F3B2B;
+    line-height: 1.7;
 }
 
-body{
-margin:0;
-font-family:Georgia,serif;
-background:#F4F0E6;
-color:#2F3B2B;
-line-height:1.7;
+header {
+    background: #34432F;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 5px solid #C9A65B;
 }
 
-/* YLÄOSA */
-
-header{
-background:#34432F;
-color:white;
-padding:22px 25px;
-text-align:center;
-border-bottom:5px solid #C9A65B;
+header h1 {
+    margin: 0 0 15px 0;
+    color: #D1AA55;
+    font-size: 42px;
 }
 
-header h1{
-color:#D1AA55;
-font-size:46px;
-margin:0;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 7px;
+    display: inline-block;
 }
 
-nav{
-margin-top:18px;
+nav a:hover {
+    color: #D1AA55;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin:5px 9px;
-display:inline-block;
-font-size:16px;
+.hero {
+    background: #5B7052;
+    color: #FFFDF8;
+    padding: 70px 10%;
+    text-align: center;
 }
 
-nav a:hover{
-color:#D1AA55;
+.hero h2 {
+    color: #D1AA55;
+    font-size: 42px;
+    margin-bottom: 15px;
 }
 
-/* PÄÄOSA */
-
-section{
-padding:65px 10%;
+.hero p {
+    color: #FFF3D6;
+    font-size: 20px;
+    max-width: 800px;
+    margin: auto;
 }
 
-.about{
-max-width:1000px;
-margin:auto;
-display:flex;
-gap:45px;
-flex-wrap:wrap;
-align-items:center;
+.content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
 }
 
-.about img{
-width:320px;
-max-width:100%;
-border-radius:25px;
-box-shadow:0 10px 25px rgba(0,0,0,.15);
+.card {
+    background: #FFFDF8;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
 
-.text{
-flex:1;
-min-width:280px;
+.card h3 {
+    color: #526947;
+    font-size: 27px;
+    margin-top: 0;
 }
 
-.text h2{
-color:#526947;
-font-size:40px;
-margin-top:0;
+.card p {
+    margin-bottom: 15px;
 }
 
-.text p{
-font-size:19px;
+.button {
+    display: inline-block;
+    background: #526947;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
 }
 
-/* KORTIT */
-
-.cards{
-max-width:850px;
-margin:50px auto 0;
+.button:hover {
+    background: #34432F;
 }
 
-.card{
-background:#FFFDF8;
-padding:30px;
-margin-top:25px;
-border-radius:20px;
-border:1px solid #DED6C5;
-box-shadow:0 8px 20px rgba(0,0,0,.06);
+.quote {
+    text-align: center;
+    font-style: italic;
+    font-size: 22px;
+    color: #526947;
+    margin: 50px 0;
 }
 
-.card h3{
-color:#526947;
-font-size:26px;
-margin-top:0;
+footer {
+    background: #34432F;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
 }
-
-.card p{
-font-size:18px;
-}
-
-.button{
-display:inline-block;
-background:#526947;
-color:white;
-padding:12px 22px;
-border-radius:10px;
-text-decoration:none;
-margin-top:10px;
-}
-
-.button:hover{
-background:#34432F;
-}
-
-/* LOPPUAJATUS */
-
-.quote{
-background:#EEE8D8;
-padding:65px 10%;
-text-align:center;
-}
-
-.quote p{
-max-width:760px;
-margin:auto;
-font-size:25px;
-font-style:italic;
-color:#526947;
-}
-
-/* ALATUNNISTE */
-
-footer{
-background:#222B20;
-color:white;
-text-align:center;
-padding:30px;
-}
-
-/* PUHELIN */
-
-@media(max-width:600px){
-
-header h1{
-font-size:36px;
-}
-
-nav a{
-font-size:15px;
-margin:4px 6px;
-}
-
-section{
-padding:50px 7%;
-}
-
-.text h2{
-font-size:32px;
-}
-
-}
-
 </style>
-
 </head>
 
 <body>
 
 <header>
+    <h1>Elonpolulla</h1>
 
-<h1>Elonpolulla</h1>
-
-<nav>
-
-<a href="index.html">Etusivu</a>
-<a href="palvelut.html">Palvelut</a>
-<a href="blogi.html">Blogi</a>
-<a href="ekirjat.html">E-kirjat</a>
-<a href="kauppa.html">Kauppa</a>
-<a href="tietoa.html">Tietoa</a>
-<a href="yhteys.html">Yhteys</a>
-
-</nav>
-
+    <nav>
+        <a href="index.html">Etusivu</a>
+        <a href="palvelut.html">Palvelut</a>
+        <a href="blogi.html">Blogi</a>
+        <a href="ekirjat.html">E-kirjat</a>
+        <a href="kauppa.html">Kauppa</a>
+        <a href="tietoa.html">Tietoa</a>
+        <a href="yhteys.html">Yhteys</a>
+    </nav>
 </header>
 
-<section>
-
-<div class="about">
-
-<img src="Petri.jpg" alt="Petri">
-
-<div class="text">
-
-<h2>Tietoa Elonpolusta</h2>
-
-<p>
-Olen Petri, ja Elonpolku on syntynyt pitkän kokemuksen,
-ihmisten kohtaamisten ja halusta auttaa ihmisiä heidän
-omalla polullaan.
-</p>
-
-<p>
-Elämän aikana olen saanut kohdata tuhansia ihmisiä ja
-nähdä hyvin erilaisia elämäntilanteita. Näiden kohtaamisten
-kautta on vähitellen syntynyt ajatus siitä, että ihmiset
-tarvitsevat joskus rinnalleen toisen ihmisen – ilman suurta
-kynnystä pyytää apua.
-</p>
-
-<p>
-Elonpolulla haluan tarjota mahdollisuuden pysähtyä,
-keskustella, tulla kuulluksi ja löytää seuraava askel
-omalla polulla.
-</p>
-
-</div>
-
-</div>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>🌿 Miksi Elonpolku syntyi?</h3>
-
-<p>
-Poliisin työssä ja oikeustradenomina olen kohdannut ihmisiä
-monenlaisissa elämäntilanteissa. Näissä kohtaamisissa olen
-huomannut, kuinka erilaisia tuen tarpeita ihmisillä voi olla.
-</p>
-
-<p>
-Nuorten joukossa on yksinäisiä ja suuntaansa etsiviä ihmisiä,
-joilla ei välttämättä ole riittävästi tukea ympärillään.
-Elämäntavat voivat myös ajautua epäterveeseen suuntaan,
-kun oma paikka ja suunta elämässä ovat hukassa.
-</p>
-
-<p>
-Keski-ikäisillä perheellisillä elämä voi puolestaan olla
-täynnä työtä, perhettä ja erilaisia velvollisuuksia.
-Ruuhkavuosien keskellä omat voimavarat voivat vähitellen
-kulua loppuun.
-</p>
-
-<p>
-Vanhusten kohdalla olen nähnyt yksin jäämistä ja sitä,
-kuinka tavallisetkin arjen asiat voivat muuttua vaikeiksi.
-Asioiden hoitaminen, paperiasiat, yhteydenotot ja muut
-käytännön tehtävät voivat tuntua raskailta silloin,
-kun oma toimintakyky tai voimavarat eivät enää riitä.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>🤝 Ihmisen rinnalle</h3>
-
-<p>
-Kaikki vaikeat tilanteet eivät tarvitse suurta ratkaisua.
-Joskus tarvitaan vain toinen ihminen, joka kuuntelee,
-on läsnä tai auttaa selvittämään seuraavaa askelta.
-</p>
-
-<p>
-Tästä ajatuksesta on syntynyt myös <strong>Kaveripalvelu</strong>.
-Sen tarkoituksena on tarjota matalan kynnyksen seuraa,
-kuuntelua ja rinnalla kulkemista silloin, kun ihminen
-sitä tarvitsee.
-</p>
-
-<p>
-Kaveripalvelussa kohtaaminen voi tapahtua Satakunnan
-alueella paikan päällä tai etänä puhelimitse tai
-videotapaamisen välityksellä.
-</p>
-
-<a href="kaveripalvelu.html" class="button">
-Tutustu Kaveripalveluun →
-</a>
-
-</div>
-
-<div class="card">
-
-<h3>🌱 Kokemuksesta syntynyt ajatus</h3>
-
-<p>
-Poliisin työn ja oikeudellisen koulutuksen lisäksi olen
-saanut kokemusta myös energia- ja shamaanihoidoista sekä
-erilaisista tavoista tarkastella ihmistä kokonaisuutena.
-</p>
-
-<p>
-Kaikki nämä kokemukset, ihmisten kohtaaminen ja elämän
-erilaisten vaiheiden näkeminen ovat yhdessä synnyttäneet
-ajatuksen Elonpolusta.
-</p>
-
-<p>
-Elonpolun tarkoituksena ei ole antaa ihmiselle valmista
-vastausta siihen, miten hänen pitäisi elää. Jokaisella
-on oma polkunsa. Tarkoitus on olla rinnalla silloin,
-kun siihen tarvitaan tukea.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>🌬 Työkaluja oman polun tueksi</h3>
-
-<p>
-Toisen ihmisen rinnalla joskus tarvitaan myös aikaa,
-ajatuksia ja erilaisia välineitä oman tilanteen tutkimiseen.
-Siksi Elonpolkuun rakentuu vähitellen erilaisia sisältöjä,
-joiden avulla voi pysähtyä oman itsensä ja oman elämänsä
-äärelle.
-</p>
-
-<p>
-Näitä ovat esimerkiksi hengitys, kirjoitukset, blogi,
-e-kirjat sekä tulevaisuudessa myös muut hyvinvointia
-ja omaa polkua tukevat sisällöt.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>🤍 Matalan kynnyksen apua</h3>
-
-<p>
-Ajatus Elonpolun taustalla on yksinkertainen:
-apua pitäisi olla mahdollista pyytää jo ennen kuin
-asiat ovat kasvaneet liian suuriksi.
-</p>
-
-<p>
-Joskus riittää keskustelu. Joskus tarvitaan seuraa,
-kuuntelijaa tai käytännön apua. Joskus taas tärkeintä
-on vain se, ettei tarvitse olla hetkeä yksin.
-</p>
-
-<p>
-<strong>Jokaisella on oma polkunsa – mutta kaikkea ei
-tarvitse kulkea yksin.</strong>
-</p>
-
-</div>
-
-</div>
-
+<section class="hero">
+    <h2>Tietoa Elonpolusta</h2>
+    <p>
+        Jokaisella meistä on oma polkumme kuljettavana.
+        Joskus tarvitsemme vain hieman tukea löytääksemme seuraavan askeleen.
+    </p>
 </section>
 
-<section class="quote">
+<section class="content">
 
-<p>
-"Jokainen polku on erilainen.
-Joskus tärkeintä on, että joku kulkee hetken rinnalla."
-</p>
+    <div class="card">
+        <h3>🌿 Miksi Elonpolku syntyi?</h3>
+
+        <p>
+            Olen kohdannut ihmisiä monenlaisissa elämäntilanteissa.
+            Näissä kohtaamisissa olen huomannut, kuinka erilaisia tuen tarpeita
+            ihmisillä voi olla ja kuinka helposti ihminen voi jäädä yksin
+            tilanteessa, jossa tarvitsisi vain hieman tukea, kuuntelemista
+            tai rinnalla kulkemista.
+        </p>
+
+        <p>
+            Nuorten joukossa olen kohdannut yksinäisiä ja suuntaansa etsiviä
+            ihmisiä, joilla ei välttämättä ole riittävästi tukea ympärillään.
+            Kun oma paikka ja suunta elämässä ovat hukassa, voivat myös
+            elämäntavat ajautua helposti epäterveeseen suuntaan.
+        </p>
+
+        <p>
+            Keski-ikäisillä perheellisillä elämä voi puolestaan olla täynnä
+            työtä, perhe-elämän vaatimuksia ja erilaisia velvollisuuksia.
+            Ruuhkavuosien keskellä omat voimavarat voivat vähitellen kulua
+            loppuun. Omille tarpeille ja jaksamiselle ei aina jää riittävästi
+            aikaa tai tilaa.
+        </p>
+
+        <p>
+            Vanhusten kohdalla olen nähnyt yksin jäämistä ja sitä, kuinka
+            tavallisetkin arjen asiat voivat muuttua vaikeiksi.
+            Nopeasti muuttuva ympäristö ja muuttunut terveydentila voivat
+            aiheuttaa ahdistusta, epävarmuutta tai syrjäytymistä.
+        </p>
+
+        <p>
+            Asioiden hoitaminen, paperiasiat, yhteydenotot ja muut käytännön
+            tehtävät voivat tuntua raskailta silloin, kun oma toimintakyky
+            tai voimavarat eivät enää riitä.
+        </p>
+
+        <p>
+            Näiden kohtaamisten kautta olen ymmärtänyt yhä paremmin,
+            kuinka tärkeää voi olla se, että joku pysähtyy hetkeksi rinnalle,
+            kuuntelee ja auttaa eteenpäin.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h3>🤝 Ihmisen rinnalle</h3>
+
+        <p>
+            Kaveripalvelu on matalan kynnyksen mahdollisuus saada toinen
+            ihminen hetkeksi rinnalle. Joskus tärkeintä ei ole löytää
+            valmista ratkaisua, vaan saada puhua, tulla kuulluksi ja viettää
+            hetki yhdessä.
+        </p>
+
+        <p>
+            Kaveripalvelua on mahdollista saada Satakunnan alueella
+            lähitapaamisina sekä etänä puhelimitse tai videotapaamisen
+            välityksellä.
+        </p>
+
+        <a class="button" href="kaveripalvelu.html">
+            Tutustu Kaveripalveluun →
+        </a>
+    </div>
+
+
+    <div class="card">
+        <h3>🌬 Työkaluja oman polun tueksi</h3>
+
+        <p>
+            Kaikki tilanteet eivät tarvitse toista ihmistä rinnalle.
+            Joskus tarvitsemme vain uuden ajatuksen, hetken pysähtymistä
+            tai jonkin työkalun, jonka avulla voimme lähteä tutkimaan
+            omaa tilannettamme.
+        </p>
+
+        <p>
+            Elonpolulla löydät esimerkiksi hengitykseen liittyviä harjoituksia,
+            kirjoituksia, blogitekstejä ja e-kirjoja. Sivustolle tulee
+            vähitellen myös muuta sisältöä oman polun tueksi.
+        </p>
+    </div>
+
+
+    <div class="card">
+        <h3>🤍 Matalan kynnyksen apua</h3>
+
+        <p>
+            Avun ei tarvitse alkaa vasta silloin, kun ongelmat ovat kasvaneet
+            suuriksi. Joskus ensimmäinen askel voi olla keskustelu,
+            kuunteleva ihminen, seura tai pieni käytännön apu.
+        </p>
+
+        <p>
+            Jokaisen elämäntilanne on erilainen. Siksi myös tuen tarve
+            voi olla erilainen.
+        </p>
+    </div>
+
+
+    <div class="quote">
+        "Jokainen polku on erilainen. Joskus tärkeintä on, että joku kulkee hetken rinnalla."
+    </div>
 
 </section>
 
 <footer>
-
-© Elonpolulla
-
+    © Elonpolulla
 </footer>
 
 </body>
-
 </html>
