@@ -8,6 +8,8 @@
 
 <title>Kauppa | Elonpolulla</title>
 
+<meta name="description" content="Elonpolun verkkokauppa avautuu myöhemmin. Tulossa tuotteita ja sisältöjä hyvinvoinnin, oman polun ja arjen tueksi.">
+
 <style>
 
 * {
@@ -63,7 +65,7 @@ nav a:hover {
 .hero p {
     font-size: 20px;
     color: #FFF3D6;
-    max-width: 750px;
+    max-width: 850px;
     margin: auto;
 }
 
@@ -73,35 +75,22 @@ nav a:hover {
     padding: 50px 20px;
 }
 
-.shop-card {
+.card {
     background: #FFFDF8;
-    padding: 40px;
+    padding: 30px;
+    margin-bottom: 30px;
     border-radius: 12px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-    text-align: center;
 }
 
-.shop-card h3 {
+.card h3 {
     color: #526947;
-    font-size: 29px;
+    font-size: 27px;
     margin-top: 0;
 }
 
-.shop-card p {
+.card p {
     font-size: 18px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.coming {
-    margin-top: 30px;
-    padding: 20px;
-    background: #F4F0E6;
-    border-radius: 10px;
-    color: #526947;
-    font-size: 20px;
-    font-weight: bold;
 }
 
 .quote {
@@ -110,6 +99,19 @@ nav a:hover {
     font-size: 22px;
     color: #526947;
     margin: 50px 0 20px;
+}
+
+.back {
+    display: block;
+    text-align: center;
+    margin: 35px 0 10px;
+    color: #526947;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -183,8 +185,8 @@ footer a {
         font-size: 34px;
     }
 
-    .shop-card {
-        padding: 28px 20px;
+    .card {
+        padding: 25px 20px;
     }
 
     .cookie-banner {
@@ -203,9 +205,7 @@ footer a {
 
 </head>
 
-
 <body>
-
 
 <header>
 
@@ -223,53 +223,51 @@ footer a {
 
 </header>
 
-
 <section class="hero">
 
 <h2>🛍 Kauppa</h2>
 
 <p>
-Elonpolun kauppa rakentuu vähitellen osaksi sivustoa.
+Elonpolun kauppa rakentuu vähitellen.
+Tänne tulee myöhemmin tuotteita ja sisältöjä,
+jotka sopivat Elonpolun ajatukseen ja maailmaan.
 </p>
 
 </section>
-
 
 <section class="content">
 
+<div class="card">
 
-<div class="shop-card">
-
-<h3>🌿 Elonpolun kauppa</h3>
+<h3>🌿 Kauppa avautuu myöhemmin</h3>
 
 <p>
-Tänne rakentuu ajan myötä Elonpolun oma kauppa.
+Verkkokauppa ei ole vielä avoinna.
+Rakennamme sisältöä rauhassa ja lisäämme tuotteita
+sitä mukaa, kun ne ovat valmiita.
 </p>
 
 <p>
-Ajatuksena on, että kaupan sisältö syntyy vähitellen
-Elonpolun matkan mukana ja täydentää sivuston muuta sisältöä.
+Tavoitteena on, että kaupan sisältö liittyy luontevasti
+hyvinvointiin, omaan polkuun, pysähtymiseen ja arjen tueksi
+sopiviin asioihin.
 </p>
 
 <p>
-Emme halua kiirehtiä valmista, vaan antaa myös tämän
-osan löytää oman muotonsa luonnollisesti.
+Palaa myöhemmin katsomaan, mitä Elonpolulle on tullut.
 </p>
-
-<div class="coming">
-Kauppa avautuu myöhemmin.
-</div>
 
 </div>
-
 
 <div class="quote">
-"Kaiken ei tarvitse olla valmista heti. Myös asiat saavat kasvaa matkalla."
+"Kaiken ei tarvitse valmistua kerralla. Myös hyvä saa kasvaa rauhassa."
 </div>
 
+<a class="back" href="index.html">
+← Takaisin etusivulle
+</a>
 
 </section>
-
 
 <footer>
 
@@ -281,7 +279,6 @@ Kauppa avautuu myöhemmin.
 </p>
 
 </footer>
-
 
 <div id="cookieBanner" class="cookie-banner">
 
@@ -310,7 +307,6 @@ Kieltäydy
 </div>
 
 </div>
-
 
 <script>
 
@@ -343,7 +339,6 @@ function loadAnalytics() {
     document.head.appendChild(script);
 }
 
-
 function acceptAnalytics() {
 
     localStorage.setItem('elonpolullaAnalytics', 'accepted');
@@ -353,7 +348,6 @@ function acceptAnalytics() {
     loadAnalytics();
 }
 
-
 function rejectAnalytics() {
 
     localStorage.setItem('elonpolullaAnalytics', 'rejected');
@@ -361,12 +355,10 @@ function rejectAnalytics() {
     document.getElementById('cookieBanner').style.display = 'none';
 }
 
-
 function openCookieSettings() {
 
     document.getElementById('cookieBanner').style.display = 'block';
 }
-
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -389,7 +381,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
-
 
 </body>
 
