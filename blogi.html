@@ -6,7 +6,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Blogi | Elonpolulla</title>
+<title>Blogi | Hyvinvointi, oma polku ja henkilökohtainen kasvu | Elonpolulla</title>
+
+<meta name="description" content="Elonpolun blogissa kirjoituksia hyvinvoinnista, henkilökohtaisesta kasvusta, pysähtymisestä ja oman polun löytämisestä.">
 
 <style>
 
@@ -63,12 +65,12 @@ nav a:hover {
 .hero p {
     font-size: 20px;
     color: #FFF3D6;
-    max-width: 750px;
+    max-width: 800px;
     margin: auto;
 }
 
 .content {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding: 50px 20px;
 }
@@ -76,7 +78,7 @@ nav a:hover {
 .card {
     background: #FFFDF8;
     padding: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     border-radius: 12px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
@@ -84,7 +86,7 @@ nav a:hover {
 .card h3 {
     color: #526947;
     font-size: 27px;
-    margin-top: 5px;
+    margin-top: 0;
 }
 
 .card p {
@@ -92,9 +94,9 @@ nav a:hover {
 }
 
 .date {
-    color: #7A806F;
-    font-size: 15px !important;
-    margin-bottom: 5px;
+    color: #7A7A6F;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 
 .card a {
@@ -113,6 +115,19 @@ nav a:hover {
     font-size: 22px;
     color: #526947;
     margin: 50px 0 20px;
+}
+
+.back {
+    display: block;
+    text-align: center;
+    margin: 35px 0 10px;
+    color: #526947;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -186,6 +201,10 @@ footer a {
         font-size: 34px;
     }
 
+    .card {
+        padding: 25px 20px;
+    }
+
     .cookie-banner {
         left: 10px;
         right: 10px;
@@ -202,9 +221,7 @@ footer a {
 
 </head>
 
-
 <body>
-
 
 <header>
 
@@ -222,81 +239,74 @@ footer a {
 
 </header>
 
-
 <section class="hero">
 
 <h2>✍️ Blogi</h2>
 
 <p>
-Kirjoituksia elämästä, hyvinvoinnista, pysähtymisestä
+Kirjoituksia elämästä, hyvinvoinnista, henkilökohtaisesta kasvusta
 ja oman polun löytämisestä.
 </p>
 
 </section>
 
-
 <section class="content">
-
 
 <div class="card">
 
-<p class="date">11.9.2026</p>
+<div class="date">11.9.2026</div>
 
 <h3>Onnellisuus elonpolulla</h3>
 
 <p>
-Kauniina syyspäivänä Reijo Taipaleen Elonpolulla-kappale
-herätti ajatuksia onnellisuudesta, elämästä ja siitä,
-kuinka lähellä onnellisuus voikaan joskus olla.
+Ajatuksia onnellisuudesta, tästä hetkestä ja siitä,
+mitä oma elonpolku voi meille opettaa.
 </p>
 
 <a href="onnellisuus-elonpolulla.html">
-Lue kirjoitus →
+Lue artikkeli →
 </a>
 
 </div>
-
 
 <div class="card">
 
 <h3>Matka takaisin itseen</h3>
 
 <p>
-Ajatuksia pysähtymisestä, luonnosta, hengityksestä
-ja oman polun löytämisestä.
+Ajatuksia luonnosta, hengityksestä ja oman polun löytämisestä.
 </p>
 
 <a href="matka-itseen.html">
-Lue kirjoitus →
+Lue artikkeli →
 </a>
 
 </div>
-
 
 <div class="card">
 
 <h3>Miksi Elonpolulla syntyi</h3>
 
 <p>
-Elonpolulla syntyi ajatuksesta luoda paikka,
-jossa ihminen voi pysähtyä, löytää uusia näkökulmia
-ja kulkea omaa polkuaan.
+Ajatuksia siitä, mistä Elonpolun idea sai alkunsa
+ja miksi rinnalla kulkeminen tuntui tärkeältä.
 </p>
 
 <a href="miksi-elonpolulla-syntyi.html">
-Lue kirjoitus →
+Lue artikkeli →
 </a>
 
 </div>
-
 
 <div class="quote">
 "Joskus pysähtyminen on ensimmäinen askel eteenpäin."
 </div>
 
+<a class="back" href="index.html">
+← Takaisin etusivulle
+</a>
 
 </section>
-
 
 <footer>
 
@@ -308,7 +318,6 @@ Lue kirjoitus →
 </p>
 
 </footer>
-
 
 <div id="cookieBanner" class="cookie-banner">
 
@@ -337,7 +346,6 @@ Kieltäydy
 </div>
 
 </div>
-
 
 <script>
 
@@ -370,7 +378,6 @@ function loadAnalytics() {
     document.head.appendChild(script);
 }
 
-
 function acceptAnalytics() {
 
     localStorage.setItem('elonpolullaAnalytics', 'accepted');
@@ -380,7 +387,6 @@ function acceptAnalytics() {
     loadAnalytics();
 }
 
-
 function rejectAnalytics() {
 
     localStorage.setItem('elonpolullaAnalytics', 'rejected');
@@ -388,12 +394,10 @@ function rejectAnalytics() {
     document.getElementById('cookieBanner').style.display = 'none';
 }
 
-
 function openCookieSettings() {
 
     document.getElementById('cookieBanner').style.display = 'block';
 }
-
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -416,7 +420,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
-
 
 </body>
 
