@@ -6,7 +6,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Yhteys | Elonpolulla</title>
+<title>Yhteys | Ota yhteyttä Elonpolulle</title>
+
+<meta name="description" content="Ota yhteyttä Elonpolulle Kaveripalvelusta, tapaamisesta tai muusta kysymyksestä. Yhteydenotto onnistuu sähköpostilla, lomakkeella tai Instagramissa.">
 
 <style>
 
@@ -63,7 +65,7 @@ nav a:hover {
 .hero p {
     font-size: 20px;
     color: #FFF3D6;
-    max-width: 750px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -73,163 +75,104 @@ nav a:hover {
     padding: 50px 20px;
 }
 
-.contact-card {
+.card {
     background: #FFFDF8;
-    padding: 35px;
+    padding: 30px;
+    margin-bottom: 30px;
     border-radius: 12px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-    text-align: center;
 }
 
-.contact-card h3 {
+.card h3 {
     color: #526947;
-    font-size: 30px;
+    font-size: 27px;
     margin-top: 0;
 }
 
-.contact-card p {
+.card p {
     font-size: 18px;
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.contact-options {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 35px;
-}
-
-.contact-option {
-    background: #526947;
-    color: white;
-    text-decoration: none;
-    padding: 30px 20px;
-    border-radius: 12px;
-    transition: 0.2s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 150px;
-}
-
-.contact-option:hover {
-    background: #34432F;
-    transform: translateY(-2px);
-}
-
-.contact-icon {
-    width: 42px;
-    height: 42px;
-    margin-bottom: 12px;
-}
-
-.contact-option strong {
-    font-size: 20px;
-}
-
-.contact-option span {
-    margin-top: 5px;
-    color: #FFF3D6;
-}
-
-.form-section {
-    margin-top: 45px;
-    padding-top: 35px;
-    border-top: 1px solid #ddd3bd;
-    text-align: left;
-}
-
-.form-section h3 {
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.form-intro {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
+.contact-link {
     display: block;
-    font-weight: bold;
-    color: #526947;
-    margin-bottom: 7px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 14px;
-    border: 1px solid #CFC7B5;
-    border-radius: 8px;
-    font-family: Georgia, serif;
-    font-size: 17px;
-    background: white;
+    background: #F4F0E6;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    text-decoration: none;
     color: #2F3B2B;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #526947;
+.contact-link strong {
+    color: #526947;
+    font-size: 19px;
 }
 
-.form-group textarea {
-    min-height: 170px;
+.contact-link:hover {
+    background: #EAE4D7;
+}
+
+form {
+    margin-top: 25px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    color: #526947;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CFC6B3;
+    border-radius: 7px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    background: white;
+}
+
+textarea {
+    min-height: 160px;
     resize: vertical;
 }
 
-.submit-button {
-    display: block;
-    width: 100%;
+button {
     background: #526947;
     color: white;
     border: none;
-    padding: 16px 25px;
+    padding: 14px 26px;
     border-radius: 8px;
+    margin-top: 20px;
     font-family: Georgia, serif;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.2s;
 }
 
-.submit-button:hover {
+button:hover {
     background: #34432F;
 }
 
 .form-note {
-    text-align: center;
-    font-size: 14px;
+    font-size: 14px !important;
     margin-top: 15px;
-    color: #687160;
 }
 
-.info {
-    margin-top: 45px;
-    padding-top: 30px;
-    border-top: 1px solid #ddd3bd;
-}
-
-.info h4 {
-    color: #526947;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.quote {
+.back {
+    display: block;
     text-align: center;
-    font-style: italic;
-    font-size: 22px;
+    margin: 35px 0 10px;
     color: #526947;
-    margin: 50px 0 20px 0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -285,6 +228,7 @@ footer a {
     font-family: Georgia, serif;
     font-size: 16px;
     font-weight: bold;
+    margin-top: 0;
 }
 
 .accept-button {
@@ -299,16 +243,12 @@ footer a {
 
 @media (max-width: 700px) {
 
-    .contact-options {
-        grid-template-columns: 1fr;
-    }
-
     .hero h2 {
         font-size: 34px;
     }
 
-    .contact-card {
-        padding: 25px 18px;
+    .card {
+        padding: 25px 20px;
     }
 
     .cookie-banner {
@@ -327,9 +267,7 @@ footer a {
 
 </head>
 
-
 <body>
-
 
 <header>
 
@@ -347,209 +285,86 @@ footer a {
 
 </header>
 
-
 <section class="hero">
 
 <h2>Yhteys</h2>
 
 <p>
-Jos haluat kysyä lisää, jutella tilanteestasi tai varata
-Kaveripalvelun maksuttoman alkukartoituksen, ota rohkeasti yhteyttä.
+Jos haluat kysyä Kaveripalvelusta, tapaamisesta
+tai jostakin muusta Elonpolkuun liittyvästä,
+voit ottaa yhteyttä matalalla kynnyksellä.
 </p>
 
 </section>
 
-
 <section class="content">
 
+<div class="card">
 
-<div class="contact-card">
-
-<h3>🌿 Ota yhteyttä</h3>
+<h3>🤍 Ota yhteyttä</h3>
 
 <p>
 Voit ottaa yhteyttä sähköpostilla, Instagramissa
-tai lähettää viestin suoraan alla olevalla lomakkeella.
+tai lähettää viestin suoraan tämän sivun lomakkeella.
 </p>
 
-
-<div class="contact-options">
-
-
-<a class="contact-option" href="mailto:petrivee@proton.me">
-
-<svg class="contact-icon"
-viewBox="0 0 24 24"
-fill="none"
-stroke="currentColor"
-stroke-width="1.8"
-stroke-linecap="round"
-stroke-linejoin="round">
-
-<rect x="3" y="5" width="18" height="14" rx="2"></rect>
-<path d="M3 7l9 6 9-6"></path>
-
-</svg>
-
-<strong>Ota yhteyttä sähköpostilla</strong>
-<span>Lähetä viesti →</span>
-
+<a class="contact-link" href="mailto:petrivee@proton.me">
+<strong>✉️ Ota yhteyttä sähköpostilla</strong><br>
+Lähetä viesti →
 </a>
 
-
-<a class="contact-option"
-href="https://www.instagram.com/elonpolulla/"
-target="_blank"
-rel="noopener noreferrer">
-
-<svg class="contact-icon"
-viewBox="0 0 24 24"
-fill="none"
-stroke="currentColor"
-stroke-width="1.8"
-stroke-linecap="round"
-stroke-linejoin="round">
-
-<rect x="3" y="3" width="18" height="18" rx="5"></rect>
-<circle cx="12" cy="12" r="4"></circle>
-<circle cx="17.5" cy="6.5" r="1"></circle>
-
-</svg>
-
-<strong>Instagram</strong>
-<span>@elonpolulla</span>
-
+<a class="contact-link" href="https://www.instagram.com/elonpolulla/" target="_blank" rel="noopener">
+<strong>📷 Instagram</strong><br>
+@elonpolulla
 </a>
-
 
 </div>
 
-
-<div class="form-section">
+<div class="card">
 
 <h3>✉️ Lähetä viesti</h3>
 
-<p class="form-intro">
-Voit lähettää viestin myös suoraan tästä.
-Vastaan sinulle sähköpostilla.
+<p>
+Voit kirjoittaa viestisi tähän.
+Vastaan mahdollisimman pian.
 </p>
 
+<form action="https://formsubmit.co/petrivee@proton.me" method="POST">
 
-<form
-action="https://formsubmit.co/petrivee@proton.me"
-method="POST">
+<input type="hidden" name="_subject" value="Uusi yhteydenotto Elonpolulla-sivulta">
 
-<input type="hidden"
-name="_subject"
-value="Uusi yhteydenotto Elonpolulla-sivulta">
+<input type="hidden" name="_template" value="table">
 
-<input type="hidden"
-name="_template"
-value="table">
+<input type="hidden" name="_url" value="https://elonpolulla.fi/yhteys.html">
 
-<input type="hidden"
-name="_url"
-value="https://elonpolulla.fi/yhteys.html">
+<input type="text" name="_honey" style="display:none">
 
-<input
-type="text"
-name="_honey"
-style="display:none">
+<label for="name">Nimi</label>
+<input id="name" type="text" name="Nimi" required>
 
-<div class="form-group">
+<label for="email">Sähköposti</label>
+<input id="email" type="email" name="Sähköposti" required>
 
-<label for="nimi">
-Nimi
-</label>
+<label for="message">Viesti</label>
+<textarea id="message" name="Viesti" required></textarea>
 
-<input
-type="text"
-id="nimi"
-name="Nimi"
-placeholder="Nimesi"
-required>
-
-</div>
-
-
-<div class="form-group">
-
-<label for="email">
-Sähköposti
-</label>
-
-<input
-type="email"
-id="email"
-name="email"
-placeholder="Sähköpostiosoitteesi"
-required>
-
-</div>
-
-
-<div class="form-group">
-
-<label for="viesti">
-Viesti
-</label>
-
-<textarea
-id="viesti"
-name="Viesti"
-placeholder="Kirjoita viestisi tähän..."
-required></textarea>
-
-</div>
-
-
-<button
-class="submit-button"
-type="submit">
-
+<button type="submit">
 Lähetä viesti
-
 </button>
-
 
 <p class="form-note">
 Tietojasi käytetään vain yhteydenottoosi vastaamiseen.
 </p>
 
-
 </form>
 
 </div>
 
-
-<div class="info">
-
-<h4>🌿 Elonpolulla</h4>
-
-<p>
-Suomi / verkkopalvelut
-</p>
-
-<p>
-Hyvinvointia, kasvua ja oman polun löytämistä –
-luonnon, pysähtymisen ja aidon kohtaamisen kautta.
-</p>
-
-</div>
-
-
-</div>
-
-
-<div class="quote">
-
-"Oma polku – mutta ei aina yksin."
-
-</div>
-
+<a class="back" href="index.html">
+← Takaisin etusivulle
+</a>
 
 </section>
-
 
 <footer>
 
@@ -561,7 +376,6 @@ luonnon, pysähtymisen ja aidon kohtaamisen kautta.
 </p>
 
 </footer>
-
 
 <div id="cookieBanner" class="cookie-banner">
 
@@ -590,7 +404,6 @@ Kieltäydy
 </div>
 
 </div>
-
 
 <script>
 
@@ -623,7 +436,6 @@ function loadAnalytics() {
     document.head.appendChild(script);
 }
 
-
 function acceptAnalytics() {
 
     localStorage.setItem('elonpolullaAnalytics', 'accepted');
@@ -633,7 +445,6 @@ function acceptAnalytics() {
     loadAnalytics();
 }
 
-
 function rejectAnalytics() {
 
     localStorage.setItem('elonpolullaAnalytics', 'rejected');
@@ -641,12 +452,10 @@ function rejectAnalytics() {
     document.getElementById('cookieBanner').style.display = 'none';
 }
 
-
 function openCookieSettings() {
 
     document.getElementById('cookieBanner').style.display = 'block';
 }
-
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -669,7 +478,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
-
 
 </body>
 
