@@ -8,21 +8,6 @@
 
 <title>Yhteys | Elonpolulla</title>
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6RE9D5240B"></script>
-
-<script>
-window.dataLayer = window.dataLayer || [];
-
-function gtag(){
-    dataLayer.push(arguments);
-}
-
-gtag('js', new Date());
-gtag('config', 'G-6RE9D5240B');
-</script>
-
-
 <style>
 
 * {
@@ -109,9 +94,6 @@ nav a:hover {
     margin-right: auto;
 }
 
-
-/* YHTEYDENOTTOTAVAT */
-
 .contact-options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -152,9 +134,6 @@ nav a:hover {
     margin-top: 5px;
     color: #FFF3D6;
 }
-
-
-/* LOMAKE */
 
 .form-section {
     margin-top: 45px;
@@ -233,9 +212,6 @@ nav a:hover {
     color: #687160;
 }
 
-
-/* ALATIEDOT */
-
 .info {
     margin-top: 45px;
     padding-top: 30px;
@@ -264,8 +240,62 @@ footer {
     margin-top: 40px;
 }
 
+footer a {
+    color: #FFFDF8;
+    margin: 0 8px;
+}
 
-/* PUHELIN */
+.cookie-banner {
+    display: none;
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    max-width: 750px;
+    margin: auto;
+    background: #FFFDF8;
+    color: #2F3B2B;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    z-index: 9999;
+    border: 2px solid #C9A65B;
+}
+
+.cookie-banner h3 {
+    color: #526947;
+    margin-top: 0;
+}
+
+.cookie-banner a {
+    color: #526947;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cookie-buttons button {
+    border: none;
+    padding: 12px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.accept-button {
+    background: #C9A65B;
+    color: #2F3B2B;
+}
+
+.reject-button {
+    background: #E5E0D5;
+    color: #2F3B2B;
+}
 
 @media (max-width: 700px) {
 
@@ -279,6 +309,16 @@ footer {
 
     .contact-card {
         padding: 25px 18px;
+    }
+
+    .cookie-banner {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .cookie-buttons button {
+        width: 100%;
     }
 
 }
@@ -308,7 +348,6 @@ footer {
 </header>
 
 
-
 <section class="hero">
 
 <h2>Yhteys</h2>
@@ -321,12 +360,10 @@ Kaveripalvelun maksuttoman alkukartoituksen, ota rohkeasti yhteyttä.
 </section>
 
 
-
 <section class="content">
 
 
 <div class="contact-card">
-
 
 <h3>🌿 Ota yhteyttä</h3>
 
@@ -336,11 +373,8 @@ tai lähettää viestin suoraan alla olevalla lomakkeella.
 </p>
 
 
-
 <div class="contact-options">
 
-
-<!-- SÄHKÖPOSTI -->
 
 <a class="contact-option" href="mailto:petrivee@proton.me">
 
@@ -353,20 +387,15 @@ stroke-linecap="round"
 stroke-linejoin="round">
 
 <rect x="3" y="5" width="18" height="14" rx="2"></rect>
-
 <path d="M3 7l9 6 9-6"></path>
 
 </svg>
 
 <strong>Ota yhteyttä sähköpostilla</strong>
-
 <span>Lähetä viesti →</span>
 
 </a>
 
-
-
-<!-- INSTAGRAM -->
 
 <a class="contact-option"
 href="https://www.instagram.com/elonpolulla/"
@@ -382,15 +411,12 @@ stroke-linecap="round"
 stroke-linejoin="round">
 
 <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-
 <circle cx="12" cy="12" r="4"></circle>
-
 <circle cx="17.5" cy="6.5" r="1"></circle>
 
 </svg>
 
 <strong>Instagram</strong>
-
 <span>@elonpolulla</span>
 
 </a>
@@ -398,9 +424,6 @@ stroke-linejoin="round">
 
 </div>
 
-
-
-<!-- YHTEYDENOTTOLOMAKE -->
 
 <div class="form-section">
 
@@ -416,28 +439,22 @@ Vastaan sinulle sähköpostilla.
 action="https://formsubmit.co/petrivee@proton.me"
 method="POST">
 
-
 <input type="hidden"
 name="_subject"
 value="Uusi yhteydenotto Elonpolulla-sivulta">
-
 
 <input type="hidden"
 name="_template"
 value="table">
 
-
 <input type="hidden"
 name="_url"
 value="https://elonpolulla.fi/yhteys.html">
 
-
-<!-- Roskapostisuoja -->
 <input
 type="text"
 name="_honey"
 style="display:none">
-
 
 <div class="form-group">
 
@@ -505,7 +522,6 @@ Tietojasi käytetään vain yhteydenottoosi vastaamiseen.
 </div>
 
 
-
 <div class="info">
 
 <h4>🌿 Elonpolulla</h4>
@@ -525,7 +541,6 @@ luonnon, pysähtymisen ja aidon kohtaamisen kautta.
 </div>
 
 
-
 <div class="quote">
 
 "Oma polku – mutta ei aina yksin."
@@ -536,12 +551,124 @@ luonnon, pysähtymisen ja aidon kohtaamisen kautta.
 </section>
 
 
-
 <footer>
 
-© Elonpolulla
+<p>© Elonpolulla</p>
+
+<p>
+<a href="tietosuoja.html">Tietosuoja</a>
+<a href="#" onclick="openCookieSettings(); return false;">Evästeasetukset</a>
+</p>
 
 </footer>
+
+
+<div id="cookieBanner" class="cookie-banner">
+
+<h3>🍪 Evästeet ja analytiikka</h3>
+
+<p>
+Elonpolulla käyttää Google Analyticsia sivuston kävijämäärien
+ja käytön seuraamiseen. Analytics otetaan käyttöön vain,
+jos hyväksyt sen.
+</p>
+
+<p>
+<a href="tietosuoja.html">Lue lisää tietosuojasta</a>
+</p>
+
+<div class="cookie-buttons">
+
+<button class="accept-button" onclick="acceptAnalytics()">
+Hyväksy analytiikka
+</button>
+
+<button class="reject-button" onclick="rejectAnalytics()">
+Kieltäydy
+</button>
+
+</div>
+
+</div>
+
+
+<script>
+
+const analyticsId = 'G-6RE9D5240B';
+
+function loadAnalytics() {
+
+    if (window.analyticsLoaded) {
+        return;
+    }
+
+    window.analyticsLoaded = true;
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag(){
+        dataLayer.push(arguments);
+    }
+
+    window.gtag = gtag;
+
+    gtag('js', new Date());
+    gtag('config', analyticsId);
+
+    const script = document.createElement('script');
+
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + analyticsId;
+
+    document.head.appendChild(script);
+}
+
+
+function acceptAnalytics() {
+
+    localStorage.setItem('elonpolullaAnalytics', 'accepted');
+
+    document.getElementById('cookieBanner').style.display = 'none';
+
+    loadAnalytics();
+}
+
+
+function rejectAnalytics() {
+
+    localStorage.setItem('elonpolullaAnalytics', 'rejected');
+
+    document.getElementById('cookieBanner').style.display = 'none';
+}
+
+
+function openCookieSettings() {
+
+    document.getElementById('cookieBanner').style.display = 'block';
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    const choice = localStorage.getItem('elonpolullaAnalytics');
+
+    if (choice === 'accepted') {
+
+        loadAnalytics();
+
+    } else if (choice === 'rejected') {
+
+        document.getElementById('cookieBanner').style.display = 'none';
+
+    } else {
+
+        document.getElementById('cookieBanner').style.display = 'block';
+
+    }
+
+});
+
+</script>
 
 
 </body>
