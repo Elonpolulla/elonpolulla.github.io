@@ -1,268 +1,167 @@
+
 <!DOCTYPE html>
 <html lang="fi">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Kaveripalvelu ja asiointiapu Satakunnassa | Elonpolulla</title>
 
-<meta name="description" content="Kaveripalvelu tarjoaa seuraa, läsnäoloa ja käytännön asiointiapua Satakunnassa sekä etänä koko Suomessa. Palvelun voi tilata myös omainen tai muu läheinen.">
+<meta name="description" content="Kaveripalvelu tarjoaa seuraa, läsnäoloa ja käytännön asiointiapua Satakunnassa sekä etänä koko Suomessa. Palvelu voidaan tilata myös läheiselle.">
 
 <style>
-
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Georgia, serif;
     background: #F4F0E6;
     color: #2F3B2B;
+    font-family: Georgia, serif;
     line-height: 1.7;
 }
 
 header {
     background: #34432F;
-    color: white;
-    padding: 25px;
+    color: #FFFDF8;
     text-align: center;
+    padding: 24px 16px;
     border-bottom: 5px solid #C9A65B;
 }
 
 header h1 {
+    margin: 0;
     color: #D1AA55;
-    font-size: 42px;
-    margin: 0 0 15px 0;
+    font-size: 38px;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px;
+    padding: 15px 10px;
+    background: #FFFDF8;
 }
 
 nav a {
-    color: white;
+    color: #34432F;
     text-decoration: none;
-    margin: 7px;
-    display: inline-block;
+    font-weight: bold;
 }
 
 nav a:hover {
-    color: #D1AA55;
+    color: #94712E;
 }
 
 .hero {
     background: #5B7052;
     color: #FFFDF8;
-    padding: 70px 10%;
     text-align: center;
+    padding: 48px 20px;
 }
 
 .hero h2 {
-    font-size: 42px;
-    margin-bottom: 15px;
-    color: #D1AA55;
+    color: #F0D28A;
+    font-size: 34px;
+    margin: 0 0 15px;
 }
 
 .hero p {
-    font-size: 20px;
-    color: #FFF3D6;
-    max-width: 800px;
-    margin: auto;
+    max-width: 750px;
+    margin: 0 auto 18px;
+    font-size: 18px;
 }
 
-.content {
-    max-width: 1000px;
-    margin: auto;
-    padding: 50px 20px;
+main {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 25px 18px 45px;
 }
 
 .card {
     background: #FFFDF8;
-    padding: 30px;
-    margin-bottom: 30px;
     border-radius: 12px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    padding: 25px;
+    margin: 22px 0;
+    box-shadow: 0 3px 12px rgba(47, 59, 43, 0.08);
 }
 
-.card h3 {
-    color: #526947;
-    font-size: 27px;
+h2, h3 {
+    color: #34432F;
+}
+
+.card h2, .card h3 {
     margin-top: 0;
-}
-
-.card h4 {
-    color: #526947;
-    font-size: 21px;
-    margin-bottom: 5px;
-}
-
-.card p {
-    font-size: 18px;
-}
-
-.card ul {
-    padding-left: 25px;
-}
-
-.card li {
-    margin-bottom: 10px;
-    font-size: 17px;
-}
-
-.notice {
-    background: #F4F0E6;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 25px;
-}
-
-.price-section {
-    padding: 22px 0;
-    border-bottom: 1px solid #DDD3BD;
-}
-
-.price-section:last-child {
-    border-bottom: none;
-}
-
-.price {
-    font-size: 24px;
-    font-weight: bold;
-    color: #526947;
-    margin: 8px 0 14px 0;
 }
 
 .button {
     display: inline-block;
-    background: #526947;
-    color: white;
-    padding: 14px 26px;
-    border-radius: 8px;
+    background: #34432F;
+    color: #FFFDF8;
     text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 7px;
     margin-top: 10px;
     font-weight: bold;
 }
 
 .button:hover {
-    background: #34432F;
+    background: #526947;
 }
 
 .quote {
     text-align: center;
+    padding: 28px 18px;
+    color: #526947;
+    font-size: 23px;
     font-style: italic;
-    font-size: 22px;
-    color: #526947;
-    margin: 50px 0 20px;
-}
-
-.back {
-    display: block;
-    text-align: center;
-    margin: 35px 0 10px;
-    color: #526947;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.back:hover {
-    text-decoration: underline;
 }
 
 footer {
     background: #34432F;
-    color: white;
+    color: #FFFDF8;
     text-align: center;
-    padding: 25px;
-    margin-top: 40px;
+    padding: 25px 15px;
+    border-top: 5px solid #C9A65B;
 }
 
 footer a {
-    color: #FFFDF8;
+    color: #F0D28A;
     margin: 0 8px;
 }
 
-.cookie-banner {
-    display: none;
-    position: fixed;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    max-width: 750px;
-    margin: auto;
-    background: #FFFDF8;
-    color: #2F3B2B;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-    z-index: 9999;
-    border: 2px solid #C9A65B;
-}
-
-.cookie-banner h3 {
-    color: #526947;
-    margin-top: 0;
-}
-
-.cookie-banner a {
-    color: #526947;
-}
-
-.cookie-buttons {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.cookie-buttons button {
-    border: none;
-    padding: 12px 18px;
-    border-radius: 7px;
-    cursor: pointer;
-    font-family: Georgia, serif;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.accept-button {
-    background: #C9A65B;
-    color: #2F3B2B;
-}
-
-.reject-button {
-    background: #E5E0D5;
-    color: #2F3B2B;
-}
-
-@media (max-width: 700px) {
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
 
     .hero h2 {
-        font-size: 34px;
+        font-size: 27px;
     }
 
     .card {
-        padding: 25px 20px;
+        padding: 20px;
     }
 
-    .cookie-banner {
-        left: 10px;
-        right: 10px;
-        bottom: 10px;
+    nav {
+        gap: 8px 14px;
     }
-
-    .cookie-buttons button {
-        width: 100%;
-    }
-
 }
-
 </style>
-
 </head>
 
 <body>
 
 <header>
-
-<h1>Elonpolulla</h1>
+    <h1>Elonpolulla</h1>
+    <p>Rinnalla elämän eri vaiheissa</p>
+</header>
 
 <nav>
     <a href="index.html">Etusivu</a>
@@ -274,417 +173,146 @@ footer a {
     <a href="yhteys.html">Yhteys</a>
 </nav>
 
-</header>
-
 <section class="hero">
-
-<h2>🤝 Kaveripalvelu</h2>
-
-<p>
-Joskus tarvitsemme vain toisen ihmisen rinnallemme.
-Jonkun, joka kuuntelee, keskustelee, auttaa ja on läsnä.
-</p>
-
+    <h2>Kaveripalvelu</h2>
+    <p>
+        Kaikkea ei tarvitse selvittää yksin.
+        Joskus seuraava askel löytyy yhdessä.
+    </p>
+    <p>
+        Luotettavaa, ystävällistä ja asiantuntevaa apua,
+        seuraa ja läsnäoloa elämän erilaisiin tilanteisiin.
+    </p>
+    <a class="button" href="yhteys.html">Ota yhteyttä</a>
 </section>
 
-<section class="content">
-
-<div class="card">
-
-<h3>🤍 Sinun ei tarvitse olla yksin</h3>
-
-<p>
-Elämässä tulee tilanteita, joissa kaikkea ei tarvitse tai kannata yrittää
-selvittää yksin. Joskus tarvitaan keskustelukumppania, joskus käytännön apua
-ja joskus vain toinen ihminen hetkeksi rinnalle.
-</p>
-
-<p>
-Kaveripalvelun tarkoitus on tarjota matalan kynnyksen tukea erilaisiin
-elämäntilanteisiin. Avuntarvitsija voi olla kuka tahansa, joka kaipaa
-elämäntilanteessaan seuraa, läsnäoloa tai käytännön apua.
-</p>
-
-<p>
-Palvelun voi tilata itselleen, mutta sen voi tilata myös omainen
-tai muu läheinen avuntarvitsijalle.
-</p>
-
-<p>
-Erityisen tärkeä ajatus Kaveripalvelun taustalla ovat tilanteet,
-joissa läheiset asuvat kaukana toisistaan. Omainen voi olla huolissaan
-läheisestään ja haluaisi auttaa, mutta pitkän välimatkan tai oman
-elämäntilanteensa vuoksi ei itse pääse paikalle.
-</p>
-
-<p>
-Tällöin omainen voi ottaa yhteyttä Elonpolulle, tilata palvelun
-ja sopia kanssamme siitä, millaista seuraa tai käytännön apua
-hänen läheisensä tarvitsee. Omainen voi myös maksaa palvelun,
-vaikka Kaveripalvelu toteutetaan avuntarvitsijalle.
-</p>
-
-<p>
-Palvelu toteutetaan aina avuntarvitsijaa kuunnellen ja hänen kanssaan
-yhdessä sovitulla tavalla.
-</p>
-
-<p>
-<strong>
-Sinun ei tarvitse pystyä olemaan kaikkialla itse,
-jotta läheisesi voisi saada ihmisen rinnalleen.
-</strong>
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>🌿 Mitä Kaveripalvelu tarjoaa?</h3>
-
-<p>
-Kaveripalvelussa tarjoamme aikaa, seuraa, läsnäoloa ja käytännön apua
-erilaisiin elämäntilanteisiin. Joskus tarvitsemme vain kuuntelevaa ihmistä,
-joskus taas konkreettista apua asioiden selvittämiseen ja hoitamiseen.
-</p>
-
-<p>Voimme olla apuna esimerkiksi:</p>
-
-<ul>
-    <li>byrokratian ja erilaisten viranomaisasioiden selvittämisessä</li>
-    <li>digitaalisten palveluiden käyttämisessä</li>
-    <li>hallintopäätösten ja muiden asiakirjojen ymmärtämisessä</li>
-    <li>hakemusten ja valitusten tekemisessä</li>
-    <li>pankkiasioinnissa ja pankkitapaamiseen valmistautumisessa</li>
-    <li>Kela-asioiden hoitamisessa ja tarvittaessa mukana asioinnissa</li>
-    <li>lainaneuvotteluun valmistautumisessa ja mukana tukena olemisessa</li>
-    <li>esitutkintaan liittyvässä asioinnissa asianosaisen tukena</li>
-    <li>tulevaisuuden vaihtoehtojen ja uusien mahdollisuuksien pohtimisessa</li>
-</ul>
-
-<p>
-Kaikkea ei tarvitse osata tai selvittää yksin. Voimme yhdessä käydä
-tilannetta läpi, selvittää vaihtoehtoja ja miettiä, mikä voisi olla
-seuraava askel.
-</p>
-
-<div class="notice">
-
-<strong>Hyvä tietää:</strong>
-
-<p>
-Kaveripalvelu ei korvaa viranomaisen, juristin, talousneuvojan,
-terveydenhuollon ammattilaisen tai muun asiantuntijan palvelua.
-Tarvittaessa voimme kuitenkin auttaa löytämään oikean tahon
-ja olla rinnalla asian hoitamisessa.
-</p>
-
-</div>
-
-<p>
-Ja joskus tärkeintä ei ole asioiden hoitaminen lainkaan.
-Voimme keskustella elämästä, kuunnella ajatuksiasi
-tai vain viettää hetken yhdessä.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>🤝 Kaveripalvelutiimi</h3>
-
-<p>
-Kaveripalvelutiimin muodostavat Petri ja hänen työparinaan toimiva nainen,
-jolla on hätäkeskuspäivystäjän koulutus sekä useiden vuosien kokemus
-alan työtehtävistä.
-</p>
-
-<p>
-Hätäkeskuspäivystäjän työssä korostuvat ihmisen kuunteleminen,
-tilanteen nopea hahmottaminen sekä rauhallinen ja selkeä toiminta myös silloin,
-kun toinen ihminen on huolissaan, epävarma tai vaikeassa elämäntilanteessa.
-Tämä kokemus antaa vahvan pohjan myös Kaveripalvelussa tapahtuvalle
-ihmisten kohtaamiselle ja rinnalla kulkemiselle.
-</p>
-
-<p>
-Petrin ja hänen työparinsa erilaiset ammatilliset taustat täydentävät
-toisiaan. Tiimillä on monipuolista kokemusta ihmisten kohtaamisesta,
-haastavien tilanteiden selvittämisestä sekä käytännöllisten ratkaisujen
-etsimisestä.
-</p>
-
-<p>
-Kaveripalvelussa tärkeintä on kohdata jokainen ihminen yksilöllisesti,
-kuunnella ja auttaa löytämään seuraava askel silloin, kun kaikkea
-ei halua tai pysty selvittämään yksin.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>📍 Lähitapaamiset Satakunnan alueella</h3>
-
-<p>
-Lähitapaamisia on mahdollista sopia Satakunnan alueella.
-Voimme tavata rauhallisessa ympäristössä tai lähteä yhdessä hoitamaan
-sovittuja käytännön asioita.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>📞 Etätapaamiset</h3>
-
-<p>
-Etätapaaminen onnistuu puhelimitse tai verkon välityksellä.
-</p>
-
-<p>
-Etäyhteys mahdollistaa kohtaamisen kaikkialla Suomessa myös silloin,
-kun lähitapaaminen ei ole mahdollista tai etäyhteys tuntuu sinulle
-luontevammalta.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>💶 Kaveripalvelun hinnasto</h3>
-
-<div class="price-section">
-
-<h4>🌿 Maksuton alkukartoitus</h4>
-
-<div class="price">
-10 min – 0 €
-</div>
-
-<p>
-Lyhyt puhelin- tai videotapaaminen, jossa tutustumme ja keskustelemme
-siitä, millaista apua tai tukea tarvitaan.
-</p>
-
-</div>
-
-<div class="price-section">
-
-<h3>📞 Puhelin- ja videotapaamiset</h3>
-
-<h4>Yksittäinen tapaaminen</h4>
-
-<div class="price">
-60 min – 50 €
-</div>
-
-<h4>5 tapaamista</h4>
-
-<div class="price">
-5 × 60 min – 230 €
-</div>
-
-<h4>10 tapaamista</h4>
-
-<div class="price">
-10 × 60 min – 450 €
-</div>
-
-<p>
-Etätapaaminen voidaan toteuttaa puhelimitse tai verkon välityksellä.
-Tapaamisen sisältö muodostuu avuntarvitsijan tilanteen ja tarpeiden mukaan.
-</p>
-
-</div>
-
-<div class="price-section">
-
-<h3>🤝 Lähitapaamiset</h3>
-
-<h4>Yksittäinen lähitapaaminen / asiointiapu</h4>
-
-<div class="price">
-60 min – 65 €
-</div>
-
-<h4>5 lähitapaamista</h4>
-
-<div class="price">
-5 × 60 min – 300 €
-</div>
-
-<h4>10 lähitapaamista</h4>
-
-<div class="price">
-10 × 60 min – 580 €
-</div>
-
-<p>
-Lähitapaaminen voi olla keskustelua, yhdessäoloa tai käytännön asioiden
-hoitamista. Voimme lähteä avuntarvitsijan kanssa esimerkiksi virastoon,
-Kelaan, pankkiin tai muuhun sovittuun asiointiin.
-</p>
-
-<p>
-Asiointiapuun voi kuulua myös tapaamiseen valmistautumista
-ja asiakirjojen läpikäymistä.
-</p>
-
-<p>
-Mahdollisista matkakuluista sovitaan etukäteen.
-</p>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<h3>🤍 Miten aloitetaan?</h3>
-
-<p>
-Kaikki alkaa maksuttomasta 10 minuutin alkukartoituksesta.
-Yhteyttä voi ottaa avuntarvitsija itse tai hänen omaisensa tai muu läheisensä.
-</p>
-
-<p>
-Sen aikana keskustelemme tilanteesta ja siitä,
-millainen Kaveripalvelun apu voisi olla sopiva.
-Jos palvelun tilaajana on omainen tai muu läheinen,
-sovimme samalla käytännön asioista ja siitä,
-miten palvelu aloitetaan avuntarvitsijan kanssa.
-</p>
-
-<a class="button" href="yhteys.html">
-Ota yhteyttä →
-</a>
-
-</div>
-
-<div class="quote">
-"Kaikkea ei tarvitse selvittää yksin. Joskus seuraava askel löytyy yhdessä."
-</div>
-
-<a class="back" href="palvelut.html">
-← Takaisin palveluihin
-</a>
-
-</section>
+<main>
+
+    <section class="card">
+        <h2>🤝 Ihminen ihmiselle</h2>
+
+        <p>
+            Elämässä voi tulla vastaan tilanteita, jolloin kaipaa
+            toista ihmistä rinnalleen. Joskus tarvitaan seuraa,
+            joskus käytännön apua ja joskus kuuntelevaa ihmistä,
+            jonka kanssa asioita voi rauhassa selvittää.
+        </p>
+
+        <p>
+            Kaveripalvelu on tarkoitettu kaikenikäisille ihmisille,
+            jotka kaipaavat tukea arkeen tai omaan elämäntilanteeseensa.
+            Avun tarve voi olla tilapäinen tai pidempiaikainen.
+        </p>
+
+        <p>
+            Palvelun voi tilata itselleen tai omainen tai muu läheinen
+            voi ottaa yhteyttä ja tiedustella palvelua läheiselleen.
+            Palvelusta sovitaan aina avuntarvitsijan kanssa ja hänen
+            toiveitaan kunnioittaen.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>🌿 Millaista apua voit saada?</h2>
+
+        <ul>
+            <li>Seuraa ja kiireetöntä yhdessäoloa</li>
+            <li>Kuuntelemista ja keskustelua</li>
+            <li>Käytännön apua arjen tilanteisiin</li>
+            <li>Tukea viranomaisasioiden ja asiakirjojen selvittämiseen</li>
+            <li>Apua digitaalisten palveluiden käyttämiseen</li>
+            <li>Seuraa asiointikäynneille sovitusti</li>
+            <li>Tukea tilanteisiin, joissa et tiedä, mistä aloittaa</li>
+        </ul>
+
+        <p>
+            Jokainen tilanne on erilainen. Keskustelemme kanssasi
+            siitä, millaista apua tarvitset ja miten voimme olla
+            sinulle avuksi.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>📍 Lähitapaamiset Satakunnassa</h2>
+
+        <p>
+            Voimme tavata rauhallisessa ympäristössä, viettää aikaa
+            yhdessä tai lähteä hoitamaan sovittuja käytännön asioita.
+            Tapaamisen sisältö suunnitellaan tilanteesi ja toiveidesi
+            mukaan.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>📞 Etätapaamiset koko Suomessa</h2>
+
+        <p>
+            Etätapaaminen onnistuu puhelimitse tai verkon välityksellä.
+            Näin voimme olla yhteydessä myös silloin, kun välimatka
+            estää tapaamisen kasvotusten.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>🤍 Luotettavaa apua ja kohtaamista</h2>
+
+        <p>
+            Elonpolun taustalla on kokemusta ihmisten kohtaamisesta,
+            haastavista elämäntilanteista ja käytännön ratkaisujen
+            etsimisestä. Haluamme kohdata jokaisen ihmisen yksilönä,
+            kuunnella ja auttaa löytämään seuraavan askeleen.
+        </p>
+
+        <p>
+            Kaveripalvelu ei korvaa terveydenhuoltoa, sosiaalipalveluja,
+            asianajajaa tai muuta erityisasiantuntijaa. Tarvittaessa
+            ohjaamme selvittämään, mistä tilanteeseen saa oikeanlaista
+            ammatillista apua.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>💬 Aloitetaan yhteydenotosta</h2>
+
+        <p>
+            Jokaisen ihmisen tilanne ja avun tarve on erilainen.
+            Siksi sovimme palvelun sisällöstä, toteutuksesta ja hinnasta
+            aina tapauskohtaisesti.
+        </p>
+
+        <p>
+            Ota yhteyttä, niin keskustellaan rauhassa tilanteestasi
+            ja mietitään yhdessä, millainen apu sopisi juuri sinulle
+            tai läheisellesi.
+        </p>
+
+        <p>
+            Yhteydenotto ei vielä sido sinua palvelun tilaamiseen.
+        </p>
+
+        <a class="button" href="yhteys.html">Ota yhteyttä →</a>
+    </section>
+
+    <div class="quote">
+        ”Kaikkea ei tarvitse selvittää yksin.
+        Joskus seuraava askel löytyy yhdessä.”
+    </div>
+
+    <p style="text-align:center;">
+        <a href="palvelut.html" style="color:#34432F;">
+            ← Takaisin palveluihin
+        </a>
+    </p>
+
+</main>
 
 <footer>
-
-<p>© Elonpolulla</p>
-
-<p>
-<a href="tietosuoja.html">Tietosuoja</a>
-<a href="#" onclick="openCookieSettings(); return false;">Evästeasetukset</a>
-</p>
-
+    <p>© Elonpolulla</p>
+    <p>
+        <a href="tietosuoja.html">Tietosuoja</a>
+        <a href="yhteys.html">Yhteys</a>
+    </p>
 </footer>
 
-<div id="cookieBanner" class="cookie-banner">
-
-<h3>🍪 Evästeet ja analytiikka</h3>
-
-<p>
-Elonpolulla käyttää Google Analyticsia sivuston kävijämäärien
-ja käytön seuraamiseen. Analytics otetaan käyttöön vain,
-jos hyväksyt sen.
-</p>
-
-<p>
-<a href="tietosuoja.html">Lue lisää tietosuojasta</a>
-</p>
-
-<div class="cookie-buttons">
-
-<button class="accept-button" onclick="acceptAnalytics()">
-Hyväksy analytiikka
-</button>
-
-<button class="reject-button" onclick="rejectAnalytics()">
-Kieltäydy
-</button>
-
-</div>
-
-</div>
-
-<script>
-
-const analyticsId = 'G-6RE9D5240B';
-
-function loadAnalytics() {
-
-    if (window.analyticsLoaded) {
-        return;
-    }
-
-    window.analyticsLoaded = true;
-
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag(){
-        dataLayer.push(arguments);
-    }
-
-    window.gtag = gtag;
-
-    gtag('js', new Date());
-    gtag('config', analyticsId);
-
-    const script = document.createElement('script');
-
-    script.async = true;
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + analyticsId;
-
-    document.head.appendChild(script);
-}
-
-function acceptAnalytics() {
-
-    localStorage.setItem('elonpolullaAnalytics', 'accepted');
-
-    document.getElementById('cookieBanner').style.display = 'none';
-
-    loadAnalytics();
-}
-
-function rejectAnalytics() {
-
-    localStorage.setItem('elonpolullaAnalytics', 'rejected');
-
-    document.getElementById('cookieBanner').style.display = 'none';
-}
-
-function openCookieSettings() {
-
-    document.getElementById('cookieBanner').style.display = 'block';
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-
-    const choice = localStorage.getItem('elonpolullaAnalytics');
-
-    if (choice === 'accepted') {
-
-        loadAnalytics();
-
-    } else if (choice === 'rejected') {
-
-        document.getElementById('cookieBanner').style.display = 'none';
-
-    } else {
-
-        document.getElementById('cookieBanner').style.display = 'block';
-
-    }
-
-});
-
-</script>
-
 </body>
-
 </html>
